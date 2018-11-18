@@ -19,14 +19,16 @@
 		<div class="headertop_desc">
 			<div class="call">
 				<!-- <p><span>Need help?</span> call us <span class="number">+94772308519 (RUWAN)</span></span></p> -->
-				 <p><span>Need help?</span> call us <span class="number">+94772308519</span></p>
+				 <p><span>Need help?</span>  call us <span class="number">+94772308519</span></p>
 			</div>
 			<div class="account_desc">
 				<ul>
 				
 					<li><a href= "<?=base_url('index.php/customer/CustomerRegistrationController/customerRegistrationView')?>" ><font color="green"; font-family:bolt>REGISTER</font></a></li>
 					<li><a href= "<?=base_url('index.php/customer/CustomerRegistrationController/customerLoginView');?>"><font color="green"; font-family:bolt>LOGIN</font></a></li>
-					
+					<li><a href="#">Delivery</a></li>
+					<li><a href="#">Checkout</a></li>
+					<li><a href="#">My Account</a></li>
 
 				</ul>
 			</div>
@@ -38,7 +40,12 @@
 				
 				<img src="<?php echo base_url('assets/images/logo.png');?>" width= "300px"; overflow= "hidden">
 			</div>
-		
+			  <div class="cart">
+			  	   <p>Welcome to our Online Store! <span>Cart:</span><div id="dd" class="wrapper-dropdown-2"> 0 item(s) - $0.00
+			  	   	<ul class="dropdown">
+							<li>you have no items in your Shopping cart</li>
+					</ul></div></p>
+			  </div>
 
 			<!--start-->
 			
@@ -80,7 +87,9 @@
 	     		<ul>
 			    	<li class="active"><a href="index.html">Home</a></li>
 			    	<li><a href="about.html">About</a></li>
+			    	<li><a href="delivery.html">Delivery</a></li>
 			    	<li><a href="news.html">News</a></li>
+			    	<li><a href="contact.html">Contact</a></li>
 			    	<div class="clear"></div>
      			</ul>
 	     	</div>
@@ -125,7 +134,7 @@
 									   <div class="features_list">
 									   	<h4>Get to Know More About Our Memorable Services Lorem Ipsum is simply dummy text</h4>							               
 							            </div>
-							             
+							             <a href="preview.html" class="button">Shop Now</a>
 					                   </div>			               
 									  <div class="clear"></div>				
 				                  </div>	
@@ -136,7 +145,7 @@
 									   <div class="features_list">
 									   	<h4>Get to Know More About Our Memorable Services</h4>							               
 							            </div>
-							            
+							             <a href="preview.html" class="button">Shop Now</a>
 					                   </div>		
 						             	 <div class="slider-img">
 									     <a href="preview.html"><img src="images/slide-3-image.jpg" alt="learn more" /></a>
@@ -153,7 +162,7 @@
 									   <div class="features_list">
 									   	<h4>Get to Know More About Our Memorable Services Lorem Ipsum is simply dummy text</h4>							               
 							            </div>
-							            
+							             <a href="preview.html" class="button">Shop Now</a>
 					                   </div>	
 									  <div class="clear"></div>				
 				                  </div>												
@@ -184,7 +193,10 @@
 				       <div class="price-number">
 							<p><span class="rupees">620.87LKR</span></p>
 					    </div>
-					       		
+					       		<div class="add-cart">								
+									<h4><a href="preview.html">Add to Cart</a></h4>
+							     </div>
+							 <div class="clear"></div>
 					</div>
 					 
 				</div>
@@ -195,7 +207,10 @@
 				       <div class="price-number">
 							<p><span class="rupees">899.75LKR</span></p>
 					    </div>
-					       		
+					       		<div class="add-cart">								
+									<h4><a href="preview.html">Add to Cart</a></h4>
+							     </div>
+							 <div class="clear"></div>
 					</div>
 				    
 				</div>
@@ -206,7 +221,10 @@
 				       <div class="price-number">
 							<p><span class="rupees">599.00LKR</span></p>
 					    </div>
-					       	
+					       		<div class="add-cart">								
+									<h4><a href="preview.html">Add to Cart</a></h4>
+							     </div>
+							 <div class="clear"></div>
 					</div>
 				</div>
 				<div class="grid_1_of_4 images_1_of_4">
@@ -216,7 +234,10 @@
 				       <div class="price-number">
 							<p><span class="rupees">679.87LKR</span></p>
 					    </div>
-					       		
+					       		<div class="add-cart">								
+									<h4><a href="preview.html">Add to Cart</a></h4>
+							     </div>
+							 <div class="clear"></div>
 					</div>				     
 				</div>
 			</div>
@@ -237,7 +258,10 @@
 				       <div class="price-number">
 							<p><span class="rupees">$849.99</span></p>
 					    </div>
-					       		
+					       		<div class="add-cart">								
+									<h4><a href="preview.html">Add to Cart</a></h4>
+							     </div>
+							 <div class="clear"></div>
 					</div>
 				</div>
 				<div class="grid_1_of_4 images_1_of_4">
@@ -247,7 +271,10 @@
 				       <div class="price-number">
 							<p><span class="rupees">$599.99</span></p>
 					    </div>
-					       		
+					       		<div class="add-cart">								
+									<h4><a href="preview.html">Add to Cart</a></h4>
+							     </div>
+							 <div class="clear"></div>
 					</div>
 				</div>
 				<div class="grid_1_of_4 images_1_of_4">
@@ -257,7 +284,10 @@
 				       <div class="price-number">
 							<p><span class="rupees">$799.99</span></p>
 					    </div>
-					       		
+					       		<div class="add-cart">								
+									<h4><a href="preview.html">Add to Cart</a></h4>
+							     </div>
+							 <div class="clear"></div>
 					</div>
 				</div>
 				<div class="grid_1_of_4 images_1_of_4">
@@ -267,7 +297,10 @@
 				       <div class="price-number">
 							<p><span class="rupees">$899.99</span></p>
 					    </div>
-					       		
+					       		<div class="add-cart">								
+									<h4><a href="preview.html">Add to Cart</a></h4>
+							     </div>
+							 <div class="clear"></div>
 					</div>
 				</div>
 			</div>
@@ -277,11 +310,42 @@
    <div class="footer">
    	  <div class="wrap">	
 	     <div class="section group">
-
-				
-				
 				<div class="col_1_of_4 span_1_of_4">
-					
+						<h4>Information</h4>
+						<ul>
+						<li><a href="about.html">About Us</a></li>
+						<li><a href="contact.html">Customer Service</a></li>
+						<li><a href="#">Advanced Search</a></li>
+						<li><a href="delivery.html">Orders and Returns</a></li>
+						<li><a href="contact.html">Contact Us</a></li>
+						</ul>
+					</div>
+				<div class="col_1_of_4 span_1_of_4">
+					<h4>Why buy from us</h4>
+						<ul>
+						<li><a href="about.html">About Us</a></li>
+						<li><a href="contact.html">Customer Service</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+						<li><a href="contact.html">Site Map</a></li>
+						<li><a href="#">Search Terms</a></li>
+						</ul>
+				</div>
+				<div class="col_1_of_4 span_1_of_4">
+					<h4>My account</h4>
+						<ul>
+							<li><a href="contact.html">Sign In</a></li>
+							<li><a href="index.html">View Cart</a></li>
+							<li><a href="#">My Wishlist</a></li>
+							<li><a href="#">Track My Order</a></li>
+							<li><a href="contact.html">Help</a></li>
+						</ul>
+				</div>
+				<div class="col_1_of_4 span_1_of_4">
+					<h4>Contact</h4>
+						<ul>
+							<li><span>+94772308519</span></li>
+							<li><span>+94772058519</span></li>
+						</ul>
 						<div class="social-icons">
 							<h4>Follow Us</h4>
 					   		  <ul>

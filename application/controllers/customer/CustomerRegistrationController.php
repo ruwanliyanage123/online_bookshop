@@ -7,8 +7,11 @@ class CustomerRegistrationController extends CI_Controller{
     }
 
     public function customerRegistrationView(){
-        
         $this->load->view('customer/CustomerRegistrationView');
+    }
+
+    public function customerLoginView(){
+        $this->load->view('customer/CustomerLoginView');
     }
 }
 

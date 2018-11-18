@@ -12,10 +12,14 @@ class commonDashboard extends CI_Controller{
     /*access for the common dashboard*/
 	public function index(){
         $this->load->view('CommonDashboard');
+        //$this->load->view('customer/RegisteredCustomerDashboard');
+        
     }
+    
     
     public function in(){
         echo"ucsc ucsc ucsc";
-	}
+    }
+    
 }
 ?>
