@@ -17,8 +17,8 @@ class commonDashboard extends CI_Controller{
     }
     
     
-    public function in(){
-        echo"ucsc ucsc ucsc";
+    public function aboutView(){
+        $this->load->view('About');
     }
     
 }
