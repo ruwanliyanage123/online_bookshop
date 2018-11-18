@@ -3,12 +3,6 @@
 <title>online book</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<link href="assets/css/style.css" rel="stylesheet" type="text/css" media="all"/>
-<link href="assets/css/slider.css" rel="stylesheet" type="text/css" media="all"/>
-<script type="text/javascript" src="assets/js/jquery-1.7.2.min.js"></script> 
-<script type="text/javascript" src="assets/js/move-top.js"></script>
-<script type="text/javascript" src="assets/js/easing.js"></script>
-<script type="text/javascript" src="assets/js/startstop-slider.js"></script>
 
 <link href="<?php echo base_url(); ?>/assets/css/style.css" rel="stylesheet" type="text/css" />
 <link href="<?php echo base_url(); ?>/assets/css/slider.css" rel="stylesheet" type="text/css" />
@@ -16,6 +10,7 @@
 <script type='text/javascript' src="<?php echo base_url(); ?>/assets/js/move-top.js"></script>
 <script type='text/javascript' src="<?php echo base_url(); ?>/assets/js/easing.js"></script>
 <script type='text/javascript' src="<?php echo base_url(); ?>/assets/js/startstop-slider.js"></script>
+
 
 </head>
 <body>
@@ -28,18 +23,22 @@
 			</div>
 			<div class="account_desc">
 				<ul>
-					<li><a href="#">Register</a></li>
+				
+					<li><a href= "<?=base_url('index.php/customer/CustomerRegistrationController/customerRegistrationView')?>" ><font color="green"; font-family:bolt>REGISTER</font></a></li>
 					<li><a href="#">Login</a></li>
 					<li><a href="#">Delivery</a></li>
 					<li><a href="#">Checkout</a></li>
 					<li><a href="#">My Account</a></li>
+
 				</ul>
 			</div>
 			<div class="clear"></div>
 		</div>
 		<div class="header_top">
 			<div class="logo">
-				<a href="index.html"><img src="images/logo.png" alt="" /></a>
+				
+				
+				<img src="<?php echo base_url('assets/images/logo.png');?>" width= "300px"; overflow= "hidden">
 			</div>
 			  <div class="cart">
 			  	   <p>Welcome to our Online Store! <span>Cart:</span><div id="dd" class="wrapper-dropdown-2"> 0 item(s) - $0.00
@@ -86,7 +85,7 @@
 	<div class="header_bottom">
 	     	<div class="menu">
 	     		<ul>
-			    	<li class="active"><a href="index.html">ruwan</a></li>
+			    	<li class="active"><a href="index.html">Home</a></li>
 			    	<li><a href="about.html">About</a></li>
 			    	<li><a href="delivery.html">Delivery</a></li>
 			    	<li><a href="news.html">News</a></li>

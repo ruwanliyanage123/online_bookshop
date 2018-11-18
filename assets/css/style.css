@@ -429,7 +429,7 @@ body {
 .span_1_of_4 {
 	width: 20.5%;
 	padding:1.5% 1.5% 0 0;
-	border-left:1px solid #CECECE;
+	border-left:1px solid rgb(182, 53, 53);
 }
 .span_1_of_4  h4 {
 	color:#4F4F4F;
