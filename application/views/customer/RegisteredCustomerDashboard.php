@@ -24,11 +24,10 @@
 			<div class="account_desc">
 				<ul>
 				
-					<li><a href= "<?=base_url('index.php/customer/CustomerRegistrationController/customerRegistrationView')?>" ><font color="green"; font-family:bolt>REGISTER</font></a></li>
-					<li><a href= "<?=base_url('index.php/customer/CustomerRegistrationController/customerLoginView');?>"><font color="green"; font-family:bolt>LOGIN</font></a></li>
 					<li><a href="#">Delivery</a></li>
 					<li><a href="#">Checkout</a></li>
 					<li><a href="#">My Account</a></li>
+					<li><a href= "<?=base_url('index.php/customer/CustomerRegistrationController/customerLoginView');?>"><font color="green"; font-family:bolt>LOGOUT</font></a></li>
 
 				</ul>
 			</div>

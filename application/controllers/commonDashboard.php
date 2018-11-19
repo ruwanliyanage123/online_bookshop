@@ -6,7 +6,8 @@ class commonDashboard extends CI_Controller{
 
 	public function construct(){
 		parent::__construct();
-		$this->load->helper('url');
+        $this->load->helper('url');
+        $this->load->library('session');
     }
     
     /*access for the common dashboard*/
@@ -18,6 +19,16 @@ class commonDashboard extends CI_Controller{
     
     
     public function aboutView(){
+        
+
+        $sess_array = array(
+            'id'       => "002",
+            'username' =>"namal",
+             );
+        $this->session->set_userdata('logged_in', $sess_array);
+
+        //redirect(base_url() . 'main/enter');  
+        
         $this->load->view('About');
     }
     

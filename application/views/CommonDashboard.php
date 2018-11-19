@@ -23,11 +23,8 @@
 			</div>
 			<div class="account_desc">
 				<ul>
-				
 					<li><a href= "<?=base_url('index.php/customer/CustomerRegistrationController/customerRegistrationView')?>" ><font color="green"; font-family:bolt>REGISTER</font></a></li>
 					<li><a href= "<?=base_url('index.php/customer/CustomerRegistrationController/customerLoginView');?>"><font color="green"; font-family:bolt>LOGIN</font></a></li>
-					
-
 				</ul>
 			</div>
 			<div class="clear"></div>
