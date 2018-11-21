@@ -27,6 +27,9 @@ class CustomerRegistrationModel extends CI_Model{
     
             $this->db->set($data);
             $this->db->insert($this->db->dbprefix.'customer');
+
+            redirect(base_url().'index.php/customer/CustomerRegistrationController/messageForRegistrationSuccessfully');
+
         }
     }
 }

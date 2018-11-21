@@ -31,6 +31,22 @@ class CustomerRegistrationController extends CI_Controller{
         //echo"hello ruwan liyanage";
         $this->load->view('messages/RegistreationAlreadyExistsAccont');
     }
+
+    
+
+    //for show the message that if the massage success
+    public function messageForRegistrationSuccessfully(){
+        //echo"hello ruwan liyanage";
+        $this->load->view('messages/RegistrationSuccessfully');
+    }
+
+    /**
+     * for move the customer for the registered customers dashboard after the registration or after the login
+     */
+    public function moveToCustomerDashboard(){
+        $this->load->view('customer/RegisteredCustomerDashboard');
+    }
+
 }
 
 ?>
