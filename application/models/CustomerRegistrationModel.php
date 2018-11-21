@@ -15,7 +15,7 @@ class CustomerRegistrationModel extends CI_Model{
         $row_number = $query->num_rows();
 
         if($row_number!=0){
-            echo"already exists";
+            redirect(base_url().'index.php/customer/CustomerRegistrationController/messageForAlreadyExistsAccount');
         }
 
         else{

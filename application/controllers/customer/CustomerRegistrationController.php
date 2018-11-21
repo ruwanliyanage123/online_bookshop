@@ -21,9 +21,15 @@ class CustomerRegistrationController extends CI_Controller{
         $Email    = $this->input->post('Email');
         $Password = $this->input->post('Pass');
 
-        //check that the inputs are not empty
         $this->load->model('CustomerRegistrationModel');
         $this->CustomerRegistrationModel->validateCustomers($Username,$Email, $Password);
+    }
+
+    //for show the message in registration while try for register an user but alreadyexists
+
+    public function messageForAlreadyExistsAccount(){
+        //echo"hello ruwan liyanage";
+        $this->load->view('messages/RegistreationAlreadyExistsAccont');
     }
 }
 
