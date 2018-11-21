@@ -1,3 +1,13 @@
+<?php
+$this->load->library('session');
+$variable = $this->session->userdata('flagForSignIn');
+
+if($variable==false){
+    redirect(base_url().'index.php/customer/CustomerRegistrationController/moveToCustomerDashboard');
+}
+
+if($variable==""){
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -64,5 +74,9 @@
     <!-- JS -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="js/main.js"></script>
-</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</body>
 </html>
+<?php
+}
+
+?>

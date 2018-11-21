@@ -27,7 +27,7 @@
 					<li><a href="#">Delivery</a></li>
 					<li><a href="#">Checkout</a></li>
 					<li><a href="#">My Account</a></li>
-					<li><a href= "<?=base_url('index.php/customer/CustomerRegistrationController/customerLoginView');?>"><font color="green"; font-family:bolt>LOGOUT</font></a></li>
+					<li><a href= "<?=base_url('index.php/customer/CustomerRegistrationController/logout');?>"><font color="green"; font-family:bolt>LOGOUT</font></a></li>
 
 				</ul>
 			</div>

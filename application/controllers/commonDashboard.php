@@ -21,11 +21,7 @@ class commonDashboard extends CI_Controller{
     public function aboutView(){
         
 
-        $sess_array = array(
-            'id'       => "002",
-            'username' =>"namal",
-             );
-        $this->session->set_userdata('logged_in', $sess_array);
+        
 
         //redirect(base_url() . 'main/enter');  
         

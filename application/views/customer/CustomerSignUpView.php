@@ -1,3 +1,13 @@
+<?php
+$this->load->library('session');
+$variable = $this->session->userdata('flagForSignUp');
+
+if($variable==false){
+    redirect(base_url().'index.php/customer/CustomerRegistrationController/moveToCustomerDashboard');
+}
+
+if($variable==""){
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -66,3 +76,9 @@
     <script src="js/main.js"></script>
 </body>
 </html>
+
+<?php
+}
+
+
+?>

@@ -1,15 +1,4 @@
-<?php
-$name = $this->session->userdata['logged_in']['id'];
 
-if($name=="001"){
-	echo"ok it is ctive";
-}
-else{
-	redirect(base_url()."index.php/customer/CustomerRegistrationController/customerRegistrationView");
-	//echo"$name";
-}
-
-?>
 <!DOCTYPE HTML>
 <head>
 <title>Free Home Shoppe Website Template | About :: w3layouts</title>

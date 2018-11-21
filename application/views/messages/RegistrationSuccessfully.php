@@ -1,3 +1,11 @@
+<?php
+$this->load->library('session');
+$variable = $this->session->userdata('flagForMessage');
+
+if($variable==true){
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -31,3 +39,12 @@ function(isConfirm){
 
 </body>
 </html>
+
+
+<?php
+}
+else{
+  redirect(base_url().'index.php/customer/CustomerRegistrationController/moveToCustomerDashboard');
+}
+
+?>

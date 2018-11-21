@@ -6,15 +6,39 @@ class CustomerRegistrationController extends CI_Controller{
         $this->load->helper('url');
     }
 
+    /**
+     * for move to the sign up page 
+     * i used set_serdata() function for restrinct the unnessesary loading the sign up page
+     */
+
     public function customerRegistrationView(){
         $this->load->view('customer/CustomerSignUpView');
+        $this->session->set_userdata('flagForSignUp',false);
     }
 
+    /**
+     * for move to the sugn in page
+     * i used set_serdata() function for restrinct the unnessesary loading the sign in page
+     */
     public function customerLoginView(){
         $this->load->view('customer/CustomerSignInView');
+        $this->session->set_userdata('flagForSignIn',false);
     }
 
-    //for get the posted values of the sigh up page
+
+    /**
+     * this function use for logout for a user
+     * then the session must be destroy in this moment
+     */
+    public function logout(){
+        $this->session->sess_destroy();
+        redirect(base_url().'index.php/customer/CustomerRegistrationController/customerLoginView');
+    }
+
+/*
+ * for get the posted values of the sigh up page
+ */
+    
     public function getValesBySignUp(){
         
         $Username = $this->input->post('Name');
@@ -25,19 +49,19 @@ class CustomerRegistrationController extends CI_Controller{
         $this->CustomerRegistrationModel->validateCustomers($Username,$Email, $Password);
     }
 
-    //for show the message in registration while try for register an user but alreadyexists
-
+    /**
+     * for show the message that registration was unsuccess for the user because she or he had already registtered
+     */
     public function messageForAlreadyExistsAccount(){
-        //echo"hello ruwan liyanage";
         $this->load->view('messages/RegistreationAlreadyExistsAccont');
     }
 
-    
-
-    //for show the message that if the massage success
+    /**
+     * for show the message that registration was success for the user
+     */
     public function messageForRegistrationSuccessfully(){
-        //echo"hello ruwan liyanage";
         $this->load->view('messages/RegistrationSuccessfully');
+        $this->session->set_userdata('flagForMessage',false);
     }
 
     /**
