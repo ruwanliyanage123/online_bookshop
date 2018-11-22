@@ -1,8 +1,3 @@
-<?php
-$this->load->library('session');
-$checking = $this->session->userdata('login');
-if($checking=='1'){
-?>
 
 
 <!DOCTYPE HTML>
@@ -87,11 +82,11 @@ if($checking=='1'){
 
 		</script>
 	 <div class="clear"></div>
-  </div>                           
+  </div>
 	<div class="header_bottom">
 	     	<div class="menu">
 	     		<ul>
-				 	<li><a href= "<?=base_url('index.php/customer/CustomerRegistrationController/decieDashboard');?>">Home</a></li>
+				 <li><a href= "<?=base_url('index.php/customer/CustomerRegistrationController/decieDashboard');?>">Home</a></li>
 			    	<li><a href= "<?=base_url('index.php/customer/CustomerRegistrationController/moveToAbout');?>">About</a></li>
 			    	<li><a href="delivery.html">Delivery</a></li>
 			    	<li><a href="news.html">News</a></li>
@@ -106,85 +101,13 @@ if($checking=='1'){
 	     	</div>
 	     	<div class="clear"></div>
 	     </div>	     
-	<div class="header_slide">
-			<div class="header_bottom_left">				
-				<div class="categories">
-				  <ul>
-				  	<h3>Categories</h3>
-					  <li><a href="<?=base_url('index.php/customer/CustomerRegistrationController/categoryInformationTechnology');?>">Information Technology</a></li>
-				      <li><a href="<?=base_url('index.php/customer/CustomerRegistrationController/categoryBusiness');?>">Business</a></li>
-				      <li><a href="<?=base_url('index.php/customer/CustomerRegistrationController/categoryBiographies');?>">Biographies</a></li>
-				      <li><a href="#">Arts and Music</a></li>
-				      <li><a href="#">Kids</a></li>
-				      <li><a href="#">Novels &amp; Fitness</a></li>
-				      <li><a href="#">School Educational</a></li>
-				      <li><a href="#">Higher Educational </a></li>
-				      <li><a href="#">Medical</a></li>
-				      <li><a href="#">English</a></li>
-					  <li><a href="#">Tamil</a></li>
-					   
-				  </ul>
-				</div>					
-	  	     </div>
-					 <div class="header_bottom_right">					 
-					 	 <div class="slider">					     
-							 <div id="slider">
-			                    <div id="mover">
-			                    	<div id="slide-1" class="slide">			                    
-									 <div class="slider-img">
-									     <a href="preview.html"><img src="images/slide-1-image.png" alt="learn more" /></a>									    
-									  </div>
-						             	<div class="slider-text">
-		                                 <h1>Clearance<br><span>SALE</span></h1>
-		                                 <h2>UPTo 20% OFF</h2>
-									   <div class="features_list">
-									   	<h4>Get to Know More About Our Memorable Services Lorem Ipsum is simply dummy text</h4>							               
-							            </div>
-							             <a href="preview.html" class="button">Shop Now</a>
-					                   </div>			               
-									  <div class="clear"></div>				
-				                  </div>	
-						             	<div class="slide">
-						             		<div class="slider-text">
-		                                 <h1>Clearance<br><span>SALE</span></h1>
-		                                 <h2>UPTo 40% OFF</h2>
-									   <div class="features_list">
-									   	<h4>Get to Know More About Our Memorable Services</h4>							               
-							            </div>
-							             <a href="preview.html" class="button">Shop Now</a>
-					                   </div>		
-						             	 <div class="slider-img">
-									     <a href="preview.html"><img src="images/slide-3-image.jpg" alt="learn more" /></a>
-									  </div>						             					                 
-									  <div class="clear"></div>				
-				                  </div>
-				                  <div class="slide">						             	
-					                  <div class="slider-img">
-									     <a href="preview.html"><img src="images/slide-2-image.jpg" alt="learn more" /></a>
-									  </div>
-									  <div class="slider-text">
-		                                 <h1>Clearance<br><span>SALE</span></h1>
-		                                 <h2>UPTo 10% OFF</h2>
-									   <div class="features_list">
-									   	<h4>Get to Know More About Our Memorable Services Lorem Ipsum is simply dummy text</h4>							               
-							            </div>
-							             <a href="preview.html" class="button">Shop Now</a>
-					                   </div>	
-									  <div class="clear"></div>				
-				                  </div>												
-			                 </div>		
-		                </div>
-					 <div class="clear"></div>					       
-		         </div>
-		      </div>
-		   <div class="clear"></div>
-		</div>
-   </div>
+
+
  <div class="main">
     <div class="content">
     	<div class="content_top">
     		<div class="heading">
-    		<h3>New Products</h3>
+    		<h3>Biographies</h3>
     		</div>
     		<div class="see">
     			<p><a href="#">See all Products</a></p>
@@ -249,7 +172,7 @@ if($checking=='1'){
 			</div>
 			<div class="content_bottom">
     		<div class="heading">
-    		<h3>Feature Products</h3>
+    		<h3>Biographies</h3>
     		</div>
     		<div class="see">
     			<p><a href="#">See all Products</a></p>
@@ -313,63 +236,9 @@ if($checking=='1'){
     </div>
  </div>
 </div>
-   <div class="footer">
-   	  <div class="wrap">	
-	     <div class="section group">
-				<div class="col_1_of_4 span_1_of_4">
-						<h4>Information</h4>
-						<ul>
-						<li><a href="about.html">About Us</a></li>
-						<li><a href="contact.html">Customer Service</a></li>
-						<li><a href="#">Advanced Search</a></li>
-						<li><a href="delivery.html">Orders and Returns</a></li>
-						<li><a href="contact.html">Contact Us</a></li>
-						</ul>
-					</div>
-				<div class="col_1_of_4 span_1_of_4">
-					<h4>Why buy from us</h4>
-						<ul>
-						<li><a href="about.html">About Us</a></li>
-						<li><a href="contact.html">Customer Service</a></li>
-						<li><a href="#">Privacy Policy</a></li>
-						<li><a href="contact.html">Site Map</a></li>
-						<li><a href="#">Search Terms</a></li>
-						</ul>
-				</div>
-				<div class="col_1_of_4 span_1_of_4">
-					<h4>My account</h4>
-						<ul>
-							<li><a href="contact.html">Sign In</a></li>
-							<li><a href="index.html">View Cart</a></li>
-							<li><a href="#">My Wishlist</a></li>
-							<li><a href="#">Track My Order</a></li>
-							<li><a href="contact.html">Help</a></li>
-						</ul>
-				</div>
-				<div class="col_1_of_4 span_1_of_4">
-					<h4>Contact</h4>
-						<ul>
-							<li><span>+94772308519</span></li>
-							<li><span>+94772058519</span></li>
-						</ul>
-						<div class="social-icons">
-							<h4>Follow Us</h4>
-					   		  <ul>
-							      <li><a href="#" target="_blank"><img src="images/facebook.png" alt="" /></a></li>
-							      <li><a href="#" target="_blank"><img src="images/twitter.png" alt="" /></a></li>
-							      <li><a href="#" target="_blank"><img src="images/skype.png" alt="" /> </a></li>
-							      <li><a href="#" target="_blank"> <img src="images/dribbble.png" alt="" /></a></li>
-							      <li><a href="#" target="_blank"> <img src="images/linkedin.png" alt="" /></a></li>
-							      <div class="clear"></div>
-						     </ul>
-   	 					</div>
-				</div>
-			</div>			
-        </div>
-        <div class="copy_right">
-				
-		   </div>
-    </div>
+
+
+   
     <script type="text/javascript">
 		$(document).ready(function() {			
 			$().UItoTop({ easingType: 'easeOutQuart' });
@@ -379,15 +248,6 @@ if($checking=='1'){
     <a href="#" id="toTop"><span id="toTopHover"> </span></a>
 </body>
 </html>
-
-<?php
-}
-else{
-	redirect(base_url().'index.php/customer/CustomerRegistrationController/customerLoginView');
-}
-
-?>
-
 
 
 
