@@ -1,3 +1,5 @@
+InvalidPassword.php
+
 
 
 <!DOCTYPE html>
@@ -16,14 +18,14 @@
 
 setTimeout(function () { 
 swal({
-  title: 'SORRY! SUCH ACCOUNT NOT EXISTS',
-  text: 'please move for Sign Up',
+  title: 'YOUR PASSWORD OR EMAIL IS INVALID',
+  text: 'check and re try',
   type: 'warning',
   confirmButtonText: 'OK'
 },
 function(isConfirm){
   if (isConfirm) {
-    window.location.href = 'customerRegistrationView';
+    window.location.href = 'customerLoginView';
   }
 }); }, 1);
 

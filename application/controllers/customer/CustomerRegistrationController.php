@@ -92,6 +92,15 @@ class CustomerRegistrationController extends CI_Controller{
         $this->load->view('messages/AccountNotExists');
     }
 
+    
+
+    /**
+     * for show the message that submitted password is not correct
+     */
+    public function messageForInvalidPassword(){
+        $this->load->view('messages/InvalidPassword');
+    }
+
     /**
      * for move the customer for the registered customers dashboard after the registration or after the login
      */

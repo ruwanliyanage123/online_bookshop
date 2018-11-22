@@ -93,7 +93,7 @@ class CustomerRegistrationModel extends CI_Model{
                } 
                else{
                 
-                redirect(base_url().'index.php/customer/CustomerRegistrationController/messageForLoginUnsuccess');
+                redirect(base_url().'index.php/customer/CustomerRegistrationController/messageForInvalidPassword');
                }
             }
         }
