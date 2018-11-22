@@ -44,10 +44,11 @@ if($checking1!='1'){
 
                     <div class="signin-form">
                         <h2 class="form-title">Sign In</h2>
-                        <form method="POST" class="register-form" id="login-form">
+                        
+                        <form method="POST" class="register-form" id="login-form" action= <?= base_url("index.php/customer/CustomerRegistrationController/getValesBySignIn")?>>
                             <div class="form-group">
                                 <label for="your_name"><i class="zmdi zmdi-account material-icons-name"></i></label>
-                                <input type="text" name="your_name" id="your_name" placeholder="Enter your email address"/>
+                                <input type="text" name="your_email" id="your_email" placeholder="Enter your email address"/>
                             </div>
                             <div class="form-group">
                                 <label for="your_pass"><i class="zmdi zmdi-lock"></i></label>

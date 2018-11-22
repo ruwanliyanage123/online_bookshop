@@ -4,6 +4,12 @@ class CustomerRegistrationModel extends CI_Model{
         parent::__construct();
     }
 
+    /**
+     * this function is used for the check the login details of the user sign up page
+     * get data fri datbase relevant with the emaii
+     * make a session for the future activities
+     */
+
     public function validateCustomers($username,$email, $password){
         //check that the customer is already registered or not 
         $this->load->database();
@@ -15,11 +21,8 @@ class CustomerRegistrationModel extends CI_Model{
         $row_number = $query->num_rows();
 
         if($row_number!=0){
-
-            
             redirect(base_url().'index.php/customer/CustomerRegistrationController/messageForAlreadyExistsAccount');
         }
-
         else{
             $data = array(
                 'customer_name'     => $username,
@@ -29,7 +32,6 @@ class CustomerRegistrationModel extends CI_Model{
     
             $this->db->set($data);
             $this->db->insert($this->db->dbprefix.'customer');
-
 
             /**
              * for make the session for user
@@ -49,6 +51,39 @@ class CustomerRegistrationModel extends CI_Model{
                 
             redirect(base_url().'index.php/customer/CustomerRegistrationController/messageForRegistrationSuccessfully');
 
+        }
+    }
+
+    /**
+     * this function is used for the check the login details of the user sign in page
+     * get data fri datbase relevant with the emaii
+     * use md5 for the decrypt the passwords
+     * if the posted data not in the database then there are not a user account 
+     * hence move to the registration page
+     */
+    public function checkCustomers($Email, $Password){
+        $this->load->database();
+        $this->db->select('customer_email');
+        $this->db->select('customer_password');
+        $this->db->from('customer');
+        $this->db->where('customer_email',$Email);
+
+        $query = $this->db->get();
+        $row_numbers = $query->num_rows();
+
+
+        if($row_numbers>0){
+            $result = $query->result();
+            foreach($result as $row){
+        
+               if($Password==$row->customer_password){
+                   echo"sucess";
+                redirect(base_url().'index.php/customer/CustomerRegistrationController/moveToCustomerDashboard');
+               } 
+               else{
+                echo"unsucess";
+               }
+            }
         }
     }
 }

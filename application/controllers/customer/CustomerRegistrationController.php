@@ -35,19 +35,41 @@ class CustomerRegistrationController extends CI_Controller{
         redirect(base_url().'index.php/commonDashboard/index');
     }
 
-/*
- * for get the posted values of the sigh up page
- */
+    /*
+    * for get the posted values of the sigh up page
+    * md5 function added for the encrypt the password from out side
+    */
     
     public function getValesBySignUp(){
         
         $Username = $this->input->post('Name');
         $Email    = $this->input->post('Email');
-        $Password = $this->input->post('Pass');
+        $Password = $this->input->post('password');
+        $Password = md5($Password);
 
         $this->load->model('CustomerRegistrationModel');
         $this->CustomerRegistrationModel->validateCustomers($Username,$Email, $Password);
     }
+
+
+    /**
+     * this for get the posted vales from the sign in page
+     * md5 used 
+     * 
+     */
+    public function getValesBySignIn(){
+        $Email    = $this->input->post('your_email');
+        $Password = $this->input->post('your_pass');
+        $Password = md5($Password);
+
+        echo"$Email\n";
+        echo"$Password\n";
+        
+
+        $this->load->model('CustomerRegistrationModel');
+        $this->CustomerRegistrationModel->checkCustomers($Email, $Password);
+    }
+
 
     /**
      * for show the message that registration was unsuccess for the user because she or he had already registtered
