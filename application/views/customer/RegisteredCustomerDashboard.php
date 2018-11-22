@@ -95,7 +95,7 @@ if($checking=='1'){
 			    	<li><a href= "<?=base_url('index.php/customer/CustomerRegistrationController/moveToAbout');?>">About</a></li>
 			    	<li><a href="delivery.html">Delivery</a></li>
 			    	<li><a href="news.html">News</a></li>
-			    	<li><a href="contact.html">Contact</a></li>
+			    	
 			    	<div class="clear"></div>
      			</ul>
 	     	</div>
@@ -111,18 +111,18 @@ if($checking=='1'){
 				<div class="categories">
 				  <ul>
 				  	<h3>Categories</h3>
-				      <li><a href="#">Mobile Phones</a></li>
-				      <li><a href="#">Desktop</a></li>
-				      <li><a href="#">Laptop</a></li>
-				      <li><a href="#">Accessories</a></li>
-				      <li><a href="#">Software</a></li>
-				       <li><a href="#">Sports &amp; Fitness</a></li>
-				       <li><a href="#">Footwear</a></li>
-				       <li><a href="#">Jewellery</a></li>
-				       <li><a href="#">Clothing</a></li>
-				       <li><a href="#">Home Decor &amp; Kitchen</a></li>
-				       <li><a href="#">Beauty &amp; Healthcare</a></li>
-				       <li><a href="#">Toys, Kids &amp; Babies</a></li>
+				      <li><a href="#">Information Technology</a></li>
+				      <li><a href="#">Business</a></li>
+				      <li><a href="#">Biographies</a></li>
+				      <li><a href="#">Arts and Music</a></li>
+				      <li><a href="#">Kids</a></li>
+				      <li><a href="#">Novels &amp; Fitness</a></li>
+				      <li><a href="#">School Educational</a></li>
+				      <li><a href="#">Higher Educational </a></li>
+				      <li><a href="#">Medical</a></li>
+				      <li><a href="#">English</a></li>
+					  <li><a href="#">Tamil</a></li>
+					   
 				  </ul>
 				</div>					
 	  	     </div>

@@ -82,7 +82,7 @@
 			    	<li class="active"><a href="about.html">About</a></li>
 			    	<li><a href="delivery.html">Delivery</a></li>
 			    	<li><a href="news.html">News</a></li>
-			    	<li><a href="contact.html">Contact</a></li>
+			    	
 			    	<div class="clear"></div>
      			</ul>
 	     	</div>
