@@ -1,3 +1,10 @@
+<?php
+$this->load->library('session');
+$checking = $this->session->userdata('login');
+if($checking=='1'){
+?>
+
+
 <!DOCTYPE HTML>
 <head>
 <title>online book</title>
@@ -372,4 +379,12 @@
     <a href="#" id="toTop"><span id="toTopHover"> </span></a>
 </body>
 </html>
+
+<?php
+}
+else{
+	redirect(base_url().'index.php/customer/CustomerRegistrationController/customerLoginView');
+}
+
+?>
 

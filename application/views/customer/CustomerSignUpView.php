@@ -1,13 +1,19 @@
 <?php
 $this->load->library('session');
-$variable = $this->session->userdata('flagForSignUp');
+$checking1 = $this->session->userdata('login');
+$checking2 = $this->session->userdata('flagForSignUp');
 
-if($variable==false){
+/**
+ * for checking that if the user has logout or not
+ */
+if(($checking1=='1')&&($checking2!='1')){
+    echo"you are login but flag is off ";
     redirect(base_url().'index.php/customer/CustomerRegistrationController/moveToCustomerDashboard');
 }
 
-if($variable==""){
 ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -77,8 +83,3 @@ if($variable==""){
 </body>
 </html>
 
-<?php
-}
-
-
-?>

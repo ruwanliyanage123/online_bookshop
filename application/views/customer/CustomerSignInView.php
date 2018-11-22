@@ -1,13 +1,38 @@
 <?php
 $this->load->library('session');
-$variable = $this->session->userdata('flagForSignIn');
+$checking1 = $this->session->userdata('login');
+$checking2 = $this->session->userdata('flagForSignIn');
 
-if($variable==false){
+/**
+ * for checking that if the user has logout or not
+ */
+
+ /*
+if(($checking1=='1')&&($checking2!='1')){
+    echo"you are login but flag is off ";
+    redirect(base_url().'index.php/customer/CustomerRegistrationController/moveToCustomerDashboard');
+}*/
+
+/*
+echo"vallule 2:$checking2\n";
+
+if(!$checking1){
+    echo"vallule 1 exists:$checking1\n";
+}
+if($checking1!='1'){
+    echo"vallule 1 exists:$checking1\n";
+}
+*/
+
+if(($checking1=='1')&&($checking2!='1')){
+    echo"you are login but flag is off ";
     redirect(base_url().'index.php/customer/CustomerRegistrationController/moveToCustomerDashboard');
 }
+if($checking1!='1'){
 
-if($variable==""){
 ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -76,7 +101,8 @@ if($variable==""){
     <script src="js/main.js"></script>
 </body>
 </html>
+
+
 <?php
 }
-
 ?>

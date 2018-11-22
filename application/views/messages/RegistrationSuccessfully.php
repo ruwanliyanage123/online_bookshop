@@ -1,8 +1,8 @@
 <?php
 $this->load->library('session');
-$variable = $this->session->userdata('flagForMessage');
+$variable = $this->session->userdata('flagForMessage1');
 
-if($variable==true){
+if($variable=='1'){
 
 ?>
 

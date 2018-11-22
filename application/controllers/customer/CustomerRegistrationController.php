@@ -32,7 +32,7 @@ class CustomerRegistrationController extends CI_Controller{
      */
     public function logout(){
         $this->session->sess_destroy();
-        redirect(base_url().'index.php/customer/CustomerRegistrationController/customerLoginView');
+        redirect(base_url().'index.php/commonDashboard/index');
     }
 
 /*
@@ -54,6 +54,7 @@ class CustomerRegistrationController extends CI_Controller{
      */
     public function messageForAlreadyExistsAccount(){
         $this->load->view('messages/RegistreationAlreadyExistsAccont');
+        $this->session->set_userdata('flagForMessage2',false);
     }
 
     /**
@@ -61,7 +62,7 @@ class CustomerRegistrationController extends CI_Controller{
      */
     public function messageForRegistrationSuccessfully(){
         $this->load->view('messages/RegistrationSuccessfully');
-        $this->session->set_userdata('flagForMessage',false);
+        $this->session->set_userdata('flagForMessage1',false);
     }
 
     /**

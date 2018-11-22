@@ -15,6 +15,21 @@ class CustomerRegistrationModel extends CI_Model{
         $row_number = $query->num_rows();
 
         if($row_number!=0){
+
+            /**
+             * for make the session for user
+            */
+
+            $dat = array(
+                'email'           => "null",
+                'flagForMessage2' => true,
+                'flagForMessage1' => "null",
+                'flagForSignUp'   => "null",
+                'flagForSignIn'   => "null",
+                'login'           => "null",
+            );
+                
+            $this->session->set_userdata($dat);
             redirect(base_url().'index.php/customer/CustomerRegistrationController/messageForAlreadyExistsAccount');
         }
 
@@ -30,18 +45,15 @@ class CustomerRegistrationModel extends CI_Model{
 
 
             /**
-             * for make the session for user
-            */
+             * remake the sesssion variables
+             **/
 
-            $dat = array(
-                'email'           => $email,
-                'flagForMessage'  => true,
-                'flagForSignUp'   => true,
-                'flagForSignIn'   => true,
-                'login'           => true,
-            );
+            $this->session->set_userdata('email',$email);
+            $this->session->set_userdata('flagForMessage1',true);
+            $this->session->set_userdata('flagForSignUp',true);
+            $this->session->set_userdata('flagForSignIn',true);
+            $this->session->set_userdata('login',true);
                 
-            $this->session->set_userdata($dat);
             redirect(base_url().'index.php/customer/CustomerRegistrationController/messageForRegistrationSuccessfully');
 
         }
