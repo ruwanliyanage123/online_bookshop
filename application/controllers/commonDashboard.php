@@ -23,6 +23,14 @@ class commonDashboard extends CI_Controller{
     public function aboutView(){
         $this->load->view('About');
     }
+
+    /**
+     * following functions are use fo the loading the common dashboard book categories
+     */
+
+    public function categoryCommonArtsAndMusic(){
+        $this->load->view('book_categories/CommonArtsAndMusic');
+    }
     
 }
 ?>

@@ -168,6 +168,10 @@ class CustomerRegistrationController extends CI_Controller{
         $this->load->view('book_categories/Tamil');
     }
 
+    /**
+     * above functions are using for the categories of the book
+     */
+
 
 }
 

@@ -93,17 +93,18 @@
 				<div class="categories">
 				  <ul>
 				  	<h3>Categories</h3>
-				      <li><a href="#">Information Technology</a></li>
-				      <li><a href="#">Business</a></li>
-				      <li><a href="#">Biographies</a></li>
-				      <li><a href="#">Arts and Music</a></li>
-				      <li><a href="#">Kids</a></li>
-				      <li><a href="#">Novels &amp; Fitness</a></li>
-				      <li><a href="#">School Educational</a></li>
-				      <li><a href="#">Higher Educational </a></li>
-				      <li><a href="#">Medical</a></li>
-				      <li><a href="#">English</a></li>
-					  <li><a href="#">Tamil</a></li>
+				      <li><a href="<?=base_url('index.php/customer/CustomerRegistrationController/categoryInformationTechnology');?>">Information Technology</a></li>
+				      <li><a href="<?=base_url('index.php/customer/CustomerRegistrationController/categoryBusiness');?>">Business</a></li>
+				      <li><a href="<?=base_url('index.php/customer/CustomerRegistrationController/categoryBiographies');?>">Biographies</a></li>
+				      <li><a href="<?=base_url('index.php/commonDashboard/categoryCommonArtsAndMusic');?>">Arts and Music</a></li>
+				      <li><a href="<?=base_url('index.php/customer/CustomerRegistrationController/categoryKids');?>">Kids</a></li>
+				      <li><a href="<?=base_url('index.php/customer/CustomerRegistrationController/categoryNovels');?>">Novels</a></li>
+				      <li><a href="<?=base_url('index.php/customer/CustomerRegistrationController/categorySchoolEducational');?>">School Educational</a></li>
+				      <li><a href="<?=base_url('index.php/customer/CustomerRegistrationController/categoryHigherEducational');?>">Higher Educational </a></li>
+				      <li><a href="<?=base_url('index.php/customer/CustomerRegistrationController/categoryMedical');?>">Medical</a></li>
+				      <li><a href="<?=base_url('index.php/customer/CustomerRegistrationController/categoryEnglish');?>">English</a></li>
+					  <li><a href="<?=base_url('index.php/customer/CustomerRegistrationController/categoryTamil');?>">Tamil</a></li>
+					 
 				  </ul>
 				</div>					
 	  	     </div>
