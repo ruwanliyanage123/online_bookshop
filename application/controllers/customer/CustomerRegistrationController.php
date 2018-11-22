@@ -173,6 +173,9 @@ class CustomerRegistrationController extends CI_Controller{
      */
 
 
+     public function moveToPreview(){
+         $this->load->view('preview/preview.php');
+     }
 }
 
 ?>

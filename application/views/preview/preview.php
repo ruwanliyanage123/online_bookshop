@@ -1,0 +1,308 @@
+
+<!DOCTYPE HTML>
+<head>
+<title>online bookshop</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+<link href="<?php echo base_url(); ?>/assets/css/global.css" rel="stylesheet" type="text/css" />
+<link href="<?php echo base_url(); ?>/assets/css/easy-responsive-tabs.css" rel="stylesheet" type="text/css" />
+<link href="<?php echo base_url(); ?>/assets/css/style.css" rel="stylesheet" type="text/css" />
+<link href="<?php echo base_url(); ?>/assets/css/slider.css" rel="stylesheet" type="text/css" />
+<script type='text/javascript' src="<?php echo base_url(); ?>/assets/js/jquery-1.7.2.min.js"></script>
+<script type='text/javascript' src="<?php echo base_url(); ?>/assets/js/move-top.js"></script>
+<script type='text/javascript' src="<?php echo base_url(); ?>/assets/js/easing.js"></script>
+<script type='text/javascript' src="<?php echo base_url(); ?>/assets/js/startstop-slider.js"></script>
+<script type='text/javascript' src="<?php echo base_url(); ?>/assets/js/slides.min.jquery.js"></script>
+<script type='text/javascript' src="<?php echo base_url(); ?>/assets/js/easyResponsiveTabs.js"></script>
+
+<script>
+		$(function(){
+			$('#products').slides({
+				preload: true,
+				preloadImage: 'img/loading.gif',
+				effect: 'slide, fade',
+				crossfade: true,
+				slideSpeed: 350,
+				fadeSpeed: 500,
+				generateNextPrev: true,
+				generatePagination: false
+			});
+		});
+	</script>
+</head>
+<body>
+  <div class="wrap">
+	<div class="header">
+		
+		<div class="header_top">
+			<div class="logo">
+				<a href="index.html"><img src="images/logo.png" alt="" /></a>
+			</div>
+			  <div class="cart">
+			  	   <p>Welcome to our Online Store! <span>Cart:</span><div id="dd" class="wrapper-dropdown-2"> 0 item(s) - $0.00
+			  	   	<ul class="dropdown">
+							<li>you have no items in your Shopping cart</li>
+					</ul></div></p>
+			  </div>
+			  <script type="text/javascript">
+			function DropDown(el) {
+				this.dd = el;
+				this.initEvents();
+			}
+			DropDown.prototype = {
+				initEvents : function() {
+					var obj = this;
+
+					obj.dd.on('click', function(event){
+						$(this).toggleClass('active');
+						event.stopPropagation();
+					});	
+				}
+			}
+
+			$(function() {
+
+				var dd = new DropDown( $('#dd') );
+
+				$(document).click(function() {
+					// all dropdowns
+					$('.wrapper-dropdown-2').removeClass('active');
+				});
+
+			});
+
+		</script>
+	 <div class="clear"></div>
+  </div>
+	<div class="header_bottom">
+	     	<div class="menu">
+	     		<ul>
+			    	<li><a href="index.html">Home</a></li>
+			    	<li><a href="about.html">About</a></li>
+			    	<li><a href="delivery.html">Delivery</a></li>
+			    	<li><a href="news.html">News</a></li>
+			    	<li><a href="contact.html">Contact</a></li>
+			    	<div class="clear"></div>
+     			</ul>
+	     	</div>
+	     	<div class="search_box">
+	     		<form>
+	     			<input type="text" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}"><input type="submit" value="">
+	     		</form>
+	     	</div>
+	     	<div class="clear"></div>
+	     </div>	     	
+   </div>
+ <div class="main">
+    <div class="content">
+    	
+    	<div class="section group">
+				<div class="cont-desc span_1_of_2">
+				  <div class="product-details">				
+					<div class="grid images_3_of_2">
+						<div id="container">
+						   <div id="products_example">
+							   <div id="products">
+								<div class="slides_container">
+                                <a href="#" target="_blank"><img src="<?php echo base_url('assets/images/productslide-1.jpg');?>" alt=" "></a>
+                                <a href="#" target="_blank"><img src="<?php echo base_url('assets/images/productslide-2.jpg');?>" alt=" "></a>
+                                <a href="#" target="_blank"><img src="<?php echo base_url('assets/images/productslide-3.jpg');?>" alt=" "></a>
+                                <a href="#" target="_blank"><img src="<?php echo base_url('assets/images/productslide-4.jpg');?>" alt=" "></a>
+                                <a href="#" target="_blank"><img src="<?php echo base_url('assets/images/productslide-5.jpg');?>" alt=" "></a>
+                                <a href="#" target="_blank"><img src="<?php echo base_url('assets/images/productslide-5.jpg');?>" alt=" "></a>
+                                    
+                                    <!---
+									<a href="#" target="_blank"><img src="assets/images/productslide-1.jpg" alt=" " /></a>
+									<a href="#" target="_blank"><img src="assets/images/productslide-2.jpg" alt=" " /></a>
+									<a href="#" target="_blank"><img src="assets/images/productslide-3.jpg" alt=" " /></a>					
+									<a href="#" target="_blank"><img src="assets/images/productslide-4.jpg" alt=" " /></a>
+									<a href="#" target="_blank"><img src="assets/images/productslide-5.jpg" alt=" " /></a>
+                                    <a href="#" target="_blank"><img src="assets/images/productslide-6.jpg" alt=" " /></a>
+        -->
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="desc span_3_of_2">
+					<h2>Lorem Ipsum is simply dummy text </h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>					
+					<div class="price">
+						<p>Price: <span>$500</span></p>
+					</div>
+					<div class="available">
+						<p>Available Options :</p>
+					<ul>
+						
+						<li>Quality:<select>
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5</option>
+						</select></li>
+					</ul>
+					</div>
+				<div class="share-desc">
+					
+					<div class="add-cart">								
+						<h4><a href="preview.html">Add to Cart</a></h4>
+					</div>
+				</div>
+				 
+			</div>
+			<div class="clear"></div>
+          </div>
+          
+		<div class="product_desc">	
+			<div id="horizontalTab">
+				<ul class="resp-tabs-list">
+					<li>Book Description</li>
+					<li>product Tags</li>
+                    <li>Product Reviews</li>
+                    
+					
+				</ul>
+				<div class="resp-tabs-container">
+					<div class="product-desc">
+
+
+
+                    ISBN 10	    : <span style="color:blue;">0593080599</span><br>
+                    ISBN 13	    : <span style="color:blue;">9780593080597</span><br>
+                    Author	    : <span style="color:blue;">Frederick Forsyth</span><br>
+                    Translator	: <span style="color:blue;">-</span><br>
+                    Publisher	: <span style="color:blue;">Bantam Books</span><br>
+                    Author2	    : <span style="color:blue;">Frederick Forsyth</span><br>
+                    Language	: <span style="color:blue;">ENGLISH</span><br>
+                    </div>
+
+                    
+
+				 <div class="product-tags">
+						 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+					<h4>Add Your Tags:</h4>
+					<div class="input-box">
+						<input type="text" value="">
+					</div>
+					<div class="button"><span><a href="#">Add Tags</a></span></div>
+			    </div>	
+
+				<div class="review">
+					 <div class="your-review">
+				  	 <h3>How Do You Rate This Product?</h3>
+                        <p>Write Your Own Review?</p>
+                        
+
+
+
+                        
+				  	  <form>
+					    	<div>
+						    	<span><label>BookId<span class="red">*</span></label></span>
+						    	<span><input type="text" value=""></span>
+						    </div>
+						    <div><span><label>Summary of Your Review<span class="red">*</span></label></span>
+						    	<span><input type="text" value=""></span>
+						    </div>						
+						    
+						   <div>
+						   		<span><input type="submit" value="SUBMIT REVIEW"></span>
+                          </div>
+                          
+
+
+					    </form>
+				  	 </div>				
+				</div>
+			</div>
+         </div>
+         
+         
+
+
+
+	 </div>
+	    <script type="text/javascript">
+    $(document).ready(function () {
+        $('#horizontalTab').easyResponsiveTabs({
+            type: 'default', //Types: default, vertical, accordion           
+            width: 'auto', //auto or any width like 600px
+            fit: true   // 100% fit in a container
+        });
+    });
+   </script>		
+   <div class="content_bottom">
+    		
+    	</div>
+   <div class="section group">
+				
+				
+				
+			</div>
+        </div>
+				<div class="rightsidebar span_3_of_1">
+					
+					
+    				<div class="subscribe">
+    					<h2>Newsletters Signup</h2>
+    						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.......</p>
+						    <div class="signup">
+							    <form>
+							    	<input type="text" value="E-mail address" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'E-mail address';"><input type="submit" value="Sign up">
+							    </form>
+						    </div>
+      				</div>
+      				 <div class="community-poll">
+      				 	<h2>Community POll</h2>
+      				 	<p>What is the main reason for you to purchase products online?</p>
+      				 	<div class="poll">
+      				 		<form>
+      				 			<ul>
+									<li>
+									<input type="radio" name="vote" class="radio" value="1">
+									<span class="label"><label>More convenient shipping and delivery </label></span>
+									</li>
+									<li>
+									<input type="radio" name="vote" class="radio" value="2">
+									<span class="label"><label for="vote_2">Lower price</label></span>
+									</li>
+									<li>
+									<input type="radio" name="vote" class="radio" value="3">
+									<span class="label"><label for="vote_3">Bigger choice</label></span>
+									</li>
+									<li>
+									<input type="radio" name="vote" class="radio" value="5">
+									<span class="label"><label for="vote_5">Payments security </label></span>
+									</li>
+									<li>
+									<input type="radio" name="vote" class="radio" value="6">
+									<span class="label"><label for="vote_6">30-day Money Back Guarantee </label></span>
+									</li>
+									<li>
+									<input type="radio" name="vote" class="radio" value="7">
+									<span class="label"><label for="vote_7">Other.</label></span>
+									</li>
+									</ul>
+      				 		</form>
+      				 	</div>
+      				 </div>
+ 				</div>
+ 		</div>
+ 	</div>
+    </div>
+ </div>
+  
+   <script type="text/javascript">
+		$(document).ready(function() {			
+			$().UItoTop({ easingType: 'easeOutQuart' });
+			
+		});
+	</script>
+    <a href="#" id="toTop"><span id="toTopHover"> </span></a>
+</body>
+</html>
+

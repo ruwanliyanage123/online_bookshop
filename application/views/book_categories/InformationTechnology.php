@@ -121,7 +121,7 @@
 							<p><span class="rupees">620.87LKR</span></p>
 					    </div>
 					       		<div class="add-cart">								
-									<h4><a href="preview.html">Add to Cart</a></h4>
+									<h4><a href="<?=base_url('index.php/customer/CustomerRegistrationController/moveToPreview');?>">Add to Cart</a></h4>
 							     </div>
 							 <div class="clear"></div>
 					</div>
