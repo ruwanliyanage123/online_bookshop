@@ -143,9 +143,11 @@ class CustomerRegistrationController extends CI_Controller{
     public function categoryBiographies(){
         $this->load->view('book_categories/Biographies');
     }
-    
     public function categoryArtsAndMusic(){
         $this->load->view('book_categories/ArtsAndMusic');
+    }
+    public function categoryKids(){
+        $this->load->view('book_categories/Kids');
     }
 
 }
