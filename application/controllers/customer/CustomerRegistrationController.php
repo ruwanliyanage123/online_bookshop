@@ -149,7 +149,6 @@ class CustomerRegistrationController extends CI_Controller{
     public function categoryKids(){
         $this->load->view('book_categories/Kids');
     }
-
     public function categoryNovels(){
         $this->load->view('book_categories/Novels');
     }
@@ -158,6 +157,9 @@ class CustomerRegistrationController extends CI_Controller{
     }
     public function categoryHigherEducational(){
         $this->load->view('book_categories/HigherEducational');
+    }
+    public function categoryMedical(){
+        $this->load->view('book_categories/Medical');
     }
 
 
