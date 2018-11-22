@@ -3,29 +3,9 @@ $this->load->library('session');
 $checking1 = $this->session->userdata('login');
 $checking2 = $this->session->userdata('flagForSignIn');
 
-/**
- * for checking that if the user has logout or not
- */
-
- /*
-if(($checking1=='1')&&($checking2!='1')){
-    echo"you are login but flag is off ";
-    redirect(base_url().'index.php/customer/CustomerRegistrationController/moveToCustomerDashboard');
-}*/
-
-/*
-echo"vallule 2:$checking2\n";
-
-if(!$checking1){
-    echo"vallule 1 exists:$checking1\n";
-}
-if($checking1!='1'){
-    echo"vallule 1 exists:$checking1\n";
-}
-*/
 
 if(($checking1=='1')&&($checking2!='1')){
-    echo"you are login but flag is off ";
+   
     redirect(base_url().'index.php/customer/CustomerRegistrationController/moveToCustomerDashboard');
 }
 if($checking1!='1'){
@@ -67,11 +47,11 @@ if($checking1!='1'){
                         <form method="POST" class="register-form" id="login-form">
                             <div class="form-group">
                                 <label for="your_name"><i class="zmdi zmdi-account material-icons-name"></i></label>
-                                <input type="text" name="your_name" id="your_name" placeholder="Your Name"/>
+                                <input type="text" name="your_name" id="your_name" placeholder="Enter your email address"/>
                             </div>
                             <div class="form-group">
                                 <label for="your_pass"><i class="zmdi zmdi-lock"></i></label>
-                                <input type="password" name="your_pass" id="your_pass" placeholder="Password"/>
+                                <input type="password" name="your_pass" id="your_pass" placeholder="Enter your Password"/>
                             </div>
                             <div class="form-group">
                                 <input type="checkbox" name="remember-me" id="remember-me" class="agree-term" />

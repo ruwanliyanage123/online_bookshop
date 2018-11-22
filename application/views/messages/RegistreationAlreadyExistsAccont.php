@@ -2,8 +2,8 @@
 $this->load->library('session');
 $variable = $this->session->userdata('flagForMessage2');
 
-if($variable=='1'){
-//echo"this is the :$variable";
+//if($variable=='1'){
+
 ?>
 
 <!DOCTYPE html>
@@ -41,9 +41,6 @@ function(isConfirm){
 </html>
 
 <?php
-}
-else{
-  redirect(base_url().'index.php/customer/CustomerRegistrationController/moveToCustomerDashboard');
-}
+
 
 ?>

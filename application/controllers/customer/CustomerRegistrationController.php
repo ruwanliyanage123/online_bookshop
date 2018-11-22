@@ -55,6 +55,7 @@ class CustomerRegistrationController extends CI_Controller{
     public function messageForAlreadyExistsAccount(){
         $this->load->view('messages/RegistreationAlreadyExistsAccont');
         $this->session->set_userdata('flagForMessage2',false);
+        //$this->session->set_userdata('noSignInToSignUp',false);
     }
 
     /**
@@ -63,6 +64,7 @@ class CustomerRegistrationController extends CI_Controller{
     public function messageForRegistrationSuccessfully(){
         $this->load->view('messages/RegistrationSuccessfully');
         $this->session->set_userdata('flagForMessage1',false);
+       // $this->session->set_userdata('noSignInToSignUp',false);
     }
 
     /**

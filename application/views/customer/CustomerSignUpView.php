@@ -2,14 +2,19 @@
 $this->load->library('session');
 $checking1 = $this->session->userdata('login');
 $checking2 = $this->session->userdata('flagForSignUp');
-
+$checking3 = $this->session->userdata('noSignInToSignUp');
 /**
  * for checking that if the user has logout or not
  */
 if(($checking1=='1')&&($checking2!='1')){
-    echo"you are login but flag is off ";
+    
     redirect(base_url().'index.php/customer/CustomerRegistrationController/moveToCustomerDashboard');
 }
+
+/*
+if($checking3!='1'){
+    redirect(base_url().'index.php/customer/CustomerRegistrationController/customerLoginView');
+}*/
 
 ?>
 
@@ -28,6 +33,7 @@ if(($checking1=='1')&&($checking2!='1')){
     <!-- Main css -->
     <link rel ="stylesheet" href="<?php echo base_url();?>/assets/css/registration_form/styleForRegistration.css">
     <link rel="stylesheet" href="css/styleForRegistration.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
 <body>
 
@@ -50,12 +56,28 @@ if(($checking1=='1')&&($checking2!='1')){
                             </div>
                             <div class="form-group">
                                 <label for="pass"><i class="zmdi zmdi-lock"></i></label>
-                                <input type="password" name="Pass" id="pass" placeholder="Password" required/>
+                                <input type="password" name="password" id="password" placeholder="Password" required/>
                             </div>
                             <div class="form-group">
                                 <label for="re-pass"><i class="zmdi zmdi-lock-outline"></i></label>
-                                <input type="password" name="Re_pass" id="re_pass" placeholder="Repeat your password" required/>
+                                <input type="password" name="confirm_password" id="confirm_password" placeholder="Repeat your password" required/>
+                                <span id='message'></span>
                             </div>
+
+                            <script>
+
+                            /*
+                            *this code is  use for chck whether the password and re enter passwords are match
+                            */
+                                $('#password, #confirm_password').on('keyup', function () {
+                                if ($('#password').val() == $('#confirm_password').val()) {
+                                    $('#message').html('PASSWORDS ARE MATCHING').css('color', 'green');
+                                } else 
+                                    $('#message').html('YOUR PASSWORDS ARE NOT MATCHING').css('color', 'red');
+                                });
+                            </script>
+
+
                             <div class="form-group">
                                 <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" required/>
                                 <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all statements in  <a href="#" class="term-service">Terms of service</a></label>
@@ -63,6 +85,7 @@ if(($checking1=='1')&&($checking2!='1')){
                             <div class="form-group form-button">
                                 <input type="submit" name="signup" id="signup" class="form-submit" value="Register"/>
                             </div>
+                            
                         </form>
                     </div>
                     <div class="signup-image">

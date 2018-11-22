@@ -16,20 +16,7 @@ class CustomerRegistrationModel extends CI_Model{
 
         if($row_number!=0){
 
-            /**
-             * for make the session for user
-            */
-
-            $dat = array(
-                'email'           => "null",
-                'flagForMessage2' => true,
-                'flagForMessage1' => "null",
-                'flagForSignUp'   => "null",
-                'flagForSignIn'   => "null",
-                'login'           => "null",
-            );
-                
-            $this->session->set_userdata($dat);
+            
             redirect(base_url().'index.php/customer/CustomerRegistrationController/messageForAlreadyExistsAccount');
         }
 
@@ -45,14 +32,20 @@ class CustomerRegistrationModel extends CI_Model{
 
 
             /**
-             * remake the sesssion variables
-             **/
+             * for make the session for user
+            */
 
-            $this->session->set_userdata('email',$email);
-            $this->session->set_userdata('flagForMessage1',true);
-            $this->session->set_userdata('flagForSignUp',true);
-            $this->session->set_userdata('flagForSignIn',true);
-            $this->session->set_userdata('login',true);
+            $dat = array(
+                
+                'flagForMessage2' => true,  //controll show already exists account message in backtracking
+                'flagForMessage1' => true,//controll show registration successfull message in backtracking
+                'flagForSignUp'   => true,//for prevent the insert to sign up in backtracking
+                'noSignInToSignUp'=> true,  //for prevent the insert to sign up from sign in page
+                'flagForSignIn'   => true,//for prevent the insert to sign in in backtracking
+                'login'           => true,
+            );
+                
+            $this->session->set_userdata($dat);
                 
             redirect(base_url().'index.php/customer/CustomerRegistrationController/messageForRegistrationSuccessfully');
 
