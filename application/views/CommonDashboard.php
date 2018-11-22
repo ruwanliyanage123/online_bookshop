@@ -93,17 +93,17 @@
 				<div class="categories">
 				  <ul>
 				  	<h3>Categories</h3>
-				      <li><a href="<?=base_url('index.php/customer/CustomerRegistrationController/categoryInformationTechnology');?>">Information Technology</a></li>
-				      <li><a href="<?=base_url('index.php/customer/CustomerRegistrationController/categoryBusiness');?>">Business</a></li>
-				      <li><a href="<?=base_url('index.php/customer/CustomerRegistrationController/categoryBiographies');?>">Biographies</a></li>
+				      <li><a href="<?=base_url('index.php/commonDashboard/categoryCommonInformationTechnology');?>">Information Technology</a></li>
+				      <li><a href="<?=base_url('index.php/commonDashboard/categoryCommonBusiness');?>">Business</a></li>
+				      <li><a href="<?=base_url('index.php/commonDashboard/categoryCommonBiographies');?>">Biographies</a></li>
 				      <li><a href="<?=base_url('index.php/commonDashboard/categoryCommonArtsAndMusic');?>">Arts and Music</a></li>
-				      <li><a href="<?=base_url('index.php/customer/CustomerRegistrationController/categoryKids');?>">Kids</a></li>
-				      <li><a href="<?=base_url('index.php/customer/CustomerRegistrationController/categoryNovels');?>">Novels</a></li>
-				      <li><a href="<?=base_url('index.php/customer/CustomerRegistrationController/categorySchoolEducational');?>">School Educational</a></li>
-				      <li><a href="<?=base_url('index.php/customer/CustomerRegistrationController/categoryHigherEducational');?>">Higher Educational </a></li>
-				      <li><a href="<?=base_url('index.php/customer/CustomerRegistrationController/categoryMedical');?>">Medical</a></li>
-				      <li><a href="<?=base_url('index.php/customer/CustomerRegistrationController/categoryEnglish');?>">English</a></li>
-					  <li><a href="<?=base_url('index.php/customer/CustomerRegistrationController/categoryTamil');?>">Tamil</a></li>
+				      <li><a href="<?=base_url('index.php/commonDashboard/categoryCommonKids');?>">Kids</a></li>
+				      <li><a href="<?=base_url('index.php/commonDashboard/categoryCommonNovels');?>">Novels</a></li>
+				      <li><a href="<?=base_url('index.php/commonDashboard/categoryCommonSchoolEducational');?>">School Educational</a></li>
+				      <li><a href="<?=base_url('index.php/commonDashboard/categoryCommonHigherEducational');?>">Higher Educational </a></li>
+				      <li><a href="<?=base_url('index.php/commonDashboard/categoryCommonMedical');?>">Medical</a></li>
+				      <li><a href="<?=base_url('index.php/commonDashboard/categoryCommonEnglish');?>">English</a></li>
+					  <li><a href="<?=base_url('index.php/commonDashboard/categoryCommonTamil');?>">Tamil</a></li>
 					 
 				  </ul>
 				</div>					
