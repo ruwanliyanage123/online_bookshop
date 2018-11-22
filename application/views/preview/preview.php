@@ -113,14 +113,7 @@
                                 <a href="#" target="_blank"><img src="<?php echo base_url('assets/images/productslide-5.jpg');?>" alt=" "></a>
                                 <a href="#" target="_blank"><img src="<?php echo base_url('assets/images/productslide-5.jpg');?>" alt=" "></a>
                                     
-                                    <!---
-									<a href="#" target="_blank"><img src="assets/images/productslide-1.jpg" alt=" " /></a>
-									<a href="#" target="_blank"><img src="assets/images/productslide-2.jpg" alt=" " /></a>
-									<a href="#" target="_blank"><img src="assets/images/productslide-3.jpg" alt=" " /></a>					
-									<a href="#" target="_blank"><img src="assets/images/productslide-4.jpg" alt=" " /></a>
-									<a href="#" target="_blank"><img src="assets/images/productslide-5.jpg" alt=" " /></a>
-                                    <a href="#" target="_blank"><img src="assets/images/productslide-6.jpg" alt=" " /></a>
-        -->
+                                    
 								</div>
 								
 							</div>
@@ -145,95 +138,46 @@
 							<option>5</option>
 						</select></li>
 					</ul>
-					</div>
-				<div class="share-desc">
+                    </div>
+                    
+                
+                    <div>
+                            <fieldset class="rating">
+                                <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+                                <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                                <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+                                <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                                <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+                                <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                                <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+                                <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                                <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+                                <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                            </fieldset>
+                            </div>
 					
-					<div class="add-cart">								
+					<div class="add-cart" style="margin-top:20px; margin-left:-200px;">								
 						<h4><a href="preview.html">Add to Cart</a></h4>
 					</div>
-				</div>
 				 
 			</div>
 			<div class="clear"></div>
           </div>
           
-		<div class="product_desc">	
-			<div id="horizontalTab">
-				<ul class="resp-tabs-list">
-					<li>Book Description</li>
-					<li>product Tags</li>
-                    <li>Product Reviews</li>
-                    
-					
-				</ul>
-				<div class="resp-tabs-container">
-					<div class="product-desc">
-
-
-
-                    ISBN 10	    : <span style="color:blue;">0593080599</span><br>
+          ISBN 10	    : <span style="color:blue;">0593080599</span><br>
                     ISBN 13	    : <span style="color:blue;">9780593080597</span><br>
                     Author	    : <span style="color:blue;">Frederick Forsyth</span><br>
                     Translator	: <span style="color:blue;">-</span><br>
                     Publisher	: <span style="color:blue;">Bantam Books</span><br>
                     Author2	    : <span style="color:blue;">Frederick Forsyth</span><br>
                     Language	: <span style="color:blue;">ENGLISH</span><br>
-                    </div>
-
-                    
-
-				 <div class="product-tags">
-						 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-					<h4>Add Your Tags:</h4>
-					<div class="input-box">
-						<input type="text" value="">
-					</div>
-					<div class="button"><span><a href="#">Add Tags</a></span></div>
-			    </div>	
-
-				<div class="review">
-					 <div class="your-review">
-				  	 <h3>How Do You Rate This Product?</h3>
-                        <p>Write Your Own Review?</p>
-                        
-
-
-
-                        
-				  	  <form>
-					    	<div>
-						    	<span><label>BookId<span class="red">*</span></label></span>
-						    	<span><input type="text" value=""></span>
-						    </div>
-						    <div><span><label>Summary of Your Review<span class="red">*</span></label></span>
-						    	<span><input type="text" value=""></span>
-						    </div>						
-						    
-						   <div>
-						   		<span><input type="submit" value="SUBMIT REVIEW"></span>
-                          </div>
-                          
-
-                          
-					    </form>
-				  	 </div>				
-				</div>
-			</div>
-         </div>
+        
+          <div class="product_desc">	
+		  <div id="horizontalTab">
+		  </div>
          
          
-<fieldset class="rating">
-    <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
-    <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
-    <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
-    <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
-    <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
-    <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
-    <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
-    <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
-    <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
-    <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
-</fieldset>
+
 
 <style>
 
