@@ -150,6 +150,11 @@ class CustomerRegistrationController extends CI_Controller{
         $this->load->view('book_categories/Kids');
     }
 
+    public function categoryNovels(){
+        $this->load->view('book_categories/Novels');
+    }
+
+
 }
 
 ?>
