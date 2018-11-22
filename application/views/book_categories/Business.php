@@ -84,7 +84,7 @@
 	<div class="header_bottom">
 	     	<div class="menu">
 	     		<ul>
-				 <li><a href= "<?=base_url('index.php/customer/CustomerRegistrationController/decieDashboard');?>">Home</a></li>
+                    <li><a href= "<?=base_url('index.php/customer/CustomerRegistrationController/decieDashboard');?>">Home</a></li>
 			    	<li><a href= "<?=base_url('index.php/customer/CustomerRegistrationController/moveToAbout');?>">About</a></li>
 			    	<li><a href="delivery.html">Delivery</a></li>
 			    	<li><a href="news.html">News</a></li>
@@ -105,7 +105,7 @@
     <div class="content">
     	<div class="content_top">
     		<div class="heading">
-    		<h3>Information Technology</h3>
+    		<h3>Business</h3>
     		</div>
     		<div class="see">
     			<p><a href="#">See all Products</a></p>
@@ -170,7 +170,7 @@
 			</div>
 			<div class="content_bottom">
     		<div class="heading">
-    		<h3>Information Technology</h3>
+    		<h3>Business</h3>
     		</div>
     		<div class="see">
     			<p><a href="#">See all Products</a></p>

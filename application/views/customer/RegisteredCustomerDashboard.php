@@ -112,7 +112,7 @@ if($checking=='1'){
 				  <ul>
 				  	<h3>Categories</h3>
 					  <li><a href="<?=base_url('index.php/customer/CustomerRegistrationController/categoryInformationTechnology');?>">Information Technology</a></li>
-				      <li><a href="#">Business</a></li>
+				      <li><a href="<?=base_url('index.php/customer/CustomerRegistrationController/categoryBusiness');?>">Business</a></li>
 				      <li><a href="#">Biographies</a></li>
 				      <li><a href="#">Arts and Music</a></li>
 				      <li><a href="#">Kids</a></li>
