@@ -37,6 +37,9 @@ class commonDashboard extends CI_Controller{
     public function categoryCommonBusiness(){
         $this->load->view('book_categories/CommonBusiness');
     }
+    public function categoryCommonBiographies(){
+        $this->load->view('book_categories/CommonBiographies');
+    }
 
     
 }
