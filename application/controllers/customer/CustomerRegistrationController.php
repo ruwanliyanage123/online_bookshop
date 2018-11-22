@@ -5,7 +5,7 @@ class CustomerRegistrationController extends CI_Controller{
         parent::_construct();
         $this->load->helper('url');
     }
-
+    
     /**
      * for move to the sign up page 
      * i used set_serdata() function for restrinct the unnessesary loading the sign up page
@@ -106,6 +106,27 @@ class CustomerRegistrationController extends CI_Controller{
      */
     public function moveToCustomerDashboard(){
         $this->load->view('customer/RegisteredCustomerDashboard');
+    }
+
+    /**
+     * for display the about page as a common interface
+     */
+    public function moveToAbout(){
+        $this->load->view('About');
+    }
+
+    
+    /**
+     * for decide the dashboard by consider the login or logout
+     */
+    public function decieDashboard(){
+        $key = $this->session->userdata('login');
+        if($key=='1'){
+            redirect(base_url().'index.php/customer/CustomerRegistrationController/moveToCustomerDashboard');
+        }
+        else{
+            redirect(base_url().'index.php/commonDashboard/index');
+        }
     }
 
 }

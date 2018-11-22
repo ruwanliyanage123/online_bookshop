@@ -1,7 +1,3 @@
-InvalidPassword.php
-
-
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,8 +14,8 @@ InvalidPassword.php
 
 setTimeout(function () { 
 swal({
-  title: 'YOUR PASSWORD OR EMAIL IS INVALID',
-  text: 'check and re try',
+  title: 'INVALID USERNAME OR PASSWORD',
+  text: 'check and retry',
   type: 'warning',
   confirmButtonText: 'OK'
 },

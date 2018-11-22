@@ -17,13 +17,10 @@ class commonDashboard extends CI_Controller{
         
     }
     
+    /**
+     * for display the about page as a common interface
+     */
     public function aboutView(){
-        
-
-        
-
-        //redirect(base_url() . 'main/enter');  
-        
         $this->load->view('About');
     }
     

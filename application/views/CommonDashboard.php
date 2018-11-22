@@ -76,7 +76,7 @@
 	     	<div class="menu">
 	     		<ul>
 			    	<li class="active"><a href="index.html">Home</a></li>
-					<li><a href= "<?=base_url('index.php/CommonDashboard/aboutView');?>">About</a></li>
+					<li><a href= "<?=base_url('index.php/commonDashboard/aboutView');?>">About</a></li>
 			    	<li><a href="news.html">News</a></li>
 			    	<div class="clear"></div>
      			</ul>

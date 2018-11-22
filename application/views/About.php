@@ -1,7 +1,8 @@
 
+
 <!DOCTYPE HTML>
 <head>
-<title>Free Home Shoppe Website Template | About :: w3layouts</title>
+<title>online book shop</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -20,7 +21,7 @@
 	<div class="header">
 		<div class="headertop_desc">
 			<div class="call">
-				 <p><span>Need help?</span> call us <span class="number">1-22-3456789</span></span></p>
+				 <p><span>Need help?</span> call us <span class="number">+94772308519(Hotline)</span></span></p>
 			</div>
 			<div class="account_desc">
 				<ul>
@@ -76,7 +77,8 @@
 	<div class="header_bottom">
 	     	<div class="menu">
 	     		<ul>
-			    	<li><a href="index.html">Home</a></li>
+
+				  	<li><a href= "<?=base_url('index.php/customer/CustomerRegistrationController/decieDashboard');?>">Home</a></li>
 			    	<li class="active"><a href="about.html">About</a></li>
 			    	<li><a href="delivery.html">Delivery</a></li>
 			    	<li><a href="news.html">News</a></li>
@@ -94,9 +96,12 @@
    </div>
  <div class="main">
     <div class="content">
+	<img src="<?php echo base_url('assets/images/bookshop.jpg');?>" width= "1100px"; height="500px"; overflow= "hidden">
     	<div class="section group">
+		
 				<div class="col_1_of_3 span_1_of_3">
 					<h3>Who We Are</h3>
+					
 					<img src="images/about_img.jpg" alt="">
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
@@ -187,8 +192,8 @@
 				<div class="col_1_of_4 span_1_of_4">
 					<h4>Contact</h4>
 						<ul>
-							<li><span>+91-123-456789</span></li>
-							<li><span>+00-123-000000</span></li>
+							<li><span>+94772308519</span></li>
+							<li><span>+94772058519</span></li>
 						</ul>
 						<div class="social-icons">
 							<h4>Follow Us</h4>
