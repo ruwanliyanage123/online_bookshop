@@ -129,6 +129,15 @@ class CustomerRegistrationController extends CI_Controller{
         }
     }
 
+
+    /**
+     * follow functions are will use for the move to the book categories
+     */
+
+    public function categoryInformationTechnology(){
+        $this->load->view('book_categories/InformationTechnology');
+    } 
+
 }
 
 ?>
