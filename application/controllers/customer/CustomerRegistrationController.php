@@ -10,7 +10,6 @@ class CustomerRegistrationController extends CI_Controller{
      * for move to the sign up page 
      * i used set_serdata() function for restrinct the unnessesary loading the sign up page
      */
-
     public function customerRegistrationView(){
         $this->load->view('customer/CustomerSignUpView');
         $this->session->set_userdata('flagForSignUp',false);
@@ -62,10 +61,6 @@ class CustomerRegistrationController extends CI_Controller{
         $Password = $this->input->post('your_pass');
         $Password = md5($Password);
 
-        echo"$Email\n";
-        echo"$Password\n";
-        
-
         $this->load->model('CustomerRegistrationModel');
         $this->CustomerRegistrationModel->checkCustomers($Email, $Password);
     }
@@ -85,8 +80,16 @@ class CustomerRegistrationController extends CI_Controller{
      */
     public function messageForRegistrationSuccessfully(){
         $this->load->view('messages/RegistrationSuccessfully');
-        $this->session->set_userdata('flagForMessage1',false);
+        $this->session->set_userdata('flagForMessage1',false); 
        // $this->session->set_userdata('noSignInToSignUp',false);
+    }
+
+
+    /**
+     * for show the message that such account is not in the database
+     */
+    public function messageForLoginUnsuccess(){
+        $this->load->view('messages/AccountNotExists');
     }
 
     /**

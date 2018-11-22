@@ -77,13 +77,28 @@ class CustomerRegistrationModel extends CI_Model{
             foreach($result as $row){
         
                if($Password==$row->customer_password){
-                   echo"sucess";
+                   
+                $dat = array(
+                
+                    'flagForMessage2' => true,  //controll show already exists account message in backtracking
+                    'flagForMessage1' => true,//controll show registration successfull message in backtracking
+                    'flagForSignUp'   => true,//for prevent the insert to sign up in backtracking
+                    'noSignInToSignUp'=> true,  //for prevent the insert to sign up from sign in page
+                    'flagForSignIn'   => true,//for prevent the insert to sign in in backtracking
+                    'login'           => true,
+                );
+                    
+                $this->session->set_userdata($dat);
                 redirect(base_url().'index.php/customer/CustomerRegistrationController/moveToCustomerDashboard');
                } 
                else{
-                echo"unsucess";
+                
+                redirect(base_url().'index.php/customer/CustomerRegistrationController/messageForLoginUnsuccess');
                }
             }
+        }
+        else{
+            redirect(base_url().'index.php/customer/CustomerRegistrationController/messageForLoginUnsuccess');
         }
     }
 }
