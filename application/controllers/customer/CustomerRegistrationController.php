@@ -161,6 +161,9 @@ class CustomerRegistrationController extends CI_Controller{
     public function categoryMedical(){
         $this->load->view('book_categories/Medical');
     }
+    public function categoryEnglish(){
+        $this->load->view('book_categories/English');
+    }
 
 
 }
