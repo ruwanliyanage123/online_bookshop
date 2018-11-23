@@ -131,19 +131,20 @@ if($checking=='1'){
 							 <div id="slider">
 			                    <div id="mover">
 			                    	<div id="slide-1" class="slide">			                    
-									 <div class="slider-img">
-									     <a href="preview.html"><img src="images/slide-1-image.png" alt="learn more" /></a>									    
-									  </div>
+										<div class="slider-img">
+											<img src="<?php echo base_url('assets/images/books/books_for_main_slide_3.jpg');?>" height="300px"; width="400px"; overflow= "hidden">
+										</div>
 						             	<div class="slider-text">
-		                                 <h1>Clearance<br><span>SALE</span></h1>
-		                                 <h2>UPTo 20% OFF</h2>
-									   <div class="features_list">
-									   	<h4>Get to Know More About Our Memorable Services Lorem Ipsum is simply dummy text</h4>							               
-							            </div>
-							             <a href="preview.html" class="button">Shop Now</a>
-					                   </div>			               
-									  <div class="clear"></div>				
-				                  </div>	
+											<h1>Clearance<br><span>SALE</span></h1>
+												<h2>UPTo 20% OFF</h2>
+											<div class="features_list">
+												<h4>Get to Know More About Our Memorable Services Lorem Ipsum is simply dummy text</h4>							               
+											</div>
+											<a href="preview.html" class="button">Shop Now</a>
+					                    </div>			               
+									    <div class="clear"></div>				
+									</div>	
+									
 						             	<div class="slide">
 						             		<div class="slider-text">
 		                                 <h1>Clearance<br><span>SALE</span></h1>
@@ -154,14 +155,14 @@ if($checking=='1'){
 							             <a href="preview.html" class="button">Shop Now</a>
 					                   </div>		
 						             	 <div class="slider-img">
-									     <a href="preview.html"><img src="images/slide-3-image.jpg" alt="learn more" /></a>
-									  </div>						             					                 
+										  <img src="<?php echo base_url('assets/images/books/books_for_main_slide_5.jpg');?>"  height="320px"; width="400px";  overflow= "hidden">
+						  				</div>						             					                 
 									  <div class="clear"></div>				
 				                  </div>
 				                  <div class="slide">						             	
 					                  <div class="slider-img">
-									     <a href="preview.html"><img src="images/slide-2-image.jpg" alt="learn more" /></a>
-									  </div>
+									  <img src="<?php echo base_url('assets/images/books/books_for_main_slide_4.jpg');?>"overflow= "hidden">
+					  					</div>
 									  <div class="slider-text">
 		                                 <h1>Clearance<br><span>SALE</span></h1>
 		                                 <h2>UPTo 10% OFF</h2>
@@ -180,6 +181,7 @@ if($checking=='1'){
 		   <div class="clear"></div>
 		</div>
    </div>
+
  <div class="main">
     <div class="content">
     	<div class="content_top">
@@ -192,121 +194,123 @@ if($checking=='1'){
     		<div class="clear"></div>
     	</div>
 	      <div class="section group">
+
+
+		  		
+			  
 				<div class="grid_1_of_4 images_1_of_4">
-					 <a href="preview.html"><img src="images/feature-pic1.jpg" alt="" /></a>
-					 <h2>Lorem Ipsum is simply </h2>
+					<img src="<?php echo base_url('assets/images/books/books_novel_1.jpg');?>" width= "250px"; height="300px"; overflow= "hidden">
 					<div class="price-details">
-				       <div class="price-number">
-							<p><span class="rupees">620.87LKR</span></p>
-					    </div>
-					       		<div class="add-cart">								
-									<h4><a href="preview.html">Add to Cart</a></h4>
-							     </div>
-							 <div class="clear"></div>
-					</div>
-					 
-				</div>
-				<div class="grid_1_of_4 images_1_of_4">
-					<a href="preview.html"><img src="images/feature-pic2.jpg" alt="" /></a>
-					 <h2>Lorem Ipsum is simply </h2>
-					<div class="price-details">
-				       <div class="price-number">
-							<p><span class="rupees">899.75LKR</span></p>
-					    </div>
-					       		<div class="add-cart">								
-									<h4><a href="preview.html">Add to Cart</a></h4>
-							     </div>
-							 <div class="clear"></div>
-					</div>
-				    
-				</div>
-				<div class="grid_1_of_4 images_1_of_4">
-					<a href="preview.html"><img src="images/feature-pic3.jpg" alt="" /></a>
-					 <h2>Lorem Ipsum is simply </h2>
-					 <div class="price-details">
-				       <div class="price-number">
-							<p><span class="rupees">599.00LKR</span></p>
-					    </div>
-					       		<div class="add-cart">								
-									<h4><a href="preview.html">Add to Cart</a></h4>
-							     </div>
-							 <div class="clear"></div>
+						<div class="price-number">
+							<p><span class="rupees">LKR. 1,170.00</span></p>
+						</div>
+						<div class="add-cart">								
+							<h4><a href="preview.html">Add to Cart</a></h4>
+						</div>
+						<div class="clear"></div>
 					</div>
 				</div>
+
 				<div class="grid_1_of_4 images_1_of_4">
-					<a href="preview.html"><img src="images/feature-pic4.jpg" alt="" /></a>
-					 <h2>Lorem Ipsum is simply </h2>
+					<img src="<?php echo base_url('assets/images/books/books_business_4.jpg');?>" width= "250px"; height="300px"; overflow= "hidden">
 					<div class="price-details">
-				       <div class="price-number">
-							<p><span class="rupees">679.87LKR</span></p>
-					    </div>
-					       		<div class="add-cart">								
-									<h4><a href="preview.html">Add to Cart</a></h4>
-							     </div>
-							 <div class="clear"></div>
-					</div>				     
+						<div class="price-number">
+							<p><span class="rupees">LKR. 1,170.00</span></p>
+						</div>
+						<div class="add-cart">								
+							<h4><a href="preview.html">Add to Cart</a></h4>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+
+				<div class="grid_1_of_4 images_1_of_4">
+					<img src="<?php echo base_url('assets/images/books/books_information_technology_4.jpg');?>" width= "250px"; height="300px"; overflow= "hidden">
+					<div class="price-details">
+						<div class="price-number">
+							<p><span class="rupees">LKR. 1,170.00</span></p>
+						</div>
+						<div class="add-cart">								
+							<h4><a href="preview.html">Add to Cart</a></h4>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+
+				<div class="grid_1_of_4 images_1_of_4">
+					<img src="<?php echo base_url('assets/images/books/books_biography_6.jpg');?>" width= "250px"; height="300px"; overflow= "hidden">
+					<div class="price-details">
+						<div class="price-number">
+							<p><span class="rupees">LKR. 1,170.00</span></p>
+						</div>
+						<div class="add-cart">								
+							<h4><a href="preview.html">Add to Cart</a></h4>
+						</div>
+						<div class="clear"></div>
+					</div>
 				</div>
 			</div>
+
 			<div class="content_bottom">
-    		<div class="heading">
-    		<h3>Feature Products</h3>
-    		</div>
-    		<div class="see">
-    			<p><a href="#">See all Products</a></p>
-    		</div>
-    		<div class="clear"></div>
-    	</div>
+				<div class="heading">
+					<h3>Feature Products</h3>
+				</div>
+				<div class="see">
+					<p><a href="#">See all Products</a></p>
+				</div>
+				<div class="clear"></div>
+			</div>
+		
 			<div class="section group">
 				<div class="grid_1_of_4 images_1_of_4">
-					 <a href="preview.html"><img src="images/new-pic1.jpg" alt="" /></a>					
-					 <h2>Lorem Ipsum is simply </h2>
+					<img src="<?php echo base_url('assets/images/books/books_biography_7.jpg');?>" width= "250px"; height="300px"; overflow= "hidden">
 					<div class="price-details">
-				       <div class="price-number">
-							<p><span class="rupees">$849.99</span></p>
-					    </div>
-					       		<div class="add-cart">								
-									<h4><a href="preview.html">Add to Cart</a></h4>
-							     </div>
-							 <div class="clear"></div>
+						<div class="price-number">
+							<p><span class="rupees">LKR. 1,170.00</span></p>
+						</div>
+						<div class="add-cart">								
+							<h4><a href="preview.html">Add to Cart</a></h4>
+						</div>
+						<div class="clear"></div>
 					</div>
 				</div>
+
 				<div class="grid_1_of_4 images_1_of_4">
-					<a href="preview.html"><img src="images/new-pic2.jpg" alt="" /></a>
-					 <h2>Lorem Ipsum is simply </h2>
-					 <div class="price-details">
-				       <div class="price-number">
-							<p><span class="rupees">$599.99</span></p>
-					    </div>
-					       		<div class="add-cart">								
-									<h4><a href="preview.html">Add to Cart</a></h4>
-							     </div>
-							 <div class="clear"></div>
-					</div>
-				</div>
-				<div class="grid_1_of_4 images_1_of_4">
-					<a href="preview.html"><img src="images/new-pic4.jpg" alt="" /></a>
-					 <h2>Lorem Ipsum is simply </h2>
+					<img src="<?php echo base_url('assets/images/books/books_music_3.jpg');?>" width= "250px"; height="300px"; overflow= "hidden">
 					<div class="price-details">
-				       <div class="price-number">
-							<p><span class="rupees">$799.99</span></p>
-					    </div>
-					       		<div class="add-cart">								
-									<h4><a href="preview.html">Add to Cart</a></h4>
-							     </div>
-							 <div class="clear"></div>
+						<div class="price-number">
+							<p><span class="rupees">LKR. 1,170.00</span></p>
+						</div>
+						<div class="add-cart">								
+							<h4><a href="preview.html">Add to Cart</a></h4>
+						</div>
+						<div class="clear"></div>
 					</div>
 				</div>
+
 				<div class="grid_1_of_4 images_1_of_4">
-				 <a href="preview.html"><img src="images/new-pic3.jpg" alt="" /></a>
-					 <h2>Lorem Ipsum is simply </h2>					 
-					 <div class="price-details">
-				       <div class="price-number">
-							<p><span class="rupees">$899.99</span></p>
-					    </div>
-					       		<div class="add-cart">								
-									<h4><a href="preview.html">Add to Cart</a></h4>
-							     </div>
-							 <div class="clear"></div>
+					<img src="<?php echo base_url('assets/images/books/books_novel_7.jpg');?>" width= "250px"; height="300px"; overflow= "hidden">
+					<div class="price-details">
+						<div class="price-number">
+							<p><span class="rupees">LKR. 1,170.00</span></p>
+						</div>
+						<div class="add-cart">								
+							<h4><a href="preview.html">Add to Cart</a></h4>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+
+				<div class="grid_1_of_4 images_1_of_4">
+					<img src="<?php echo base_url('assets/images/books/books_Music_1.jpg');?>" width= "250px"; height="300px"; overflow= "hidden">
+					<div class="price-details">
+						<div class="price-number">
+							<p><span class="rupees">LKR. 1,170.00</span></p>
+						</div>
+						<div class="add-cart">								
+							<h4><a href="preview.html">Add to Cart</a></h4>
+						</div>
+						<div class="clear"></div>
 					</div>
 				</div>
 			</div>
