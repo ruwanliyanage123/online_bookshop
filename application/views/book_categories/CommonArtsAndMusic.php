@@ -100,10 +100,7 @@
 							<div class="price-number">
 								<p><span class="rupees">LKR. 2,170.00</span></p>
 							</div>
-							<div class="add-cart">								
-								<h4><a href="<?=base_url('index.php/customer/CustomerRegistrationController/moveToPreview');?>">Add to Cart</a></h4>
-							</div>
-							<div class="clear"></div>
+							
 						</div>
 				</div>
 
@@ -115,10 +112,7 @@
 							<div class="price-number">
 								<p><span class="rupees">LKR. 670.00</span></p>
 							</div>
-							<div class="add-cart">								
-								<h4><a href="<?=base_url('index.php/customer/CustomerRegistrationController/moveToPreview');?>">Add to Cart</a></h4>
-							</div>
-							<div class="clear"></div>
+							
 						</div>
 				</div>
 				    
@@ -130,10 +124,7 @@
 							<div class="price-number">
 								<p><span class="rupees">LKR. 1,670.00</span></p>
 							</div>
-							<div class="add-cart">								
-								<h4><a href="<?=base_url('index.php/customer/CustomerRegistrationController/moveToPreview');?>">Add to Cart</a></h4>
-							</div>
-							<div class="clear"></div>
+							
 						</div>
 				</div>
 
@@ -144,10 +135,7 @@
 							<div class="price-number">
 								<p><span class="rupees">LKR. 2,670.00</span></p>
 							</div>
-							<div class="add-cart">								
-								<h4><a href="<?=base_url('index.php/customer/CustomerRegistrationController/moveToPreview');?>">Add to Cart</a></h4>
-							</div>
-							<div class="clear"></div>
+							
 						</div>
 				</div>
 
@@ -172,10 +160,7 @@
 							<div class="price-number">
 								<p><span class="rupees">LKR. 1,870.00</span></p>
 							</div>
-							<div class="add-cart">								
-								<h4><a href="<?=base_url('index.php/customer/CustomerRegistrationController/moveToPreview');?>">Add to Cart</a></h4>
-							</div>
-							<div class="clear"></div>
+							
 						</div>
 				</div>
 
@@ -186,10 +171,7 @@
 							<div class="price-number">
 								<p><span class="rupees">LKR. 1,470.00</span></p>
 							</div>
-							<div class="add-cart">								
-								<h4><a href="<?=base_url('index.php/customer/CustomerRegistrationController/moveToPreview');?>">Add to Cart</a></h4>
-							</div>
-							<div class="clear"></div>
+							
 						</div>
 				</div>
 
@@ -200,10 +182,7 @@
 							<div class="price-number">
 								<p><span class="rupees">LKR. 1,770.00</span></p>
 							</div>
-							<div class="add-cart">								
-								<h4><a href="<?=base_url('index.php/customer/CustomerRegistrationController/moveToPreview');?>">Add to Cart</a></h4>
-							</div>
-							<div class="clear"></div>
+							
 						</div>
 				</div>
 
@@ -214,10 +193,7 @@
 							<div class="price-number">
 								<p><span class="rupees">LKR. 1,170.00</span></p>
 							</div>
-							<div class="add-cart">								
-								<h4><a href="<?=base_url('index.php/customer/CustomerRegistrationController/moveToPreview');?>">Add to Cart</a></h4>
-							</div>
-							<div class="clear"></div>
+							
 						</div>
 				</div>
 
