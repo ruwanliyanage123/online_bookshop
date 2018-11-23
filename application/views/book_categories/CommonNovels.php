@@ -88,105 +88,123 @@
     			<p><a href="#">See all Products</a></p>
     		</div>
     		<div class="clear"></div>
-    	</div>
+		</div>
+		
+		<!--start of the showroom-->
 	      <div class="section group">
+
 				<div class="grid_1_of_4 images_1_of_4">
-					 <a href="preview.html"><img src="images/feature-pic1.jpg" alt="" /></a>
-					 <h2>Lorem Ipsum is simply </h2>
-					<div class="price-details">
-				       <div class="price-number">
-							<p><span class="rupees">620.87LKR</span></p>
-					    </div>
-					       		
-					</div>
-					 
+					<img src="<?php echo base_url('assets/images/books/books_novel_1.jpg');?>" width= "250px"; height="300px"; overflow= "hidden">
+					
+						<div class="price-details">
+							<div class="price-number">
+								<p><span class="rupees">LKR. 2,170.00</span></p>
+							</div>
+							
+						</div>
 				</div>
+
+		
 				<div class="grid_1_of_4 images_1_of_4">
-					<a href="preview.html"><img src="images/feature-pic2.jpg" alt="" /></a>
-					 <h2>Lorem Ipsum is simply </h2>
-					<div class="price-details">
-				       <div class="price-number">
-							<p><span class="rupees">899.75LKR</span></p>
-					    </div>
-					       		
-					</div>
+					<img src="<?php echo base_url('assets/images/books/books_novel_2.jpg');?>" width= "250px"; height="300px"; overflow= "hidden">
+					
+						<div class="price-details">
+							<div class="price-number">
+								<p><span class="rupees">LKR. 670.00</span></p>
+							</div>
+							
+						</div>
+				</div>
 				    
-				</div>
+				
 				<div class="grid_1_of_4 images_1_of_4">
-					<a href="preview.html"><img src="images/feature-pic3.jpg" alt="" /></a>
-					 <h2>Lorem Ipsum is simply </h2>
-					 <div class="price-details">
-				       <div class="price-number">
-							<p><span class="rupees">599.00LKR</span></p>
-					    </div>
-					       		
-					</div>
+					<img src="<?php echo base_url('assets/images/books/books_novel_3.jpg');?>" width= "250px"; height="300px"; overflow= "hidden">
+					
+						<div class="price-details">
+							<div class="price-number">
+								<p><span class="rupees">LKR. 1,670.00</span></p>
+							</div>
+							
+						</div>
 				</div>
+
 				<div class="grid_1_of_4 images_1_of_4">
-					<a href="preview.html"><img src="images/feature-pic4.jpg" alt="" /></a>
-					 <h2>Lorem Ipsum is simply </h2>
-					<div class="price-details">
-				       <div class="price-number">
-							<p><span class="rupees">679.87LKR</span></p>
-					    </div>
-					       		
-					</div>				     
+					<img src="<?php echo base_url('assets/images/books/books_novel_4.jpg');?>" width= "250px"; height="300px"; overflow= "hidden">
+					
+						<div class="price-details">
+							<div class="price-number">
+								<p><span class="rupees">LKR. 2,670.00</span></p>
+							</div>
+							
+						</div>
 				</div>
+
 			</div>
+
 			<div class="content_bottom">
-    		<div class="heading">
-    		<h3>Novels</h3>
-    		</div>
-    		<div class="see">
-    			<p><a href="#">See all Products</a></p>
-    		</div>
-    		<div class="clear"></div>
-    	</div>
-			<div class="section group">
-				<div class="grid_1_of_4 images_1_of_4">
-					 <a href="preview.html"><img src="images/new-pic1.jpg" alt="" /></a>					
-					 <h2>Lorem Ipsum is simply </h2>
-					<div class="price-details">
-				       <div class="price-number">
-							<p><span class="rupees">$849.99</span></p>
-					    </div>
-					       		
-					</div>
+				<div class="heading">
+					<h3>Novels</h3>
 				</div>
-				<div class="grid_1_of_4 images_1_of_4">
-					<a href="preview.html"><img src="images/new-pic2.jpg" alt="" /></a>
-					 <h2>Lorem Ipsum is simply </h2>
-					 <div class="price-details">
-				       <div class="price-number">
-							<p><span class="rupees">$599.99</span></p>
-					    </div>
-					       		
-					</div>
+				<div class="see">
+					<p><a href="#">See all Products</a></p>
 				</div>
-				<div class="grid_1_of_4 images_1_of_4">
-					<a href="preview.html"><img src="images/new-pic4.jpg" alt="" /></a>
-					 <h2>Lorem Ipsum is simply </h2>
-					<div class="price-details">
-				       <div class="price-number">
-							<p><span class="rupees">$799.99</span></p>
-					    </div>
-					       		
-					</div>
-				</div>
-				<div class="grid_1_of_4 images_1_of_4">
-				 <a href="preview.html"><img src="images/new-pic3.jpg" alt="" /></a>
-					 <h2>Lorem Ipsum is simply </h2>					 
-					 <div class="price-details">
-				       <div class="price-number">
-							<p><span class="rupees">$899.99</span></p>
-					    </div>
-					       		
-					</div>
-				</div>
+    			<div class="clear"></div>
 			</div>
-    </div>
+			
+			<div class="section group">
+
+				<div class="grid_1_of_4 images_1_of_4">
+					<img src="<?php echo base_url('assets/images/books/books_novel_5.jpg');?>" width= "250px"; height="300px"; overflow= "hidden">
+					
+						<div class="price-details">
+							<div class="price-number">
+								<p><span class="rupees">LKR. 1,870.00</span></p>
+							</div>
+							
+						</div>
+				</div>
+
+				<div class="grid_1_of_4 images_1_of_4">
+					<img src="<?php echo base_url('assets/images/books/books_novel_6.jpg');?>" width= "250px"; height="300px"; overflow= "hidden">
+					
+						<div class="price-details">
+							<div class="price-number">
+								<p><span class="rupees">LKR. 1,470.00</span></p>
+							</div>
+							
+						</div>
+				</div>
+
+				<div class="grid_1_of_4 images_1_of_4">
+					<img src="<?php echo base_url('assets/images/books/books_novel_7.jpg');?>" width= "250px"; height="300px"; overflow= "hidden">
+					
+						<div class="price-details">
+							<div class="price-number">
+								<p><span class="rupees">LKR. 1,770.00</span></p>
+							</div>
+							
+						</div>
+				</div>
+
+				<div class="grid_1_of_4 images_1_of_4">
+					<img src="<?php echo base_url('assets/images/books/books_novel_8.jpg');?>" width= "250px"; height="300px"; overflow= "hidden">
+					
+						<div class="price-details">
+							<div class="price-number">
+								<p><span class="rupees">LKR. 1,170.00</span></p>
+							</div>
+							
+						</div>
+				</div>
+
+			</div>
+
+			
+		</div>
+		<!--end of the showing-->
  </div>
 </div>
+
 
 
    

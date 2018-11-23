@@ -178,7 +178,7 @@
 
 			<div class="content_bottom">
 				<div class="heading">
-					<h3>Information Technology</h3>
+					<h3>Novels</h3>
 				</div>
 				<div class="see">
 					<p><a href="#">See all Products</a></p>
