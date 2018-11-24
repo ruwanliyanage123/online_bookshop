@@ -165,6 +165,7 @@
 		   <div class="clear"></div>
 		</div>
    </div>
+
  <div class="main">
     <div class="content">
     	<div class="content_top">
@@ -281,6 +282,7 @@
 			</div>
     </div>
  </div>
+ 
 </div>
    <div class="footer">
    	  <div class="wrap">	

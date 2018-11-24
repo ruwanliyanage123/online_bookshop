@@ -210,7 +210,7 @@
 			</div>			
         </div>
         <div class="copy_right">
-				<p>&copy; 2013 home_shoppe. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
+				
 		   </div>
     </div>
    <script type="text/javascript">
@@ -223,3 +223,5 @@
 </body>
 </html>
 
+"INSERT INTO products (name, price, category, description, keywords, stock, soldunits, image) 
+			VALUES ('ruwan', '10.0', 'samsung', 'good', 'liy', '3', '0', 'abc.jpg')";
