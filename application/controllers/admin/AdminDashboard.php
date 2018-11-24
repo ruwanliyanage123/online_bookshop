@@ -55,6 +55,49 @@ class AdminDashboard extends CI_Controller{
         $this->load->view('admin/AdminCustomerEdit');
     }
 
+    /**
+     * use for access to the AdminBookAll.php
+     */
+    public function moveToAdminBookAll(){
+        $this->load->view('admin/AdminBookAll');
+    }
+
+    /**
+     * use for access to the AdminBookAdd.php
+     */
+    public function moveToAdminBookrAdd(){
+        $this->load->view('admin/AdminBookAdd');
+    }
+
+    /**
+     * use for access to the AdminBookEdit.php
+     */
+    public function moveToAdminBookEdit(){
+        $this->load->view('admin/AdminBookEdit');
+    }
+
+    /**
+     * use for access to the AdminMailInbox.php
+     */
+    public function moveToAdminMailInbox(){
+        $this->load->view('admin/AdminMailInbox');
+    }
+
+    /**
+     * use for access to the AdminMailView.php
+     */
+    public function moveToAdminMailView(){
+        $this->load->view('admin/AdminMailView');
+    }
+
+    /**
+     * use for access to the AdminMailCompose.php
+     */
+    public function moveToAdminMailCompose(){
+        $this->load->view('admin/AdminMailCompose');
+    }
+
+
     
 
 }

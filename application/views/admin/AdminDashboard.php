@@ -87,7 +87,7 @@
                         
                         
                         <li>
-                        <?=base_url('index.php/admin/AdminDashboard/moveToAdminCustomerEdit');?>
+              
                             <a class="has-arrow" href="all-professors.html" aria-expanded="false"><span class="educate-icon educate-professor icon-wrap"></span> <span class="mini-click-non">Sellers</span></a>
                             <ul class="submenu-angle" aria-expanded="false">
                                 <li><a title="All Professors" href="<?=base_url('index.php/admin/AdminDashboard/moveToAdminSellerAll');?>"><span class="mini-sub-pro">All Sellers</span></a></li>
@@ -107,19 +107,19 @@
                         <li>
                             <a class="has-arrow" href="all-courses.html" aria-expanded="false"><span class="educate-icon educate-library icon-wrap"></span> <span class="mini-click-non">Books</span></a>
                             <ul class="submenu-angle" aria-expanded="false">
-                                <li><a title="All Students" href="AdminBookAll.php"><span class="mini-sub-pro">All Books</span></a></li>
-                                <li><a title="All Library" href="AdminBookAdd.php"><span class="mini-sub-pro">Add Book</span></a></li>
-                                <li><a title="Add Library" href="AdminBookEdit.php"><span class="mini-sub-pro">Edit Book</span></a></li>
-                                <li><a title="Edit Library" href="AdminBookRemove.php"><span class="mini-sub-pro">Remove Book</span></a></li>
+                                <li><a title="All Students" href="<?=base_url('index.php/admin/AdminDashboard/moveToAdminBookAll');?>"><span class="mini-sub-pro">All Books</span></a></li>
+                                <li><a title="All Library" href="<?=base_url('index.php/admin/AdminDashboard/moveToAdminBookAdd');?>"><span class="mini-sub-pro">Add Book</span></a></li>
+                                <li><a title="Add Library" href="<?=base_url('index.php/admin/AdminDashboard/moveToAdminBookEdit');?>"><span class="mini-sub-pro">Edit Book</span></a></li>
+                                <li><a title="Edit Library" href="<?=base_url('index.php/admin/AdminDashboard/moveToAdminBookRemove');?>"><span class="mini-sub-pro">Remove Book</span></a></li>
                             </ul>
                         </li>
                         
                         <li>
                             <a class="has-arrow" href="mailbox.html" aria-expanded="false"><span class="educate-icon educate-message icon-wrap"></span> <span class="mini-click-non">Mailbox</span></a>
                             <ul class="submenu-angle" aria-expanded="false">
-                                <li><a title="Inbox" href="AdminMailInbox.php"><span class="mini-sub-pro">Inbox</span></a></li>
-                                <li><a title="View Mail" href="AdminMailView.php"><span class="mini-sub-pro">View Mail</span></a></li>
-                                <li><a title="Compose Mail" href="AdminMailCompose.php"><span class="mini-sub-pro">Compose Mail</span></a></li>
+                                <li><a title="Inbox" href="<?=base_url('index.php/admin/AdminDashboard/moveToAdminMailInbox');?>"><span class="mini-sub-pro">Inbox</span></a></li>
+                                <li><a title="View Mail" href="<?=base_url('index.php/admin/AdminDashboard/moveToAdminMailView');?>"><span class="mini-sub-pro">View Mail</span></a></li>
+                                <li><a title="Compose Mail" href="<?=base_url('index.php/admin/AdminDashboard/moveToAdminMailCompose');?>"><span class="mini-sub-pro">Compose Mail</span></a></li>
                             </ul>
                         </li>
                         
