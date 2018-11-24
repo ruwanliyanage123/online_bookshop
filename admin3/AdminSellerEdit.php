@@ -74,59 +74,61 @@
     <!--[if lt IE 8]>
 		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 	<![endif]-->
+    <!-- Start Left menu area -->
     <div class="left-sidebar-pro">
-            <nav id="sidebar" class="">
-                <div class="sidebar-header">
-                    <a href="index.html"><img class="main-logo" src="img/logo/logo.png" alt="" /></a>
-                    <strong><a href="index.html"><img src="img/logo/logosn.png" alt="" /></a></strong>
-                </div>
-                <div class="left-custom-menu-adp-wrap comment-scrollbar">
-                    <nav class="sidebar-nav left-sidebar-menu-pro">
-                        <ul class="metismenu" id="menu1">
-                            
-                            
-                            <li>
-                                <a class="has-arrow" href="all-professors.html" aria-expanded="false"><span class="educate-icon educate-professor icon-wrap"></span> <span class="mini-click-non">Sellers</span></a>
-                                <ul class="submenu-angle" aria-expanded="false">
-                                    <li><a title="All Professors" href="all-professors.html"><span class="mini-sub-pro">All Sellers</span></a></li>
-                                    <li><a title="Add Professor" href="add-professor.html"><span class="mini-sub-pro">Add Seller</span></a></li>
-                                    <li><a title="Edit Professor" href="edit-professor.html"><span class="mini-sub-pro">Edit Seller</span></a></li>
-                                                                    </ul>
-                            </li>
-                            <li>
-                                <a class="has-arrow" href="all-students.html" aria-expanded="false"><span class="educate-icon educate-student icon-wrap"></span> <span class="mini-click-non">Customers</span></a>
-                                <ul class="submenu-angle" aria-expanded="false">
-                                    <li><a title="All Students" href="all-students.html"><span class="mini-sub-pro">All Customers</span></a></li>
-                                    <li><a title="Add Students" href="add-student.html"><span class="mini-sub-pro">Add Customer</span></a></li>
-                                    <li><a title="Edit Students" href="edit-student.html"><span class="mini-sub-pro">Edit Customer</span></a></li>
-                               </ul>
-                            </li>
-                            
-                            <li>
-                                <a class="has-arrow" href="all-courses.html" aria-expanded="false"><span class="educate-icon educate-library icon-wrap"></span> <span class="mini-click-non">Books</span></a>
-                                <ul class="submenu-angle" aria-expanded="false">
-                                        <li><a title="All Students" href="all-students.html"><span class="mini-sub-pro">All Books</span></a></li>
-                                    <li><a title="All Library" href="library-assets.html"><span class="mini-sub-pro">Add Book</span></a></li>
-                                    <li><a title="Add Library" href="add-library-assets.html"><span class="mini-sub-pro">Edit Book</span></a></li>
-                                    <li><a title="Edit Library" href="edit-library-assets.html"><span class="mini-sub-pro">Remove Book</span></a></li>
+        <nav id="sidebar" class="">
+            <div class="sidebar-header">
+                <a href="AdminDashboard.php"><img class="main-log" src="img/logo/dashboard_logo.jpg" height="120px"; width="170px"; alt="" /></a>
+                <strong><a href="index.html"><img src="img/logo/logosn.png" alt="" /></a></strong>
+            </div>
+            <div class="left-custom-menu-adp-wrap comment-scrollbar">
+                <nav class="sidebar-nav left-sidebar-menu-pro">
+                    <ul class="metismenu" id="menu1">
+                        
+                        
+                        <li>
+                            <a class="has-arrow" href="all-professors.html" aria-expanded="false"><span class="educate-icon educate-professor icon-wrap"></span> <span class="mini-click-non">Sellers</span></a>
+                            <ul class="submenu-angle" aria-expanded="false">
+                                <li><a title="All Professors" href="AdminSellerAll.php"><span class="mini-sub-pro">All Sellers</span></a></li>
+                                <li><a title="Add Professor" href="AdminSellerAdd.php"><span class="mini-sub-pro">Add Seller</span></a></li>
+                                <li><a title="Edit Professor" href="AdminSellerEdit.php"><span class="mini-sub-pro">Edit Seller</span></a></li>
+                          </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow" href="all-students.html" aria-expanded="false"><span class="educate-icon educate-student icon-wrap"></span> <span class="mini-click-non">Customers</span></a>
+                            <ul class="submenu-angle" aria-expanded="false">
+                                <li><a title="All Students" href="AdminCustomerAll.php"><span class="mini-sub-pro">All Customers</span></a></li>
+                                <li><a title="Add Students" href="AdminCustomerAdd.php"><span class="mini-sub-pro">Add Customer</span></a></li>
+                                <li><a title="Edit Students" href="AdminCustomerEdit.php"><span class="mini-sub-pro">Edit Customer</span></a></li>
                                 </ul>
-                            </li>
-                            
-                            <li>
-                                <a class="has-arrow" href="mailbox.html" aria-expanded="false"><span class="educate-icon educate-message icon-wrap"></span> <span class="mini-click-non">Mailbox</span></a>
-                                <ul class="submenu-angle" aria-expanded="false">
-                                    <li><a title="Inbox" href="mailbox.html"><span class="mini-sub-pro">Inbox</span></a></li>
-                                    <li><a title="View Mail" href="mailbox-view.html"><span class="mini-sub-pro">View Mail</span></a></li>
-                                    <li><a title="Compose Mail" href="mailbox-compose.html"><span class="mini-sub-pro">Compose Mail</span></a></li>
-                                </ul>
-                            </li>
-                            
-                            
-                        </ul>
-                    </nav>
-                </div>
-            </nav>
-        </div>
+                        </li>
+                        
+                        <li>
+                            <a class="has-arrow" href="all-courses.html" aria-expanded="false"><span class="educate-icon educate-library icon-wrap"></span> <span class="mini-click-non">Books</span></a>
+                            <ul class="submenu-angle" aria-expanded="false">
+                                <li><a title="All Students" href="AdminBookAll.php"><span class="mini-sub-pro">All Books</span></a></li>
+                                <li><a title="All Library" href="AdminBookAdd.php"><span class="mini-sub-pro">Add Book</span></a></li>
+                                <li><a title="Add Library" href="AdminBookEdit.php"><span class="mini-sub-pro">Edit Book</span></a></li>
+                                <li><a title="Edit Library" href="AdminBookRemove.php"><span class="mini-sub-pro">Remove Book</span></a></li>
+                            </ul>
+                        </li>
+                        
+                        <li>
+                            <a class="has-arrow" href="mailbox.html" aria-expanded="false"><span class="educate-icon educate-message icon-wrap"></span> <span class="mini-click-non">Mailbox</span></a>
+                            <ul class="submenu-angle" aria-expanded="false">
+                                <li><a title="Inbox" href="AdminMailInbox.php"><span class="mini-sub-pro">Inbox</span></a></li>
+                                <li><a title="View Mail" href="AdminMailView.php"><span class="mini-sub-pro">View Mail</span></a></li>
+                                <li><a title="Compose Mail" href="AdminMailCompose.php"><span class="mini-sub-pro">Compose Mail</span></a></li>
+                            </ul>
+                        </li>
+                        
+                        
+                    </ul>
+                </nav>
+            </div>
+        </nav>
+    </div>
+    <!-- End Left menu area -->
 
     <!-- Start Welcome area -->
     <div class="all-content-wrapper">
