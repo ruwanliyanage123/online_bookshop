@@ -65,7 +65,7 @@ class AdminDashboard extends CI_Controller{
     /**
      * use for access to the AdminBookAdd.php
      */
-    public function moveToAdminBookrAdd(){
+    public function moveToAdminBookAdd(){
         $this->load->view('admin/AdminBookAdd');
     }
 
@@ -74,6 +74,14 @@ class AdminDashboard extends CI_Controller{
      */
     public function moveToAdminBookEdit(){
         $this->load->view('admin/AdminBookEdit');
+    }
+
+    
+    /**
+     * use for access to the AdminBookRemove.php
+     */
+    public function moveToAdminBookRemove(){
+        $this->load->view('admin/AdminBookRemove');
     }
 
     /**

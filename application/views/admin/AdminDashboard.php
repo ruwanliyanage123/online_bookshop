@@ -78,7 +78,7 @@
     <div class="left-sidebar-pro">
         <nav id="sidebar" class="">
             <div class="sidebar-header">
-                <a href="AdminDashboard.php"><img class="main-log" src="<?php echo base_url(); ?>/assets/img/logo/dashboard_logo.jpg" height="120px"; width="170px"; alt="" /></a>
+                <a href="<?=base_url('index.php/admin/AdminDashboard/moveToAdminDashboard');?>"><img class="main-log" src="<?php echo base_url(); ?>/assets/img/logo/dashboard_logo.jpg" height="120px"; width="170px"; alt="" /></a>
                 <strong><a href="index.html"><img src="img/logo/logosn.png" alt="" /></a></strong>
             </div>
             <div class="left-custom-menu-adp-wrap comment-scrollbar">
@@ -130,6 +130,7 @@
         </nav>
     </div>
     <!-- End Left menu area -->
+
     <!-- Start Welcome area -->
     <div class="all-content-wrapper">
         <div class="container-fluid">
@@ -305,6 +306,8 @@
                                             </ul>
                                         </div>
                                     </div>
+
+                                    <!--end of the-->
                                 </div>
                             </div>
                         </div>
@@ -317,7 +320,7 @@
         
         
 
-
+<!--srart-->
         <div class="library-book-area mg-t-30">
             <div class="container-fluid">
                 <div class="row">
@@ -421,6 +424,7 @@
             </div>
         </div>
 
+    <!--end of the-->
    
 
         
