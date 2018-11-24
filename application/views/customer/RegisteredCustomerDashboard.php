@@ -30,12 +30,10 @@ if($checking=='1'){
 			</div>
 			<div class="account_desc">
 				<ul>
-				
 					<li><a href="#">Delivery</a></li>
 					<li><a href="#">Checkout</a></li>
 					<li><a href="#">My Account</a></li>
 					<li><a href= "<?=base_url('index.php/customer/CustomerRegistrationController/logout');?>"><font color="green"; font-family:bolt>LOGOUT</font></a></li>
-
 				</ul>
 			</div>
 			<div class="clear"></div>

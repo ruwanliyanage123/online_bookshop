@@ -87,19 +87,20 @@
                         
                         
                         <li>
+                        <?=base_url('index.php/admin/AdminDashboard/moveToAdminCustomerEdit');?>
                             <a class="has-arrow" href="all-professors.html" aria-expanded="false"><span class="educate-icon educate-professor icon-wrap"></span> <span class="mini-click-non">Sellers</span></a>
                             <ul class="submenu-angle" aria-expanded="false">
-                                <li><a title="All Professors" href="AdminSellerAll.php"><span class="mini-sub-pro">All Sellers</span></a></li>
-                                <li><a title="Add Professor" href="AdminSellerAdd.php"><span class="mini-sub-pro">Add Seller</span></a></li>
-                                <li><a title="Edit Professor" href="AdminSellerEdit.php"><span class="mini-sub-pro">Edit Seller</span></a></li>
-                          </ul>
+                                <li><a title="All Professors" href="<?=base_url('index.php/admin/AdminDashboard/moveToAdminSellerAll');?>"><span class="mini-sub-pro">All Sellers</span></a></li>
+                                <li><a title="Add Professor" href="<?=base_url('index.php/admin/AdminDashboard/moveToAdminSellerAdd');?>"><span class="mini-sub-pro">Add Seller</span></a></li>
+                                <li><a title="Edit Professor" href="<?=base_url('index.php/admin/AdminDashboard/moveToAdminSellerEdit');?>"><span class="mini-sub-pro">Edit Seller</span></a></li>
+                            </ul>
                         </li>
                         <li>
                             <a class="has-arrow" href="all-students.html" aria-expanded="false"><span class="educate-icon educate-student icon-wrap"></span> <span class="mini-click-non">Customers</span></a>
                             <ul class="submenu-angle" aria-expanded="false">
-                                <li><a title="All Students" href="AdminCustomerAll.php"><span class="mini-sub-pro">All Customers</span></a></li>
-                                <li><a title="Add Students" href="AdminCustomerAdd.php"><span class="mini-sub-pro">Add Customer</span></a></li>
-                                <li><a title="Edit Students" href="AdminCustomerEdit.php"><span class="mini-sub-pro">Edit Customer</span></a></li>
+                                <li><a title="All Students" href="<?=base_url('index.php/admin/AdminDashboard/moveToAdminCustomerAll');?>"><span class="mini-sub-pro">All Customers</span></a></li>
+                                <li><a title="Add Students" href="<?=base_url('index.php/admin/AdminDashboard/moveToAdminCustomerAdd');?>"><span class="mini-sub-pro">Add Customer</span></a></li>
+                                <li><a title="Edit Students" href="<?=base_url('index.php/admin/AdminDashboard/moveToAdminCustomerEdit');?>"><span class="mini-sub-pro">Edit Customer</span></a></li>
                                 </ul>
                         </li>
                         
