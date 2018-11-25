@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Inbox | Kiaalap - Kiaalap Admin Template</title>
+    <title>Edit Professor | Kiaalap - Kiaalap Admin Template</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- favicon
@@ -53,6 +53,12 @@
 		============================================ -->
     <link rel="stylesheet" href="css/calendar/fullcalendar.min.css">
     <link rel="stylesheet" href="css/calendar/fullcalendar.print.min.css">
+    <!-- forms CSS
+		============================================ -->
+    <link rel="stylesheet" href="css/form/all-type-forms.css">
+    <!-- dropzone CSS
+		============================================ -->
+    <link rel="stylesheet" href="css/dropzone/dropzone.css">
     <!-- style CSS
 		============================================ -->
     <link rel="stylesheet" href="style.css">
@@ -69,55 +75,148 @@
 		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 	<![endif]-->
     <!-- Start Left menu area -->
-    <!-- Start Left menu area -->
     <div class="left-sidebar-pro">
         <nav id="sidebar" class="">
             <div class="sidebar-header">
-                <a href="AdminDashboard.php"><img class="main-log" src="img/logo/dashboard_logo.jpg" height="120px"; width="170px"; alt="" /></a>
+                <a href="index.html"><img class="main-logo" src="img/logo/logo.png" alt="" /></a>
                 <strong><a href="index.html"><img src="img/logo/logosn.png" alt="" /></a></strong>
             </div>
             <div class="left-custom-menu-adp-wrap comment-scrollbar">
                 <nav class="sidebar-nav left-sidebar-menu-pro">
                     <ul class="metismenu" id="menu1">
-                        
-                        
                         <li>
-                            <a class="has-arrow" href="all-professors.html" aria-expanded="false"><span class="educate-icon educate-professor icon-wrap"></span> <span class="mini-click-non">Sellers</span></a>
-                            <ul class="submenu-angle" aria-expanded="false">
-                                <li><a title="All Professors" href="AdminSellerAll.php"><span class="mini-sub-pro">All Sellers</span></a></li>
-                                <li><a title="Add Professor" href="AdminSellerAdd.php"><span class="mini-sub-pro">Add Seller</span></a></li>
-                                <li><a title="Edit Professor" href="AdminSellerEdit.php"><span class="mini-sub-pro">Edit Seller</span></a></li>
-                          </ul>
-                        </li>
-                        <li>
-                            <a class="has-arrow" href="all-students.html" aria-expanded="false"><span class="educate-icon educate-student icon-wrap"></span> <span class="mini-click-non">Customers</span></a>
-                            <ul class="submenu-angle" aria-expanded="false">
-                                <li><a title="All Students" href="AdminCustomerAll.php"><span class="mini-sub-pro">All Customers</span></a></li>
-                                <li><a title="Add Students" href="AdminCustomerAdd.php"><span class="mini-sub-pro">Add Customer</span></a></li>
-                                <li><a title="Edit Students" href="AdminCustomerEdit.php"><span class="mini-sub-pro">Edit Customer</span></a></li>
-                                </ul>
-                        </li>
-                        
-                        <li>
-                            <a class="has-arrow" href="all-courses.html" aria-expanded="false"><span class="educate-icon educate-library icon-wrap"></span> <span class="mini-click-non">Books</span></a>
-                            <ul class="submenu-angle" aria-expanded="false">
-                                <li><a title="All Students" href="AdminBookAll.php"><span class="mini-sub-pro">All Books</span></a></li>
-                                <li><a title="All Library" href="AdminBookAdd.php"><span class="mini-sub-pro">Add Book</span></a></li>
-                                <li><a title="Add Library" href="AdminBookEdit.php"><span class="mini-sub-pro">Edit Book</span></a></li>
-                                <li><a title="Edit Library" href="AdminBookRemove.php"><span class="mini-sub-pro">Remove Book</span></a></li>
+                            <a class="has-arrow" href="index.html">
+								   <span class="educate-icon educate-home icon-wrap"></span>
+								   <span class="mini-click-non">Education</span>
+								</a>
+                            <ul class="submenu-angle" aria-expanded="true">
+                                <li><a title="Dashboard v.1" href="index.html"><span class="mini-sub-pro">Dashboard v.1</span></a></li>
+                                <li><a title="Dashboard v.2" href="index-1.html"><span class="mini-sub-pro">Dashboard v.2</span></a></li>
+                                <li><a title="Dashboard v.3" href="index-2.html"><span class="mini-sub-pro">Dashboard v.3</span></a></li>
+                                <li><a title="Analytics" href="analytics.html"><span class="mini-sub-pro">Analytics</span></a></li>
+                                <li><a title="Widgets" href="widgets.html"><span class="mini-sub-pro">Widgets</span></a></li>
                             </ul>
                         </li>
-                        
+                        <li>
+                            <a title="Landing Page" href="events.html" aria-expanded="false"><span class="educate-icon educate-event icon-wrap sub-icon-mg" aria-hidden="true"></span> <span class="mini-click-non">Event</span></a>
+                        </li>
+                        <li class="active">
+                            <a class="has-arrow" href="all-professors.html" aria-expanded="false"><span class="educate-icon educate-professor icon-wrap"></span> <span class="mini-click-non">Professors</span></a>
+                            <ul class="submenu-angle" aria-expanded="false">
+                                <li><a title="All Professors" href="all-professors.html"><span class="mini-sub-pro">All Professors</span></a></li>
+                                <li><a title="Add Professor" href="add-professor.html"><span class="mini-sub-pro">Add Professor</span></a></li>
+                                <li><a title="Edit Professor" href="edit-professor.html"><span class="mini-sub-pro">Edit Professor</span></a></li>
+                                <li><a title="Professor Profile" href="professor-profile.html"><span class="mini-sub-pro">Professor Profile</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow" href="all-students.html" aria-expanded="false"><span class="educate-icon educate-student icon-wrap"></span> <span class="mini-click-non">Students</span></a>
+                            <ul class="submenu-angle" aria-expanded="false">
+                                <li><a title="All Students" href="all-students.html"><span class="mini-sub-pro">All Students</span></a></li>
+                                <li><a title="Add Students" href="add-student.html"><span class="mini-sub-pro">Add Student</span></a></li>
+                                <li><a title="Edit Students" href="edit-student.html"><span class="mini-sub-pro">Edit Student</span></a></li>
+                                <li><a title="Students Profile" href="student-profile.html"><span class="mini-sub-pro">Student Profile</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow" href="all-courses.html" aria-expanded="false"><span class="educate-icon educate-course icon-wrap"></span> <span class="mini-click-non">Courses</span></a>
+                            <ul class="submenu-angle" aria-expanded="false">
+                                <li><a title="All Courses" href="all-courses.html"><span class="mini-sub-pro">All Courses</span></a></li>
+                                <li><a title="Add Courses" href="add-course.html"><span class="mini-sub-pro">Add Course</span></a></li>
+                                <li><a title="Edit Courses" href="edit-course.html"><span class="mini-sub-pro">Edit Course</span></a></li>
+                                <li><a title="Courses Profile" href="course-info.html"><span class="mini-sub-pro">Courses Info</span></a></li>
+                                <li><a title="course Payment" href="course-payment.html"><span class="mini-sub-pro">Courses Payment</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow" href="all-courses.html" aria-expanded="false"><span class="educate-icon educate-library icon-wrap"></span> <span class="mini-click-non">Library</span></a>
+                            <ul class="submenu-angle" aria-expanded="false">
+                                <li><a title="All Library" href="library-assets.html"><span class="mini-sub-pro">Library Assets</span></a></li>
+                                <li><a title="Add Library" href="add-library-assets.html"><span class="mini-sub-pro">Add Library Asset</span></a></li>
+                                <li><a title="Edit Library" href="edit-library-assets.html"><span class="mini-sub-pro">Edit Library Asset</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow" href="all-courses.html" aria-expanded="false"><span class="educate-icon educate-department icon-wrap"></span> <span class="mini-click-non">Departments</span></a>
+                            <ul class="submenu-angle" aria-expanded="false">
+                                <li><a title="Departments List" href="departments.html"><span class="mini-sub-pro">Departments List</span></a></li>
+                                <li><a title="Add Departments" href="add-department.html"><span class="mini-sub-pro">Add Departments</span></a></li>
+                                <li><a title="Edit Departments" href="edit-department.html"><span class="mini-sub-pro">Edit Departments</span></a></li>
+                            </ul>
+                        </li>
                         <li>
                             <a class="has-arrow" href="mailbox.html" aria-expanded="false"><span class="educate-icon educate-message icon-wrap"></span> <span class="mini-click-non">Mailbox</span></a>
                             <ul class="submenu-angle" aria-expanded="false">
-                                <li><a title="Inbox" href="AdminMailInbox.php"><span class="mini-sub-pro">Inbox</span></a></li>
-                                <li><a title="View Mail" href="AdminMailView.php"><span class="mini-sub-pro">View Mail</span></a></li>
-                                <li><a title="Compose Mail" href="AdminMailCompose.php"><span class="mini-sub-pro">Compose Mail</span></a></li>
+                                <li><a title="Inbox" href="mailbox.html"><span class="mini-sub-pro">Inbox</span></a></li>
+                                <li><a title="View Mail" href="mailbox-view.html"><span class="mini-sub-pro">View Mail</span></a></li>
+                                <li><a title="Compose Mail" href="mailbox-compose.html"><span class="mini-sub-pro">Compose Mail</span></a></li>
                             </ul>
                         </li>
-                        
-                        
+                        <li>
+                            <a class="has-arrow" href="mailbox.html" aria-expanded="false"><span class="educate-icon educate-interface icon-wrap"></span> <span class="mini-click-non">Interface</span></a>
+                            <ul class="submenu-angle interface-mini-nb-dp" aria-expanded="false">
+                                <li><a title="Google Map" href="google-map.html"><span class="mini-sub-pro">Google Map</span></a></li>
+                                <li><a title="Data Maps" href="data-maps.html"><span class="mini-sub-pro">Data Maps</span></a></li>
+                                <li><a title="Pdf Viewer" href="pdf-viewer.html"><span class="mini-sub-pro">Pdf Viewer</span></a></li>
+                                <li><a title="X-Editable" href="x-editable.html"><span class="mini-sub-pro">X-Editable</span></a></li>
+                                <li><a title="Code Editor" href="code-editor.html"><span class="mini-sub-pro">Code Editor</span></a></li>
+                                <li><a title="Tree View" href="tree-view.html"><span class="mini-sub-pro">Tree View</span></a></li>
+                                <li><a title="Preloader" href="preloader.html"><span class="mini-sub-pro">Preloader</span></a></li>
+                                <li><a title="Images Cropper" href="images-cropper.html"><span class="mini-sub-pro">Images Cropper</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow" href="mailbox.html" aria-expanded="false"><span class="educate-icon educate-charts icon-wrap"></span> <span class="mini-click-non">Charts</span></a>
+                            <ul class="submenu-angle chart-mini-nb-dp" aria-expanded="false">
+                                <li><a title="Bar Charts" href="bar-charts.html"><span class="mini-sub-pro">Bar Charts</span></a></li>
+                                <li><a title="Line Charts" href="line-charts.html"><span class="mini-sub-pro">Line Charts</span></a></li>
+                                <li><a title="Area Charts" href="area-charts.html"><span class="mini-sub-pro">Area Charts</span></a></li>
+                                <li><a title="Rounded Charts" href="rounded-chart.html"><span class="mini-sub-pro">Rounded Charts</span></a></li>
+                                <li><a title="C3 Charts" href="c3.html"><span class="mini-sub-pro">C3 Charts</span></a></li>
+                                <li><a title="Sparkline Charts" href="sparkline.html"><span class="mini-sub-pro">Sparkline Charts</span></a></li>
+                                <li><a title="Peity Charts" href="peity.html"><span class="mini-sub-pro">Peity Charts</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow" href="mailbox.html" aria-expanded="false"><span class="educate-icon educate-data-table icon-wrap"></span> <span class="mini-click-non">Data Tables</span></a>
+                            <ul class="submenu-angle" aria-expanded="false">
+                                <li><a title="Peity Charts" href="static-table.html"><span class="mini-sub-pro">Static Table</span></a></li>
+                                <li><a title="Data Table" href="data-table.html"><span class="mini-sub-pro">Data Table</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow" href="mailbox.html" aria-expanded="false"><span class="educate-icon educate-form icon-wrap"></span> <span class="mini-click-non">Forms Elements</span></a>
+                            <ul class="submenu-angle form-mini-nb-dp" aria-expanded="false">
+                                <li><a title="Basic Form Elements" href="basic-form-element.html"><span class="mini-sub-pro">Bc Form Elements</span></a></li>
+                                <li><a title="Advance Form Elements" href="advance-form-element.html"><span class="mini-sub-pro">Ad Form Elements</span></a></li>
+                                <li><a title="Password Meter" href="password-meter.html"><span class="mini-sub-pro">Password Meter</span></a></li>
+                                <li><a title="Multi Upload" href="multi-upload.html"><span class="mini-sub-pro">Multi Upload</span></a></li>
+                                <li><a title="Text Editor" href="tinymc.html"><span class="mini-sub-pro">Text Editor</span></a></li>
+                                <li><a title="Dual List Box" href="dual-list-box.html"><span class="mini-sub-pro">Dual List Box</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow" href="mailbox.html" aria-expanded="false"><span class="educate-icon educate-apps icon-wrap"></span> <span class="mini-click-non">App views</span></a>
+                            <ul class="submenu-angle app-mini-nb-dp" aria-expanded="false">
+                                <li><a title="Notifications" href="notifications.html"><span class="mini-sub-pro">Notifications</span></a></li>
+                                <li><a title="Alerts" href="alerts.html"><span class="mini-sub-pro">Alerts</span></a></li>
+                                <li><a title="Modals" href="modals.html"><span class="mini-sub-pro">Modals</span></a></li>
+                                <li><a title="Buttons" href="buttons.html"><span class="mini-sub-pro">Buttons</span></a></li>
+                                <li><a title="Tabs" href="tabs.html"><span class="mini-sub-pro">Tabs</span></a></li>
+                                <li><a title="Accordion" href="accordion.html"><span class="mini-sub-pro">Accordion</span></a></li>
+                            </ul>
+                        </li>
+                        <li id="removable">
+                            <a class="has-arrow" href="#" aria-expanded="false"><span class="educate-icon educate-pages icon-wrap"></span> <span class="mini-click-non">Pages</span></a>
+                            <ul class="submenu-angle page-mini-nb-dp" aria-expanded="false">
+                                <li><a title="Login" href="login.html"><span class="mini-sub-pro">Login</span></a></li>
+                                <li><a title="Register" href="register.html"><span class="mini-sub-pro">Register</span></a></li>
+                                <li><a title="Lock" href="lock.html"><span class="mini-sub-pro">Lock</span></a></li>
+                                <li><a title="Password Recovery" href="password-recovery.html"><span class="mini-sub-pro">Password Recovery</span></a></li>
+                                <li><a title="404 Page" href="404.html"><span class="mini-sub-pro">404 Page</span></a></li>
+                                <li><a title="500 Page" href="500.html"><span class="mini-sub-pro">500 Page</span></a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -947,369 +1046,215 @@
                 </div>
             </div>
             <!-- Mobile Menu end -->
-            
-        </div>
-        <div class="mailbox-area mg-b-15">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-3 col-md-3 col-sm-3 col-xs-12">
-                        <div class="hpanel responsive-mg-b-30">
-                            <div class="panel-body">
-
-                                <ul class="mailbox-list">
-                                    <li class="active">
-                                        <a href="#">
-												<span class="pull-right">12</span>
-												<i class="fa fa-envelope"></i> Inbox
-											</a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fa fa-paper-plane"></i> Sent</a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fa fa-pencil"></i> Draft</a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fa fa-trash"></i> Trash</a>
-                                    </li>
-                                </ul>
-                                <hr>
-                                <ul class="mailbox-list">
-                                    <li>
-                                        <a href="#"><i class="fa fa-plane text-danger"></i> Travel</a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fa fa-bar-chart text-warning"></i> Finance</a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fa fa-users text-info"></i> Social</a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fa fa-tag text-success"></i> Promos</a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fa fa-flag text-primary"></i> Updates</a>
-                                    </li>
-                                </ul>
-                                <hr>
-                                <ul class="mailbox-list">
-                                    <li>
-                                        <a href="#"><i class="fa fa-gears"></i> Settings</a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fa fa-info-circle"></i> Support</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-9 col-md-9 col-sm-9 col-xs-12">
-                        <div class="hpanel">
-                            <div class="panel-heading hbuilt mailbox-hd">
-                                <div class="text-center p-xs font-normal">
-                                    <div class="input-group">
-                                        <input type="text" class="form-control input-sm" placeholder="Search email in your inbox..."> <span class="input-group-btn active-hook"> <button type="button" class="btn btn-sm btn-default">Search
-											</button> </span></div>
-                                </div>
-                            </div>
-                            <div class="panel-body">
+            <div class="breadcome-area">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="breadcome-list single-page-breadcome">
                                 <div class="row">
-                                    <div class="col-md-6 col-md-6 col-sm-6 col-xs-8">
-                                        <div class="btn-group ib-btn-gp active-hook mail-btn-sd mg-b-15">
-                                            <button class="btn btn-default btn-sm"><i class="fa fa-refresh"></i> Refresh</button>
-                                            <button class="btn btn-default btn-sm"><i class="fa fa-eye"></i></button>
-                                            <button class="btn btn-default btn-sm"><i class="fa fa-exclamation"></i></button>
-                                            <button class="btn btn-default btn-sm"><i class="fa fa-trash-o"></i></button>
-                                            <button class="btn btn-default btn-sm"><i class="fa fa-check"></i></button>
-                                            <button class="btn btn-default btn-sm"><i class="fa fa-tag"></i></button>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                        <div class="breadcome-heading">
+                                            <form role="search" class="sr-input-func">
+                                                <input type="text" placeholder="Search..." class="search-int form-control">
+                                                <a href="#"><i class="fa fa-search"></i></a>
+                                            </form>
                                         </div>
                                     </div>
-                                    <div class="col-md-6 col-md-6 col-sm-6 col-xs-4 mailbox-pagination">
-                                        <div class="btn-group ib-btn-gp active-hook mail-btn-sd mg-b-15">
-                                            <button class="btn btn-default btn-sm"><i class="fa fa-arrow-left"></i></button>
-                                            <button class="btn btn-default btn-sm"><i class="fa fa-arrow-right"></i></button>
-                                        </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                        <ul class="breadcome-menu">
+                                            <li><a href="#">Home</a> <span class="bread-slash">/</span>
+                                            </li>
+                                            <li><span class="bread-blod">Edit Professor</span>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
-                                <div class="table-responsive ib-tb">
-                                    <table class="table table-hover table-mailbox">
-                                        <tbody>
-                                            <tr class="unread">
-                                                <td class="">
-                                                    <div class="checkbox checkbox-single checkbox-success">
-                                                        <input type="checkbox" checked>
-                                                        <label></label>
-                                                    </div>
-                                                </td>
-                                                <td><a href="#">Jeremy Massey</a></td>
-                                                <td><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
-                                                </td>
-                                                <td><i class="fa fa-paperclip"></i></td>
-                                                <td class="text-right mail-date">Tue, Nov 25</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="">
-                                                    <div class="checkbox">
-                                                        <input type="checkbox">
-                                                        <label></label>
-                                                    </div>
-                                                </td>
-                                                <td><a href="#">Marshall Horne</a></td>
-                                                <td><a href="#">Praesent nec nisl sed neque ornare maximus at ac enim.</a>
-                                                </td>
-                                                <td></td>
-                                                <td class="text-right mail-date">Wed, Jan 13</td>
-                                            </tr>
-                                            <tr class="active">
-                                                <td class="">
-                                                    <div class="checkbox">
-                                                        <input type="checkbox">
-                                                        <label></label>
-                                                    </div>
-                                                </td>
-                                                <td><a href="#">Grant Franco</a> <span class="label label-warning">Finance</span></td>
-                                                <td><a href="#">Etiam maximus tellus a turpis tempor mollis.</a></td>
-                                                <td></td>
-                                                <td class="text-right mail-date">Mon, Oct 19</td>
-                                            </tr>
-                                            <tr class="unread active">
-                                                <td class="">
-                                                    <div class="checkbox checkbox-single">
-                                                        <input type="checkbox" checked>
-                                                        <label></label>
-                                                    </div>
-                                                </td>
-                                                <td><a href="#">Ferdinand Meadows</a></td>
-                                                <td><a href="#">Aenean hendrerit ligula eget augue gravida semper.</a></td>
-                                                <td><i class="fa fa-paperclip"></i></td>
-                                                <td class="text-right mail-date">Sat, Aug 29</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="">
-                                                    <div class="checkbox checkbox-single">
-                                                        <input type="checkbox">
-                                                        <label></label>
-                                                    </div>
-                                                </td>
-                                                <td><a href="#">Ivor Rios</a> <span class="label label-info">Social</span>
-                                                </td>
-                                                <td><a href="#">Sed quis augue in nunc venenatis finibus.</a></td>
-                                                <td><i class="fa fa-paperclip"></i></td>
-                                                <td class="text-right mail-date">Sat, Dec 12</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="">
-                                                    <div class="checkbox">
-                                                        <input type="checkbox">
-                                                        <label></label>
-                                                    </div>
-                                                </td>
-                                                <td><a href="#">Maxwell Murphy</a></td>
-                                                <td><a href="#">Quisque eu tortor quis justo viverra cursus.</a></td>
-                                                <td></td>
-                                                <td class="text-right mail-date">Sun, May 17</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="">
-                                                    <div class="checkbox">
-                                                        <input type="checkbox">
-                                                        <label></label>
-                                                    </div>
-                                                </td>
-                                                <td><a href="#">Henry Patterson</a></td>
-                                                <td><a href="#">Aliquam nec justo interdum, ornare mi non, elementum
-														lacus.</a></td>
-                                                <td><i class="fa fa-paperclip"></i></td>
-                                                <td class="text-right mail-date">Thu, Aug 06</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="">
-                                                    <div class="checkbox">
-                                                        <input type="checkbox">
-                                                        <label></label>
-                                                    </div>
-                                                </td>
-                                                <td><a href="#">Brent Rasmussen</a></td>
-                                                <td><a href="#">Nam nec turpis sed quam tristique sodales.</a></td>
-                                                <td></td>
-                                                <td class="text-right mail-date">Sun, Nov 15</td>
-                                            </tr>
-                                            <tr class="unread">
-                                                <td class="">
-                                                    <div class="checkbox checkbox-single checkbox-success">
-                                                        <input type="checkbox" checked>
-                                                        <label></label>
-                                                    </div>
-                                                </td>
-                                                <td><a href="#">Joseph Hurley</a></td>
-                                                <td><a href="#">Nullam tempus leo id urna sagittis blandit.</a></td>
-                                                <td><i class="fa fa-paperclip"></i></td>
-                                                <td class="text-right mail-date">Sun, Aug 10</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="">
-                                                    <div class="checkbox">
-                                                        <input type="checkbox">
-                                                        <label></label>
-                                                    </div>
-                                                </td>
-                                                <td><a href="#">Alan Matthews</a></td>
-                                                <td><a href="#">Quisque quis turpis ac quam sagittis scelerisque vel ut
-														urna.</a></td>
-                                                <td></td>
-                                                <td class="text-right mail-date">Sun, Mar 27</td>
-                                            </tr>
-                                            <tr class="active">
-                                                <td class="">
-                                                    <div class="checkbox">
-                                                        <input type="checkbox">
-                                                        <label></label>
-                                                    </div>
-                                                </td>
-                                                <td><a href="#">Colby Lynch</a> <span class="label label-danger">Travel</span></td>
-                                                <td><a href="#">Donec non enim pulvinar, ultrices metus eget, condimentum
-														mi.</a></td>
-                                                <td></td>
-                                                <td class="text-right mail-date">Thu, Dec 31</td>
-                                            </tr>
-                                            <tr class="unread">
-                                                <td class="">
-                                                    <div class="checkbox checkbox-single checkbox-success">
-                                                        <input type="checkbox" checked>
-                                                        <label></label>
-                                                    </div>
-                                                </td>
-                                                <td><a href="#">Jeremy Massey</a></td>
-                                                <td><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
-                                                </td>
-                                                <td><i class="fa fa-paperclip"></i></td>
-                                                <td class="text-right mail-date">Tue, Nov 25</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="">
-                                                    <div class="checkbox">
-                                                        <input type="checkbox">
-                                                        <label></label>
-                                                    </div>
-                                                </td>
-                                                <td><a href="#">Marshall Horne</a></td>
-                                                <td><a href="#">Praesent nec nisl sed neque ornare maximus at ac enim.</a>
-                                                </td>
-                                                <td></td>
-                                                <td class="text-right mail-date">Wed, Jan 13</td>
-                                            </tr>
-                                            <tr class="active">
-                                                <td class="">
-                                                    <div class="checkbox">
-                                                        <input type="checkbox">
-                                                        <label></label>
-                                                    </div>
-                                                </td>
-                                                <td><a href="#">Grant Franco</a> <span class="label label-warning">Finance</span></td>
-                                                <td><a href="#">Etiam maximus tellus a turpis tempor mollis.</a></td>
-                                                <td></td>
-                                                <td class="text-right mail-date">Mon, Oct 19</td>
-                                            </tr>
-                                            <tr class="unread active">
-                                                <td class="">
-                                                    <div class="checkbox checkbox-single">
-                                                        <input type="checkbox" checked>
-                                                        <label></label>
-                                                    </div>
-                                                </td>
-                                                <td><a href="#">Ferdinand Meadows</a></td>
-                                                <td><a href="#">Aenean hendrerit ligula eget augue gravida semper.</a></td>
-                                                <td><i class="fa fa-paperclip"></i></td>
-                                                <td class="text-right mail-date">Sat, Aug 29</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="">
-                                                    <div class="checkbox checkbox-single">
-                                                        <input type="checkbox">
-                                                        <label></label>
-                                                    </div>
-                                                </td>
-                                                <td><a href="#">Ivor Rios</a> <span class="label label-info">Social</span>
-                                                </td>
-                                                <td><a href="#">Sed quis augue in nunc venenatis finibus.</a></td>
-                                                <td><i class="fa fa-paperclip"></i></td>
-                                                <td class="text-right mail-date">Sat, Dec 12</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="">
-                                                    <div class="checkbox">
-                                                        <input type="checkbox">
-                                                        <label></label>
-                                                    </div>
-                                                </td>
-                                                <td><a href="#">Maxwell Murphy</a></td>
-                                                <td><a href="#">Quisque eu tortor quis justo viverra cursus.</a></td>
-                                                <td></td>
-                                                <td class="text-right mail-date">Sun, May 17</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="">
-                                                    <div class="checkbox">
-                                                        <input type="checkbox">
-                                                        <label></label>
-                                                    </div>
-                                                </td>
-                                                <td><a href="#">Henry Patterson</a></td>
-                                                <td><a href="#">Aliquam nec justo interdum, ornare mi non, elementum
-														lacus.</a></td>
-                                                <td><i class="fa fa-paperclip"></i></td>
-                                                <td class="text-right mail-date">Thu, Aug 06</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="">
-                                                    <div class="checkbox">
-                                                        <input type="checkbox">
-                                                        <label></label>
-                                                    </div>
-                                                </td>
-                                                <td><a href="#">Brent Rasmussen</a></td>
-                                                <td><a href="#">Nam nec turpis sed quam tristique sodales.</a></td>
-                                                <td></td>
-                                                <td class="text-right mail-date">Sun, Nov 15</td>
-                                            </tr>
-                                            <tr class="unread">
-                                                <td class="">
-                                                    <div class="checkbox checkbox-single checkbox-success">
-                                                        <input type="checkbox" checked>
-                                                        <label></label>
-                                                    </div>
-                                                </td>
-                                                <td><a href="#">Joseph Hurley</a></td>
-                                                <td><a href="#">Nullam tempus leo id urna sagittis blandit.</a></td>
-                                                <td><i class="fa fa-paperclip"></i></td>
-                                                <td class="text-right mail-date">Sun, Aug 10</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="">
-                                                    <div class="checkbox">
-                                                        <input type="checkbox">
-                                                        <label></label>
-                                                    </div>
-                                                </td>
-                                                <td><a href="#">Alan Matthews</a></td>
-                                                <td><a href="#">Quisque quis turpis ac quam sagittis scelerisque vel ut
-														urna.</a></td>
-                                                <td></td>
-                                                <td class="text-right mail-date">Sun, Mar 27</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                            <div class="panel-footer ib-ml-ft">
-                                <i class="fa fa-eye"> </i> 6 unread
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        
+        <!-- Single pro tab review Start-->
+        <div class="single-pro-review-area mt-t-30 mg-b-15">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="product-payment-inner-st">
+                            <ul id="myTabedu1" class="tab-review-design">
+                                <li class="active"><a href="#description">Edit Basic Information</a></li>
+                                <li><a href="#reviews"> Edit Acount Information</a></li>
+                                <li><a href="#INFORMATION">Edit Social Information</a></li>
+                            </ul>
+                            <div id="myTabContent" class="tab-content custom-product-edit">
+                                <div class="product-tab-list tab-pane fade active in" id="description">
+                                    <div class="row">
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                            <div class="review-content-section">
+                                                <div id="dropzone1" class="pro-ad">
+                                                    <form action="#" class="dropzone dropzone-custom needsclick add-professors" id="demo1-upload">
+                                                        <div class="row">
+                                                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                                                <div class="form-group">
+                                                                    <input name="number" type="text" class="form-control" placeholder="Fly Zend" value="Fly Zend">
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <input type="text" class="form-control" placeholder="E104, catn-2, UK." value="E104, catn-2, UK.">
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <input type="text" class="form-control" placeholder="12/10/1993" value="12/10/1993">
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <input type="number" class="form-control" placeholder="1213" value="1213">
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <input type="number" class="form-control" placeholder="01962067309" value="01962067309">
+                                                                </div>
+                                                                <div class="form-group alert-up-pd">
+                                                                    <div class="dz-message needsclick download-custom">
+                                                                        <i class="fa fa-download edudropnone" aria-hidden="true"></i>
+                                                                        <h2 class="edudropnone">Drop image here or click to upload.</h2>
+                                                                        <p class="edudropnone"><span class="note needsclick">(This is just a demo dropzone. Selected image is <strong>not</strong> actually uploaded.)</span>
+                                                                        </p>
+                                                                        <input name="imageico" class="hd-pro-img" type="text" />
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                                                <div class="form-group">
+                                                                    <input type="text" class="form-control" placeholder="CSE" value="CSE">
+                                                                </div>
+                                                                <div class="form-group edit-ta-resize res-mg-t-15">
+                                                                    <textarea name="description">Lorem ipsum dolor sit amet of, consectetur adipiscing elitable. Vestibulum tincidunt est vitae ultrices accumsan.</textarea>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <select class="form-control">
+																		<option>Male</option>
+																		<option>Male</option>
+																		<option>Female</option>
+																	</select>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <select class="form-control">
+																			<option>Nepal</option>
+																			<option>India</option>
+																			<option>Pakistan</option>
+																			<option>Amerika</option>
+																			<option>China</option>
+																			<option>Dubai</option>
+																			<option>Nepal</option>
+																		</select>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <select class="form-control">
+																			<option>Maharastra</option>
+																			<option>Gujarat</option>
+																			<option>Maharastra</option>
+																			<option>Rajastan</option>
+																			<option>Maharastra</option>
+																			<option>Rajastan</option>
+																			<option>Gujarat</option>
+																		</select>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <select class="form-control">
+																			<option>Baroda</option>
+																			<option>Surat</option>
+																			<option>Baroda</option>
+																			<option>Navsari</option>
+																			<option>Baroda</option>
+																			<option>Surat</option>
+																		</select>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <input type="text" class="form-control" placeholder="www.uttara.com" value="www.uttara.com">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-lg-12">
+                                                                <div class="payment-adress">
+                                                                    <button type="submit" class="btn btn-primary waves-effect waves-light">Submit</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-tab-list tab-pane fade" id="reviews">
+                                    <div class="row">
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                            <div class="review-content-section">
+                                                <div class="row">
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                        <div class="devit-card-custom">
+                                                            <div class="form-group">
+                                                                <input type="text" class="form-control" placeholder="Email" value="Admin@gmail.com">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <input type="number" class="form-control" placeholder="Phone" value="01962067309">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <input type="password" class="form-control" placeholder="Password" value="#123#123">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <input type="password" class="form-control" placeholder="Confirm Password" value="#123#123">
+                                                            </div>
+                                                            <a href="#!" class="btn btn-primary waves-effect waves-light">Submit</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-tab-list tab-pane fade" id="INFORMATION">
+                                    <div class="row">
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                            <div class="review-content-section">
+												<div class="row">
+													<div class="col-lg-12">
+														<div class="devit-card-custom">
+															<div class="form-group">
+																<input type="url" class="form-control" placeholder="Facebook URL" value="http://www.facebook.com">
+															</div>
+															<div class="form-group">
+																<input type="url" class="form-control" placeholder="Twitter URL" value="http://www.twitter.com">
+															</div>
+															<div class="form-group">
+																<input type="url" class="form-control" placeholder="Google Plus" value="http://www.google-plus.com">
+															</div>
+															<div class="form-group">
+																<input type="url" class="form-control" placeholder="Linkedin URL" value="http://www.Linkedin.com">
+															</div>
+															<button type="submit" class="btn btn-primary waves-effect waves-light">Submit</button>
+														</div>
+													</div>
+												</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright-area">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="footer-copy-right">
+                            <p>Copyright © 2018. All rights reserved. Template by <a href="https://colorlib.com/wp/templates/">Colorlib</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- jquery
@@ -1353,6 +1298,22 @@
     <script src="js/calendar/moment.min.js"></script>
     <script src="js/calendar/fullcalendar.min.js"></script>
     <script src="js/calendar/fullcalendar-active.js"></script>
+    <!-- maskedinput JS
+		============================================ -->
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/masking-active.js"></script>
+    <!-- datepicker JS
+		============================================ -->
+    <script src="js/datepicker/jquery-ui.min.js"></script>
+    <script src="js/datepicker/datepicker-active.js"></script>
+    <!-- form validate JS
+		============================================ -->
+    <script src="js/form-validation/jquery.form.min.js"></script>
+    <script src="js/form-validation/jquery.validate.min.js"></script>
+    <script src="js/form-validation/form-active.js"></script>
+    <!-- dropzone JS
+		============================================ -->
+    <script src="js/dropzone/dropzone.js"></script>
     <!-- tab JS
 		============================================ -->
     <script src="js/tab.js"></script>
