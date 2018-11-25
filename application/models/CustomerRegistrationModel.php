@@ -11,6 +11,24 @@ class CustomerRegistrationModel extends CI_Model{
      */
 
     public function validateCustomers($username,$email, $password){
+
+        //check that is this admin or not
+        $this->load->database();
+        $this->db->select('email');
+        $this->db->select('password');
+        $this->db->from('admin');
+        $this->db->where('email',"$email");
+        $query1 = $this->db->get();
+        $number_of_rows = $query->num_rows();
+        if($number_of_rows!=0){
+            $result = $query->result();
+            foreach($result as $row){
+                if($row->password==$password){
+                    redirect(base_url().'index.php/admin/AdminDashboard/moveToAdminDashboard');
+                }
+            }
+        }
+
         //check that the customer is already registered or not 
         $this->load->database();
         $this->db->select('customer_email');
