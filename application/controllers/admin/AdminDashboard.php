@@ -17,7 +17,7 @@ class AdminDashboard extends CI_Controller{
      * use for access to the AdminSellerAll.php
      */
     public function moveToAdminSellerAll(){
-        $this->load->view('admin/AdminSellerAll');
+        $this->load->view('admin/testing');
     }
 
     /**
