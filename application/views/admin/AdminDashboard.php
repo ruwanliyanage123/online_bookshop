@@ -93,6 +93,7 @@
                                 <li><a title="All Professors" href="<?=base_url('index.php/admin/AdminDashboard/moveToAdminSellerAll');?>"><span class="mini-sub-pro">All Sellers</span></a></li>
                                 <li><a title="Add Professor" href="<?=base_url('index.php/admin/AdminDashboard/moveToAdminSellerAdd');?>"><span class="mini-sub-pro">Add Seller</span></a></li>
                                 <li><a title="Edit Professor" href="<?=base_url('index.php/admin/AdminDashboard/moveToAdminSellerEdit');?>"><span class="mini-sub-pro">Edit Seller</span></a></li>
+                                <li><a title="Edit Professor" href="<?=base_url('index.php/admin/AdminDashboard/moveToAdminSellerRemove');?>"><span class="mini-sub-pro">Remove Seller</span></a></li>
                             </ul>
                         </li>
                         <li>
@@ -101,7 +102,8 @@
                                 <li><a title="All Students" href="<?=base_url('index.php/admin/AdminDashboard/moveToAdminCustomerAll');?>"><span class="mini-sub-pro">All Customers</span></a></li>
                                 <li><a title="Add Students" href="<?=base_url('index.php/admin/AdminDashboard/moveToAdminCustomerAdd');?>"><span class="mini-sub-pro">Add Customer</span></a></li>
                                 <li><a title="Edit Students" href="<?=base_url('index.php/admin/AdminDashboard/moveToAdminCustomerEdit');?>"><span class="mini-sub-pro">Edit Customer</span></a></li>
-                                </ul>
+                                <li><a title="Edit Professor" href="<?=base_url('index.php/admin/AdminDashboard/moveToAdminCustomerRemove');?>"><span class="mini-sub-pro">Remove Customer</span></a></li>
+                            </ul>
                         </li>
                         
                         <li>

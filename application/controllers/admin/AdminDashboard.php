@@ -17,7 +17,7 @@ class AdminDashboard extends CI_Controller{
      * use for access to the AdminSellerAll.php
      */
     public function moveToAdminSellerAll(){
-        $this->load->view('admin/testing');
+        $this->load->view('admin/AdminSellerAll');
     }
 
     /**
@@ -34,6 +34,14 @@ class AdminDashboard extends CI_Controller{
         $this->load->view('admin/AdminSellerEdit');
     }
 
+    /**
+     * use for access to the AdminSellerRemove.php
+     */
+    public function moveToAdminSellerRemove(){
+        $this->load->view('admin/AdminSellerRemove');
+    }
+
+    
     /**
      * use for access to the AdminCustomerAll.php
      */
@@ -53,6 +61,13 @@ class AdminDashboard extends CI_Controller{
      */
     public function moveToAdminCustomerEdit(){
         $this->load->view('admin/AdminCustomerEdit');
+    }
+
+    /**
+     * use for access to the AdminCustomerRemove.php
+     */
+    public function moveToAdminCustomerRemove(){
+        $this->load->view('admin/AdminCustomerRemove');
     }
 
     /**
