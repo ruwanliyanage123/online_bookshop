@@ -67,11 +67,10 @@
 		============================================ -->
     <script src="<?php echo base_url(); ?>/assets/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
-
 <body>
     <!--[if lt IE 8]>
 		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-	<![endif]-->
+    <![endif]-->
     
     <!-- Start Left menu area -->
     <div class="left-sidebar-pro">
@@ -92,6 +91,7 @@
                                 <li><a title="All Professors" href="<?=base_url('index.php/admin/AdminDashboard/moveToAdminSellerAll');?>"><span class="mini-sub-pro">All Sellers</span></a></li>
                                 <li><a title="Add Professor" href="<?=base_url('index.php/admin/AdminDashboard/moveToAdminSellerAdd');?>"><span class="mini-sub-pro">Add Seller</span></a></li>
                                 <li><a title="Edit Professor" href="<?=base_url('index.php/admin/AdminDashboard/moveToAdminSellerEdit');?>"><span class="mini-sub-pro">Edit Seller</span></a></li>
+                                <li><a title="Edit Professor" href="<?=base_url('index.php/admin/AdminDashboard/moveToAdminSellerRemove');?>"><span class="mini-sub-pro">Remove Seller</span></a></li>
                             </ul>
                         </li>
                         <li>
@@ -100,7 +100,8 @@
                                 <li><a title="All Students" href="<?=base_url('index.php/admin/AdminDashboard/moveToAdminCustomerAll');?>"><span class="mini-sub-pro">All Customers</span></a></li>
                                 <li><a title="Add Students" href="<?=base_url('index.php/admin/AdminDashboard/moveToAdminCustomerAdd');?>"><span class="mini-sub-pro">Add Customer</span></a></li>
                                 <li><a title="Edit Students" href="<?=base_url('index.php/admin/AdminDashboard/moveToAdminCustomerEdit');?>"><span class="mini-sub-pro">Edit Customer</span></a></li>
-                                </ul>
+                                <li><a title="Edit Professor" href="<?=base_url('index.php/admin/AdminDashboard/moveToAdminCustomerRemove');?>"><span class="mini-sub-pro">Remove Customer</span></a></li>
+                            </ul>
                         </li>
                         
                         <li>
@@ -130,7 +131,6 @@
     </div>
     <!-- End Left menu area -->
 
-    
     <!-- Start Welcome area -->
     <div class="all-content-wrapper">
         <div class="container-fluid">
@@ -158,10 +158,9 @@
                                     </div>
                                     <div class="col-lg-6 col-md-7 col-sm-6 col-xs-12">
                                         
+                                      
                                     </div>
-
-
-<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                                    <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
                                         <div class="header-right-info">
                                             <ul class="nav navbar-nav mai-top-nav header-right-menu">
                                                 <li class="nav-item dropdown">
@@ -174,7 +173,7 @@
                                                             <li>
                                                                 <a href="#">
                                                                     <div class="message-img">
-                                                                        <img src="<?php echo base_url(); ?>/assets/img/notification/2.jpg" alt="">
+                                                                        <img src="img/contact/1.jpg" alt="">
                                                                     </div>
                                                                     <div class="message-content">
                                                                         <span class="message-date">16 Sept</span>
@@ -186,7 +185,7 @@
                                                             <li>
                                                                 <a href="#">
                                                                     <div class="message-img">
-                                                                        <img src="<?php echo base_url(); ?>/assets/img/notification/2.jpg" alt="">
+                                                                        <img src="img/contact/4.jpg" alt="">
                                                                     </div>
                                                                     <div class="message-content">
                                                                         <span class="message-date">16 Sept</span>
@@ -198,7 +197,7 @@
                                                             <li>
                                                                 <a href="#">
                                                                     <div class="message-img">
-                                                                        <img src="<?php echo base_url(); ?>/assets/img/notification/2.jpg" alt="">
+                                                                        <img src="img/contact/3.jpg" alt="">
                                                                     </div>
                                                                     <div class="message-content">
                                                                         <span class="message-date">16 Sept</span>
@@ -210,7 +209,7 @@
                                                             <li>
                                                                 <a href="#">
                                                                     <div class="message-img">
-                                                                        <img src="<?php echo base_url(); ?>/assets/img/notification/2.jpg" alt="">
+                                                                        <img src="img/contact/2.jpg" alt="">
                                                                     </div>
                                                                     <div class="message-content">
                                                                         <span class="message-date">16 Sept</span>
@@ -287,132 +286,109 @@
                                                 </li>
                                                 <li class="nav-item">
                                                     <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle">
-															<img src="<?php echo base_url(); ?>/assets/img/product/pro4.jpg" alt="" />
+															<img src="img/product/pro4.jpg" alt="" />
 															<span class="admin-name">Prof.Anderson</span>
 															<i class="fa fa-angle-down edu-icon edu-down-arrow"></i>
 														</a>
                                                     <ul role="menu" class="dropdown-header-top author-log dropdown-menu animated zoomIn">
-                                                        
-                                                        <li><a href="#"><span class="edu-icon edu-user-rounded author-log-ic"></span>My Profile</a>
-                                                        </li>
-                                                        
-                                                        <li><a href="#"><span class="edu-icon edu-settings author-log-ic"></span>Settings</a>
+                                                        <li><a href="#"><span class="edu-icon edu-home-admin author-log-ic"></span>My Account</a>
                                                         </li>
                                                         <li><a href="#"><span class="edu-icon edu-locked author-log-ic"></span>Log Out</a>
                                                         </li>
                                                     </ul>
                                                 </li>
-                                                
+                                                  
                                             </ul>
                                         </div>
                                     </div>
-
-
-
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-                      
+       
         </div>
         <!-- Single pro tab review Start-->
+
         <!--start the application-->
         <div class="single-pro-review-area mt-t-30 mg-b-15">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <div class="product-payment-inner-st">
-                                
-                                <div id="myTabContent" class="tab-content custom-product-edit">
-                                    <div class="product-tab-list tab-pane fade active in" id="description">
-                                        <div class="row">
-                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                                <div class="review-content-section">
-                                                    <div id="dropzone1" class="pro-ad">
-                                                        <form action="/upload" class="dropzone dropzone-custom needsclick add-professors" id="demo1-upload">
-                                                            <div class="row">
-                                                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                                                    <div class="form-group">
-                                                                        <input name="isbn" type="text" class="form-control" placeholder="ISBN">
-                                                                    </div>
-                                                                    <div class="form-group">
-                                                                        <input name="author" type="text" class="form-control" placeholder="Author">
-                                                                    </div>
-                                                                    <div class="form-group">
-                                                                        <input name="trtanslator" type="text" class="form-control" placeholder="Translator">
-                                                                    </div>
-                                                                    
-                                                                    <div class="form-group alert-up-pd">
-                                                                        <div class="dz-message needsclick download-custom">
-                                                                            <i class="fa fa-download edudropnone" aria-hidden="true"></i>
-                                                                            <h2 class="edudropnone">Drop image here or click to upload.</h2>
-                                                                            
-                                                                            <input name="imageico" class="hd-pro-img" type="text" />
-                                                                        </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="product-payment-inner-st">
+                            
+                            <div id="myTabContent" class="tab-content custom-product-edit">
+                                <div class="product-tab-list tab-pane fade active in" id="description">
+                                    <div class="row">
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                            <div class="review-content-section">
+                                                <div id="dropzone1" class="pro-ad">
+                                                    <form action="/upload" class="dropzone dropzone-custom needsclick add-professors" id="demo1-upload">
+                                                        <div class="row">
+                                                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                                                <div class="form-group">
+                                                                    <input name="firstname" type="text" class="form-control" placeholder="Full Name">
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <input name="address" type="text" class="form-control" placeholder="Address">
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <input name="mobileno" type="number" class="form-control" placeholder="Mobile no.">
+                                                                </div>
+                                                                
+                                                                <div class="form-group alert-up-pd">
+                                                                    <div class="dz-message needsclick download-custom">
+                                                                        <i class="fa fa-download edudropnone" aria-hidden="true"></i>
+                                                                        <h2 class="edudropnone">Drop image here or click to upload.</h2>
+                                                                        <p class="edudropnone"><span class="note needsclick">(This is just a demo dropzone. Selected image is <strong>not</strong> actually uploaded.)</span>
+                                                                        </p>
+                                                                        <input name="imageico" class="hd-pro-img" type="text" />
                                                                     </div>
                                                                 </div>
-                                                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-    
-                                                                    <div class="form-group">
-                                                                        <input type="text" class="form-control" name="publisher" placeholder="Publisher">
-                                                                    </div>
-                                                                    
-                                                                    <div class="form-group">
-                                                                        <input name="price" type="text" class="form-control" placeholder="Price">
-                                                                    </div>
-                                                                    <div class="form-group">
-                                                                        <input name="quantity" type="text" class="form-control" placeholder="Quantity">
-                                                                    </div>
-                                                                    <div class="form-group">
-                                                                        <select name="country" class="form-control">
-                                                                            <option value="none" selected="" disabled="">Select Category</option>
-                                                                            <option value="0">INFORMATION TECHNOLOGY</option>
-                                                                            <option value="1">BUSINESS</option>
-                                                                            <option value="2">BIOGRAPHIES</option>
-                                                                            <option value="3">ARTS AND MUSIC</option>
-                                                                            <option value="4">KIDS</option>
-                                                                            <option value="5">NOVELS</option>
-                                                                            <option value="6">SCHOOL EDUCATIONAL</option>
-                                                                            <option value="7">HIGHER EDUCATIONAL</option>
-                                                                            <option value="8">MEDICAL</option>
-                                                                            <option value="9">ENGLISH</option>
-                                                                            <option value="10">TAMIL</option>
+                                                            </div>
+                                                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 
-                                                                        </select>
-                                                                    </div>
-                                                                    <div class="form-group res-mg-t-15">
-                                                                        <textarea name="description" placeholder="Description"></textarea>
+                                                                <div class="form-group">
+                                                                        <input type="text" class="form-control" name="email" placeholder="Email">
                                                                     </div>
                                                                     
-                                                                </div>
-                                                            </div>
-                                                            <div class="row">
-                                                                <div class="col-lg-12">
-                                                                    <div class="payment-adress">
-                                                                        <button type="submit" class="btn btn-primary waves-effect waves-light">Submit</button>
+                                                                    <div class="form-group">
+                                                                        <input name="password" type="password" class="form-control" placeholder="Password">
                                                                     </div>
+                                                                    <div class="form-group">
+                                                                        <input name="confarmpassword" type="password" class="form-control" placeholder="Confirm Password">
+                                                                </div>
+                                                                
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-lg-12">
+                                                                <div class="payment-adress">
+                                                                    <button type="submit" class="btn btn-primary waves-effect waves-light">Submit</button>
                                                                 </div>
                                                             </div>
-                                                        </form>
-                                                    </div>
+                                                        </div>
+                                                    </form>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    
-                                    
                                 </div>
+                                
+                                
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-    
-            <!--end the application-->
+        </div>
 
-    <!-- jquery
+        <!--end the application-->
+        
+    </div>
+
+   <!-- jquery
 		============================================ -->
         <script src="<?php echo base_url(); ?>/assets/js/vendor/jquery-1.12.4.min.js"></script>
     <!-- bootstrap JS
@@ -479,6 +455,5 @@
 		============================================ -->
     <script src="<?php echo base_url(); ?>/assets/js/tawk-chat.js"></script>
 </body>
-
 
 </html>
