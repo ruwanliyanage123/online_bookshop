@@ -10,25 +10,9 @@ class CustomerRegistrationModel extends CI_Model{
      * make a session for the future activities
      */
 
-    public function validateCustomers($username,$email, $password){
+    public function pvalidateCustomers($username,$email, $password){
 
-        //check that is this admin or not
-        $this->load->database();
-        $this->db->select('email');
-        $this->db->select('password');
-        $this->db->from('admin');
-        $this->db->where('email',"$email");
-        $query1 = $this->db->get();
-        $number_of_rows = $query->num_rows();
-        if($number_of_rows!=0){
-            $result = $query->result();
-            foreach($result as $row){
-                if($row->password==$password){
-                    redirect(base_url().'index.php/admin/AdminDashboard/moveToAdminDashboard');
-                }
-            }
-        }
-
+        
         //check that the customer is already registered or not 
         $this->load->database();
         $this->db->select('customer_email');
@@ -80,44 +64,68 @@ class CustomerRegistrationModel extends CI_Model{
      * hence move to the registration page
      */
     public function checkCustomers($Email, $Password){
+
+        //check that is this admin or not
         $this->load->database();
-        $this->db->select('customer_email');
-        $this->db->select('customer_password');
-        $this->db->from('customer');
-        $this->db->where('customer_email',$Email);
-
-        $query = $this->db->get();
-        $row_numbers = $query->num_rows();
-
-
-        if($row_numbers>0){
-            $result = $query->result();
-            foreach($result as $row){
+        $this->db->select('email');
+        $this->db->select('password');
+        $this->db->from('admin');
+        $this->db->where('email',$Email);
+        $query1 = $this->db->get();
+        $number_of_rows = $query1->num_rows();
         
-               if($Password==$row->customer_password){
-                   
-                $dat = array(
-                
-                    'flagForMessage2' => true,  //controll show already exists account message in backtracking
-                    'flagForMessage1' => true,//controll show registration successfull message in backtracking
-                    'flagForSignUp'   => true,//for prevent the insert to sign up in backtracking
-                    'noSignInToSignUp'=> true,  //for prevent the insert to sign up from sign in page
-                    'flagForSignIn'   => true,//for prevent the insert to sign in in backtracking
-                    'login'           => true,
-                );
-                    
-                $this->session->set_userdata($dat);
-                redirect(base_url().'index.php/customer/CustomerRegistrationController/moveToCustomerDashboard');
-               } 
-               else{
-                
-                redirect(base_url().'index.php/customer/CustomerRegistrationController/messageForInvalidPassword');
-               }
+        if($number_of_rows!=0){
+           
+            $result1 = $query1->result();
+            foreach($result1 as $row){
+                if(md5($row->password)==$Password){
+                    redirect(base_url().'index.php/admin/AdminDashboard/moveToAdminDashboard');
+                }
             }
         }
         else{
-            redirect(base_url().'index.php/customer/CustomerRegistrationController/messageForLoginUnsuccess');
+
+            $this->load->database();
+            $this->db->select('customer_email');
+            $this->db->select('customer_password');
+            $this->db->from('customer');
+            $this->db->where('customer_email',$Email);
+    
+            $query = $this->db->get();
+            $row_numbers = $query->num_rows();
+    
+    
+            if($row_numbers>0){
+                $result = $query->result();
+                foreach($result as $row){
+            
+                   if($Password==$row->customer_password){
+                       
+                    $dat = array(
+                    
+                        'flagForMessage2' => true,  //controll show already exists account message in backtracking
+                        'flagForMessage1' => true,//controll show registration successfull message in backtracking
+                        'flagForSignUp'   => true,//for prevent the insert to sign up in backtracking
+                        'noSignInToSignUp'=> true,  //for prevent the insert to sign up from sign in page
+                        'flagForSignIn'   => true,//for prevent the insert to sign in in backtracking
+                        'login'           => true,
+                    );
+                        
+                    $this->session->set_userdata($dat);
+                    redirect(base_url().'index.php/customer/CustomerRegistrationController/moveToCustomerDashboard');
+                   } 
+                   else{
+                    
+                    redirect(base_url().'index.php/customer/CustomerRegistrationController/messageForInvalidPassword');
+                   }
+                }
+            }
+            else{
+                redirect(base_url().'index.php/customer/CustomerRegistrationController/messageForLoginUnsuccess');
+            }
+            
         }
+
     }
 }
 ?>
