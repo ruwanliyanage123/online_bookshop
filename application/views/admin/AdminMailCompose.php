@@ -2,7 +2,7 @@
 <html class="no-js" lang="en">
 
 <head>
-<meta charset="utf-8">
+    <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Siyapatha Publications</title>
     <meta name="description" content="">
