@@ -340,7 +340,7 @@
                                                                 </div>
                                                                 
                                                                 <div class="form-group">
-																	<label for="text">Kies een profiel foto:</label><br>
+																	<label for="text">Enter a picture For book:</label><br>
 																	<input type="file" name="userfile"  class="btn btn-default btn-file" />
 																</div>
                                                             </div>

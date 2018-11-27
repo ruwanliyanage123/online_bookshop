@@ -324,40 +324,41 @@
                                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                             <div class="review-content-section">
                                                 <div id="dropzone1" class="pro-ad">
-                                                    <form action="/upload" class="dropzone dropzone-custom needsclick add-professors" id="demo1-upload">
+
+                                                <!--start of the book regiatration form-->
+												<?php echo form_open_multipart('/admin/AdminBookController/create');?>
                                                         <div class="row">
                                                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                                                 <div class="form-group">
-                                                                    <input name="firstname" type="text" class="form-control" placeholder="Full Name">
+                                                                    <input name="ISBN" type="text" class="form-control" placeholder="ISBN">
                                                                 </div>
                                                                 <div class="form-group">
-                                                                    <input name="address" type="text" class="form-control" placeholder="Address">
+                                                                    <input name="author" type="text" class="form-control" placeholder="Author">
                                                                 </div>
                                                                 <div class="form-group">
-                                                                    <input name="mobileno" type="number" class="form-control" placeholder="Mobile no.">
+                                                                    <input name="translator" type="text" class="form-control" placeholder="Translator">
                                                                 </div>
                                                                 
-                                                                <div class="form-group alert-up-pd">
-                                                                    <div class="dz-message needsclick download-custom">
-                                                                        <i class="fa fa-download edudropnone" aria-hidden="true"></i>
-                                                                        <h2 class="edudropnone">Drop image here or click to upload.</h2>
-                                                                        <p class="edudropnone"><span class="note needsclick">(This is just a demo dropzone. Selected image is <strong>not</strong> actually uploaded.)</span>
-                                                                        </p>
-                                                                        <input name="imageico" class="hd-pro-img" type="text" />
-                                                                    </div>
-                                                                </div>
+                                                                <div class="form-group">
+																	<label for="text">Enter for a picture:</label><br>
+																	<input type="file" name="userfile"  class="btn btn-default btn-file" />
+																</div>
                                                             </div>
                                                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 
                                                                 <div class="form-group">
-                                                                        <input type="text" class="form-control" name="email" placeholder="Email">
+                                                                        <input type="text" class="form-control" name="publisher" placeholder="Publisher">
                                                                     </div>
                                                                     
                                                                     <div class="form-group">
-                                                                        <input name="password" type="password" class="form-control" placeholder="Password">
+                                                                        <input name="price" type="text" class="form-control" placeholder="Price">
                                                                     </div>
                                                                     <div class="form-group">
-                                                                        <input name="confarmpassword" type="password" class="form-control" placeholder="Confirm Password">
+                                                                        <input name="quantiry" type="text" class="form-control" placeholder="Quantity">
+                                                                    </div>
+                                                                    
+                                                                <div class="form-group res-mg-t-15">
+                                                                    <textarea name="description" placeholder="Description"></textarea>
                                                                 </div>
                                                                 
                                                             </div>
@@ -370,6 +371,8 @@
                                                             </div>
                                                         </div>
                                                     </form>
+
+                                                <!--end of the book regiatration form-->
                                                 </div>
                                             </div>
                                         </div>
@@ -444,9 +447,9 @@
     <script src="<?php echo base_url(); ?>/assets/js/calendar/fullcalendar-active.js"></script>
     <!-- plugins JS
         ============================================ -->
-     
-    <script src="<?php echo base_url(); ?>/assets/js/dropzone/dropzone.js"></script>    
-
+    <!-- 
+    <script src="<?php/* echo base_url();*/ ?>/assets/js/dropzone/dropzone.js"></script>    
+    -->
     <script src="<?php echo base_url(); ?>/assets/js/plugins.js"></script>
     <!-- main JS
 		============================================ -->
