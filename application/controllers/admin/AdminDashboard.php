@@ -81,7 +81,7 @@ class AdminDashboard extends CI_Controller{
      * use for access to the AdminBookAdd.php
      */
     public function moveToAdminBookAdd(){
-        redirect(base_url('/index.php/admin/AdminBookController/AddBookForDatabase'));
+        $this->load->view('admin/AdminBookAdd');
     }
 
     /**
