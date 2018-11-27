@@ -5,6 +5,9 @@ class AdminSellerController extends CI_Controller{
         $this->load->helper('url');
     }
 
+    /**
+     * this function for the add the data for the seller database
+     */
     public function create(){
        
         $this->load->helper('form');
@@ -23,13 +26,13 @@ class AdminSellerController extends CI_Controller{
         $this->load->library('upload', $config);
 
         if (!$this->upload->do_upload('userfile')){
-            // If the upload fails
             echo $this->upload->display_errors('<p>', '</p>');
-        }else{
-            // Pass the full path and post data to the set_newstudent model
-            $this->load->model('admin/AdminBookModel');
-            $this->AdminBookModel->set_newstudent($this->upload->data('full_path'),$this->input->post());
-            //$this->load->view('students/success');
+        }
+        else{
+           
+            $this->load->model('admin/AdminSellerModel');
+            $this->AdminSellerModel->addSellerForDatabase($this->upload->data('full_path'),$this->input->post());
+            
         }
     }
 }

@@ -9,20 +9,20 @@ class AdminSellerModel extends CI_Model{
  * this function is use for adding books for the database
  */
     public function addSellerForDatabase($path,$post){ 
-        
+       
         $data = array(
-            'ISBN'          =>$post['ISBN'],
-            'author'        =>$post['author'],
-            'translator'    =>$post['translator'],
+            'name'          =>$post['name'],
+            'nic'           =>$post['nic'],
+            'address'       =>$post['address'],
+            'email'         =>$post['email'],
+            'moble'         =>$post['moble'],
+            'facebook'      =>$post['facebook'],
+            'bank_account'  =>$post['bank_account'],
+            'password'      =>$post['password'],
             'image'         =>$path, 
-            'publisher'     =>$post['publisher'],
-            'price'         =>$post['price'],
-            'quantiry'      =>$post['quantiry'],
-            'category'      =>$post['category'],
-            'description'   =>$post['description'],
         );
 
-        return $this->db->insert('book', $data);
+        return $this->db->insert('seller', $data);
     }
 
 }
