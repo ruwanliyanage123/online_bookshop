@@ -326,12 +326,12 @@
                                                 <div id="dropzone1" class="pro-ad">
 
                                                 <!--start of the book regiatration form-->
-												<?php echo form_open_multipart('/admin/AdminSellerController/create');?>
+												<?php echo form_open_multipart('/admin/AdminCustomerController/create');?>
                                                         <div class="row">
-
+                                                        
                                                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                                                 <div class="form-group">
-                                                                    <input name="name" type="text" class="form-control" placeholder="name">
+                                                                    <input name="customer_name" type="text" class="form-control" placeholder="name">
                                                                 </div>
                                                                 
                                                                 <div class="form-group">
@@ -342,11 +342,11 @@
                                                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 
                                                                 <div class="form-group">
-                                                                    <input name="email" type="text" class="form-control" placeholder="email">
+                                                                    <input name="customer_email" type="text" class="form-control" placeholder="email">
                                                                 </div>
                                                                 
                                                                 <div class="form-group">
-                                                                    <input name="password" type="text" class="form-control" placeholder="password">
+                                                                    <input name="customer_password" type="text" class="form-control" placeholder="password">
                                                                 </div>
                                                     
                                                             </div>

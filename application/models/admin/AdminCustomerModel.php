@@ -9,10 +9,10 @@ class AdminCustomerModel extends CI_Model{
  * this function is use for adding customers for the database
  */
 
-    public function addSellerForDatabase($path,$post){ 
+    public function AddCustomerForDatabase($path,$post){ 
        
         $data = array(
-            'customer_id'       =>$post['customer_id'],
+            
             'customer_name'     =>$post['customer_name'],
             'customer_email'    =>$post['customer_email'],
             'customer_password' =>$post['customer_password'],

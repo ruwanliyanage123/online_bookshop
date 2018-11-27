@@ -31,7 +31,7 @@ class AdminCustomerController extends CI_Controller{
         else{
            
             $this->load->model('admin/AdminCustomerModel');
-            $this->AdminSellerModel->addSellerForDatabase($this->upload->data('full_path'),$this->input->post());
+            $this->AdminCustomerModel->AddCustomerForDatabase($this->upload->data('full_path'),$this->input->post());
             
         }
     }
