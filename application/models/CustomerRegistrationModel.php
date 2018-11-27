@@ -10,7 +10,7 @@ class CustomerRegistrationModel extends CI_Model{
      * make a session for the future activities
      */
 
-    public function pvalidateCustomers($username,$email, $password){
+    public function validateCustomers($username,$email, $password){
 
         
         //check that the customer is already registered or not 
