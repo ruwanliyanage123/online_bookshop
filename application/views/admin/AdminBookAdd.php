@@ -330,7 +330,7 @@
                                                         <div class="row">
                                                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                                                 <div class="form-group">
-                                                                    <input name="isbn" type="text" class="form-control" placeholder="ISBN">
+                                                                    <input name="ISBN" type="text" class="form-control" placeholder="ISBN">
                                                                 </div>
                                                                 <div class="form-group">
                                                                     <input name="author" type="text" class="form-control" placeholder="Author">
@@ -354,10 +354,10 @@
                                                                         <input name="price" type="text" class="form-control" placeholder="Price">
                                                                     </div>
                                                                     <div class="form-group">
-                                                                        <input name="quantity" type="text" class="form-control" placeholder="Quantity">
+                                                                        <input name="quantiry" type="text" class="form-control" placeholder="Quantity">
                                                                     </div>
                                                                     <div class="form-group">
-                                                                        <select name="country" class="form-control">
+                                                                        <select name="category" class="form-control">
 																			<option value="none" selected="" disabled="">Select Category</option>
 																			<option value="0">INFORMATION TECHNOLOGY</option>
 																			<option value="1">BUSINESS</option>

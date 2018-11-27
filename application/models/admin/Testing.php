@@ -10,20 +10,19 @@ class Testing extends CI_Model{
     }
 
     public function set_newstudent($path,$post){ 
-        
+       /* $data1 = array( 
+            'naam' => $post['naam'], 
+            'voornaam' => $post['voornaam'], 
+            'text' => $post['text'], 
+            'picture'=>$path 
+        ); */
+    
         $data = array(
-            'ISBN' =>$post['ISBN'],
-            'author' =>$post['author'],
-            'translator' =>$post['translator'],
-            'image'=>$path, 
-            'publisher' =>$post['publisher'],
-            'price' =>$post['price'],
-            'quantiry' =>$post['quantiry'],
-            'category' =>$post['category'],
-            'description' =>$post['description'],
+            'image_ID' =>$post['naam'],
+            'file_name'=>$path 
         );
 
-        return $this->db->insert('book', $data);
+        return $this->db->insert('tb_image', $data);
     }
 
 }

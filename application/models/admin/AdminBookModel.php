@@ -36,15 +36,15 @@ public function AddbookForDatabase( ){
     public function set_newstudent($path,$post){ 
         
         $data = array(
-            'ISBN' =>$post['ISBN'],
-            'author' =>$post['author'],
-            'translator' =>$post['translator'],
-            'image'=>$path, 
-            'publisher' =>$post['publisher'],
-            'price' =>$post['price'],
-            'quantiry' =>$post['quantiry'],
-            'category' =>$post['category'],
-            'description' =>$post['description'],
+            'ISBN'          =>$post['ISBN'],
+            'author'        =>$post['author'],
+            'translator'    =>$post['translator'],
+            'image'         =>$path, 
+            'publisher'     =>$post['publisher'],
+            'price'         =>$post['price'],
+            'quantiry'      =>$post['quantiry'],
+            'category'      =>$post['category'],
+            'description'   =>$post['description'],
         );
 
         return $this->db->insert('book', $data);
