@@ -31,53 +31,24 @@ public function AddbookForDatabase( ){
 
         //$this->db->set($add_book);
        // $this->db->insert($this->db->dbprefix.'book');
-}
-
-    public function create(){
-        echo"this is the ";
-       
-    $this->load->helper('form');
-    $this->load->library('form_validation');
-    $data['title'] = 'Create a new Student';
-
-
-    $this->form_validation->set_rules('naam', 'Naam', 'required');
-    $this->form_validation->set_rules('voornaam', 'Voornaam', 'required');
-    $this->form_validation->set_rules('text', 'Text', 'required');
-
-    if ($this->form_validation->run() === FALSE){
-        $this->load->view('templates/header', $data);
-        $this->load->view('students/create');
-        $this->load->view('templates/footer');
     }
-    else{
-        // Upload the files then pass data to your model
+
+    public function set_newstudent($path,$post){ 
         
-        $config = array(
-            'upload_path'    => 'assets/images/uploaded/',
-            'allowed_types'  => 'jpg|jpeg|png|bmp',
-            'max_size'       =>0,
-            'filename'       =>url_title($this->input->post('file')),
-            'encrypt_name' =>true                   
+        $data = array(
+            'ISBN' =>$post['ISBN'],
+            'author' =>$post['author'],
+            'translator' =>$post['translator'],
+            'image'=>$path, 
+            'publisher' =>$post['publisher'],
+            'price' =>$post['price'],
+            'quantiry' =>$post['quantiry'],
+            'category' =>$post['category'],
+            'description' =>$post['description'],
         );
 
-
-        $this->load->library('upload', $config);
-
-        if (!$this->upload->do_upload('userfile')){
-            // If the upload fails
-           
-            echo $this->upload->display_errors('<p>', '</p>');
-        }else{
-            // Pass the full path and post data to the set_newstudent model
-            echo"ele part";
-            $this->load->model('admin/Testing');
-            $this->Testing->set_newstudent($this->upload->data('full_path'),$this->input->post());
-            //$this->load->view('students/success');
-        }
+        return $this->db->insert('book', $data);
     }
-    
-}
 
 }
 
