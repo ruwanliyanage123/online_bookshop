@@ -10,8 +10,6 @@ class AdminBookController extends CI_Controller{
      */
     public function AddBookForDatabase(){
         $this->load->model('admin/AdminBookModel');
-       // $file_name = $_FILES['image']['name'];
-        //$file_name = $_FILES['image']['name'];
         $image = $_FILES['image']['name'];
          
 
