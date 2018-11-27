@@ -328,15 +328,16 @@
                                                 <!--start of the book regiatration form-->
 												<?php echo form_open_multipart('/admin/AdminBookController/create');?>
                                                         <div class="row">
+
                                                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                                                 <div class="form-group">
-                                                                    <input name="ISBN" type="text" class="form-control" placeholder="ISBN">
+                                                                    <input name="name" type="text" class="form-control" placeholder="name">
                                                                 </div>
                                                                 <div class="form-group">
-                                                                    <input name="author" type="text" class="form-control" placeholder="Author">
+                                                                    <input name="nic" type="text" class="form-control" placeholder="nic">
                                                                 </div>
                                                                 <div class="form-group">
-                                                                    <input name="translator" type="text" class="form-control" placeholder="Translator">
+                                                                    <input name="address" type="text" class="form-control" placeholder="address">
                                                                 </div>
                                                                 
                                                                 <div class="form-group">
@@ -347,19 +348,23 @@
                                                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 
                                                                 <div class="form-group">
-                                                                        <input type="text" class="form-control" name="publisher" placeholder="Publisher">
+                                                                        <input type="text" class="form-control" name="moble" placeholder="moble">
                                                                     </div>
                                                                     
                                                                     <div class="form-group">
-                                                                        <input name="price" type="text" class="form-control" placeholder="Price">
+                                                                        <input name="facebook" type="text" class="form-control" placeholder="facebook">
                                                                     </div>
                                                                     <div class="form-group">
-                                                                        <input name="quantiry" type="text" class="form-control" placeholder="Quantity">
+                                                                        <input name="email" type="text" class="form-control" placeholder="email">
                                                                     </div>
                                                                     
-                                                                <div class="form-group res-mg-t-15">
-                                                                    <textarea name="description" placeholder="Description"></textarea>
-                                                                </div>
+                                                                    <div class="form-group">
+                                                                        <input name="password" type="text" class="form-control" placeholder="password">
+                                                                    </div>
+                                                    
+                                                                    <div class="form-group">
+                                                                        <input name="bank_account" type="text" class="form-control" placeholder="bank_account">
+                                                                    </div>
                                                                 
                                                             </div>
                                                         </div>
