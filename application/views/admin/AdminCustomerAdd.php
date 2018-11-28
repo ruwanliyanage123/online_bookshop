@@ -293,7 +293,7 @@
                                                     <ul role="menu" class="dropdown-header-top author-log dropdown-menu animated zoomIn">
                                                         <li><a href="#"><span class="edu-icon edu-home-admin author-log-ic"></span>My Account</a>
                                                         </li>
-                                                        <li><a href="#"><span class="edu-icon edu-locked author-log-ic"></span>Log Out</a>
+                                                        <li><a href="<?=base_url('index.php/admin/AdminDashboard/logout');?>"><span class="edu-icon edu-locked author-log-ic"></span>Log Out</a>
                                                         </li>
                                                     </ul>
                                                 </li>

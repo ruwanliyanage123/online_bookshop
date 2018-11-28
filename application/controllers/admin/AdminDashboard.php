@@ -7,6 +7,14 @@ class AdminDashboard extends CI_Controller{
     }
 
     /**
+     * this funcitoin is used for logout
+     */
+    public function logout(){
+        $this->session->sess_destroy();
+        redirect(base_url().'index.php/commonDashboard/index');
+    }
+
+    /**
      * use for access to the AdminDashboard.php
      */
     public function moveToAdminDashboard(){

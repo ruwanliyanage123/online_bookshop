@@ -107,8 +107,8 @@
                         <li>
                             <a class="has-arrow" href="all-courses.html" aria-expanded="false"><span class="educate-icon educate-library icon-wrap"></span> <span class="mini-click-non">Books</span></a>
                             <ul class="submenu-angle" aria-expanded="false">
-                                <li><a title="All Students" href="<?=base_url('index.php/admin/AdminBookController/find');?>"><span class="mini-sub-pro">All Books</span></a></li>
-                                <li><a title="All Library" href="<?=base_url('index.php/admin/AdminDashboard/moveToAdminBookAdd');?>"><span class="mini-sub-pro">Add Book</span></a></li>
+                                <li><a title="All Students" href="<?=base_url('index.php/admin/AdminDashboard/moveToAdminBookAll');?>"><span class="mini-sub-pro">All Books</span></a></li>
+                                <li><a title="All Library" href=" <?=base_url('index.php/admin/AdminDashboard/moveToAdminBookAdd');?>"><span class="mini-sub-pro">Add Book</span></a></li>
                                 <li><a title="Add Library" href="<?=base_url('index.php/admin/AdminDashboard/moveToAdminBookEdit');?>"><span class="mini-sub-pro">Edit Book</span></a></li>
                                 <li><a title="Edit Library" href="<?=base_url('index.php/admin/AdminDashboard/moveToAdminBookRemove');?>"><span class="mini-sub-pro">Remove Book</span></a></li>
                             </ul>
@@ -293,7 +293,7 @@
                                                     <ul role="menu" class="dropdown-header-top author-log dropdown-menu animated zoomIn">
                                                         <li><a href="#"><span class="edu-icon edu-home-admin author-log-ic"></span>My Account</a>
                                                         </li>
-                                                        <li><a href="#"><span class="edu-icon edu-locked author-log-ic"></span>Log Out</a>
+                                                        <li><a href="<?=base_url('index.php/admin/AdminDashboard/logout');?>"> <span class="edu-icon edu-locked author-log-ic"></span>Log Out</a>
                                                         </li>
                                                     </ul>
                                                 </li>

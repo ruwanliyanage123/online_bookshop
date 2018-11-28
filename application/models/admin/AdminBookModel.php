@@ -22,8 +22,8 @@ class AdminBookModel extends CI_Model{
             'description'   =>$post['description'],
         );
 
-        return $this->db->insert('book', $data);
-        $this->load->view('admin/AdminCustomerAdd');
+        $this->db->insert('book', $data);
+        $this->load->view('admin/AdminBookAdd');
     }
 
 }

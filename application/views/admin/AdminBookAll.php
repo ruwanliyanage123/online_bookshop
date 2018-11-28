@@ -293,7 +293,7 @@
                                                     <ul role="menu" class="dropdown-header-top author-log dropdown-menu animated zoomIn">
                                                         <li><a href="#"><span class="edu-icon edu-home-admin author-log-ic"></span>My Account</a>
                                                         </li>
-                                                        <li><a href="#"><span class="edu-icon edu-locked author-log-ic"></span>Log Out</a>
+                                                        <li><a href="<?=base_url('index.php/admin/AdminDashboard/logout');?>"><span class="edu-icon edu-locked author-log-ic"></span>Log Out</a>
                                                         </li>
                                                     </ul>
                                                 </li>
@@ -342,6 +342,7 @@
     $this->load->database();
     $this->db->select('name');
     $this->db->select('image');
+    $this->db->select('price');
     $this->db->from('book');
 
     $query1 = $this->db->get();
@@ -361,15 +362,11 @@
 
         <div class="panel-footer contact-footer">
             <div class="professor-stds-int">
+                
                 <div class="professor-stds">
-                    <div class="contact-stat"><span>Likes: </span> <strong>956</strong></div>
+                    <div class="contact-stat"><span><?php echo "$row->name";?></span> <strong><?php echo "$row->price";?></strong></div>
                 </div>
-                <div class="professor-stds">
-                    <div class="contact-stat"><span>Comments: </span> <strong>350</strong></div>
-                </div>
-                <div class="professor-stds">
-                    <div class="contact-stat"><span>Views: </span> <strong>450</strong></div>
-                </div>
+                
             </div>
         </div>
     </div>
