@@ -360,8 +360,27 @@
                                                         </div>
                                                     </form>
 
+
+
+                                                    
+
                                                 <!--end of the book regiatration form-->
                                                 </div>
+
+                                                <?php
+                                                 $con = mysqli_connect("localhost","root","","online_bookshop");  
+                                                 $res = mysqli_query($con,"select*from customer"); 
+                                                 echo"<table>";
+                                                 while($row=mysqli_fetch_array($res)){
+                                                    echo"<tr>";
+                                                    echo"<td>";?><img src="<?php echo $row["image"];?>" height="100" width="100"><?php echo"</td>"; echo"<td>"; echo$row["customer_id"]; echo"</td>";
+
+                                                    echo"</tr>";
+                                                 }
+                                                echo"</table>";
+                                                ?>
+
+                                                
                                             </div>
                                         </div>
                                     </div>

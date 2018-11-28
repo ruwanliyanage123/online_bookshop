@@ -19,7 +19,7 @@ class AdminSellerController extends CI_Controller{
                 'allowed_types'  => 'jpg|jpeg|png|bmp',
                 'max_size'       =>0,
                 'filename'       =>url_title($this->input->post('file')),
-                'encrypt_name' =>true                   
+                                
         );
 
 

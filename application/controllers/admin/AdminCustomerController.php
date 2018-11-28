@@ -35,5 +35,13 @@ class AdminCustomerController extends CI_Controller{
             
         }
     }
+
+    function displayimage(){
+        $this->load->model('admin/AdminCustomerModel');
+        $image = $this->AdminCustomerModel->getImage();
+        header("Content-type: image/jpeg");
+        print($image);
+                
+    }
 }
 ?>    
