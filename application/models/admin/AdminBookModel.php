@@ -15,7 +15,7 @@ class AdminBookModel extends CI_Model{
             'author'        =>$post['author'],
             'translator'    =>$post['translator'],
             'image'         =>$path, 
-            'publisher'     =>$post['publisher'],
+            'nic'           =>$post['nic'],
             'price'         =>$post['price'],
             'quantiry'      =>$post['quantiry'],
             'category'      =>$post['category'],

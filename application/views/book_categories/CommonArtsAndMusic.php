@@ -91,116 +91,48 @@
 		</div>
 		
 		<!--start of the showroom-->
-	      <div class="section group">
+<?php
+	
+	$this->load->database();
+	$this->db->select('name');
+	$this->db->select('image');
+	$this->db->select('price');
+	$this->db->from('book');
+	$this->db->where('category',"3");
+	$query1 = $this->db->get();
+	$number_of_rows = $query1->num_rows();
 
-				<div class="grid_1_of_4 images_1_of_4">
-					<img src="<?php echo base_url('assets/images/books/books_music_1.jpg');?>" width= "250px"; height="300px"; overflow= "hidden">
-					
-						<div class="price-details">
-							<div class="price-number">
-								<p><span class="rupees">LKR. 2,170.00</span></p>
-							</div>
-							
-						</div>
-				</div>
+	if($number_of_rows!=0){
+	
+		$result1 = $query1->result();
+		foreach($result1 as $row){
+		
+?>
+
+
+
+
+<div class="grid_1_of_4 images_1_of_4">
+	<a><img class="main-log" src="<?php echo base_url(); ?>/assets/images/uploaded/<?php echo substr("$row->image",55);?>"  style="width:220px; height:300px;"/></a>
+	
+	<div class="price-details">
+		<div class="price-number">
+			<p><span class="rupees"><strong><?php echo "$row->price";?></strong></span></p>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+<?php
+		}
+	}
+
+?>		
 
 		
-				<div class="grid_1_of_4 images_1_of_4">
-					<img src="<?php echo base_url('assets/images/books/books_music_2.jpg');?>" width= "250px"; height="300px"; overflow= "hidden">
-					
-						<div class="price-details">
-							<div class="price-number">
-								<p><span class="rupees">LKR. 670.00</span></p>
-							</div>
-							
-						</div>
-				</div>
-				    
-				
-				<div class="grid_1_of_4 images_1_of_4">
-					<img src="<?php echo base_url('assets/images/books/books_music_3.jpg');?>" width= "250px"; height="300px"; overflow= "hidden">
-					
-						<div class="price-details">
-							<div class="price-number">
-								<p><span class="rupees">LKR. 1,670.00</span></p>
-							</div>
-							
-						</div>
-				</div>
-
-				<div class="grid_1_of_4 images_1_of_4">
-					<img src="<?php echo base_url('assets/images/books/books_music_4.jpg');?>" width= "250px"; height="300px"; overflow= "hidden">
-					
-						<div class="price-details">
-							<div class="price-number">
-								<p><span class="rupees">LKR. 2,670.00</span></p>
-							</div>
-							
-						</div>
-				</div>
-
-			</div>
-
-			<div class="content_bottom">
-				<div class="heading">
-					<h3>Arts and Music</h3>
-				</div>
-				<div class="see">
-					<p><a href="#">See all Products</a></p>
-				</div>
-    			<div class="clear"></div>
-			</div>
-			
-			<div class="section group">
-
-				<div class="grid_1_of_4 images_1_of_4">
-					<img src="<?php echo base_url('assets/images/books/books_music_5.jpg');?>" width= "250px"; height="300px"; overflow= "hidden">
-					
-						<div class="price-details">
-							<div class="price-number">
-								<p><span class="rupees">LKR. 1,870.00</span></p>
-							</div>
-							
-						</div>
-				</div>
-
-				<div class="grid_1_of_4 images_1_of_4">
-					<img src="<?php echo base_url('assets/images/books/books_music_6.jpg');?>" width= "250px"; height="300px"; overflow= "hidden">
-					
-						<div class="price-details">
-							<div class="price-number">
-								<p><span class="rupees">LKR. 1,470.00</span></p>
-							</div>
-							
-						</div>
-				</div>
-
-				<div class="grid_1_of_4 images_1_of_4">
-					<img src="<?php echo base_url('assets/images/books/books_music_7.jpg');?>" width= "250px"; height="300px"; overflow= "hidden">
-					
-						<div class="price-details">
-							<div class="price-number">
-								<p><span class="rupees">LKR. 1,770.00</span></p>
-							</div>
-							
-						</div>
-				</div>
-
-				<div class="grid_1_of_4 images_1_of_4">
-					<img src="<?php echo base_url('assets/images/books/books_music_8.jpg');?>" width= "250px"; height="300px"; overflow= "hidden">
-					
-						<div class="price-details">
-							<div class="price-number">
-								<p><span class="rupees">LKR. 1,170.00</span></p>
-							</div>
-							
-						</div>
-				</div>
-
-			</div>
-
-			
-		</div>
 		<!--end of the showing-->
  </div>
 </div>
