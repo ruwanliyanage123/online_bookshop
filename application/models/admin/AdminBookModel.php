@@ -11,6 +11,7 @@ class AdminBookModel extends CI_Model{
         
         $data = array(
             'ISBN'          =>$post['ISBN'],
+            'name'          =>$post['name'],
             'author'        =>$post['author'],
             'translator'    =>$post['translator'],
             'image'         =>$path, 
@@ -22,6 +23,7 @@ class AdminBookModel extends CI_Model{
         );
 
         return $this->db->insert('book', $data);
+        $this->load->view('admin/AdminCustomerAdd');
     }
 
 }

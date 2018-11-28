@@ -107,7 +107,7 @@
                         <li>
                             <a class="has-arrow" href="all-courses.html" aria-expanded="false"><span class="educate-icon educate-library icon-wrap"></span> <span class="mini-click-non">Books</span></a>
                             <ul class="submenu-angle" aria-expanded="false">
-                                <li><a title="All Students" href="<?=base_url('index.php/admin/AdminDashboard/moveToAdminBookAll');?>"><span class="mini-sub-pro">All Books</span></a></li>
+                                <li><a title="All Students" href="<?=base_url('index.php/admin/AdminBookController/find');?>"><span class="mini-sub-pro">All Books</span></a></li>
                                 <li><a title="All Library" href="<?=base_url('index.php/admin/AdminDashboard/moveToAdminBookAdd');?>"><span class="mini-sub-pro">Add Book</span></a></li>
                                 <li><a title="Add Library" href="<?=base_url('index.php/admin/AdminDashboard/moveToAdminBookEdit');?>"><span class="mini-sub-pro">Edit Book</span></a></li>
                                 <li><a title="Edit Library" href="<?=base_url('index.php/admin/AdminDashboard/moveToAdminBookRemove');?>"><span class="mini-sub-pro">Remove Book</span></a></li>
@@ -331,6 +331,9 @@
                                                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                                                 <div class="form-group">
                                                                     <input name="ISBN" type="text" class="form-control" placeholder="ISBN">
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <input name="name" type="text" class="form-control" placeholder="Book Name">
                                                                 </div>
                                                                 <div class="form-group">
                                                                     <input name="author" type="text" class="form-control" placeholder="Author">

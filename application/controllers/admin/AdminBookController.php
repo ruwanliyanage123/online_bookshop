@@ -16,36 +16,45 @@ class AdminBookController extends CI_Controller{
         $this->load->library('form_validation');
         $data['title'] = 'Create a new Student';
 
-/*
-        $this->form_validation->set_rules('naam', 'Naam', 'required');
-        $this->form_validation->set_rules('voornaam', 'Voornaam', 'required');
-        $this->form_validation->set_rules('text', 'Text', 'required');
-*/        
-
-        
-            // Upload the files then pass data to your model
-            
-            $config = array(
+        $config = array(
                 'upload_path'    => 'assets/images/uploaded/',
                 'allowed_types'  => 'jpg|jpeg|png|bmp',
                 'max_size'       =>0,
                 'filename'       =>url_title($this->input->post('file')),
-                'encrypt_name' =>true                   
-            );
+                                  
+        );
 
 
-            $this->load->library('upload', $config);
-    
-            if (!$this->upload->do_upload('userfile')){
-                // If the upload fails
-                echo $this->upload->display_errors('<p>', '</p>');
-            }else{
-                // Pass the full path and post data to the set_newstudent model
-                $this->load->model('admin/AdminBookModel');
-                $this->AdminBookModel->set_newstudent($this->upload->data('full_path'),$this->input->post());
-                //$this->load->view('students/success');
-            }
+        $this->load->library('upload', $config);
+
+        if (!$this->upload->do_upload('userfile')){
+            
+            echo $this->upload->display_errors('<p>', '</p>');
+        }else{
+            
+            $this->load->model('admin/AdminBookModel');
+            $this->AdminBookModel->addBookForDatabase($this->upload->data('full_path'),$this->input->post());
+            
+        }
+    }
+
+    public function find(){
+
+        $this->load->database();
+        $this->db->select('name');
+        $this->db->select('image');
+        $this->db->from('book');
         
+        $query = $this->db->get();
+        $number_of_rows = $query->num_rows();
+        
+        if($number_of_rows!=0){
+           
+            $result = $query->result();
+            
+            $this->load->view('admin/AdminBookAll',$result); 
+        }
+           
         
     }
 }
