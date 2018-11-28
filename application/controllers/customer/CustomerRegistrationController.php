@@ -61,8 +61,18 @@ class CustomerRegistrationController extends CI_Controller{
         $Password = $this->input->post('your_pass');
         $Password = md5($Password);
 
-        $this->load->model('CustomerRegistrationModel');
-        $this->CustomerRegistrationModel->checkCustomers($Email, $Password);
+        if("seller"=substr($Email,0,6)){
+            
+            $this->load->model('CustomerRegistrationModel');
+            $this->CustomerRegistrationModel->sellerAdmission($Email, $Password);
+        }
+        else{
+            
+            $this->load->model('CustomerRegistrationModel');
+            $this->CustomerRegistrationModel->checkCustomers($Email, $Password);
+        }
+
+       
     }
 
 

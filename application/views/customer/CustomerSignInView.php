@@ -62,6 +62,10 @@ if($checking1!='1'){
                                 <input type="submit" name="signin" id="signin" class="form-submit" value="Log in"/>
                             </div>
                         </form>
+
+                        
+
+
                         <div class="social-login">
                             <span class="social-label">Or login with</span>
                             <ul class="socials">
