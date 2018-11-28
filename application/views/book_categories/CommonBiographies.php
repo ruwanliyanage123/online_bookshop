@@ -84,107 +84,47 @@
     		<div class="heading">
     			<h3>Biographies</h3>
 			</div>
+		<div class="clear"></div>
+	</div>
+<!---------------------->			
+
+<?php
+            
+			$this->load->database();
+			$this->db->select('name');
+			$this->db->select('image');
+			$this->db->select('price');
+			$this->db->from('book');
+			$this->db->where('category',"0");
+			$query1 = $this->db->get();
+			$number_of_rows = $query1->num_rows();
+		
+			if($number_of_rows!=0){
 			
-    		<div class="see">
-    			<p><a href="#">See all Products</a></p>
-    		</div>
-    		<div class="clear"></div>
+				$result1 = $query1->result();
+				foreach($result1 as $row){
+				
+		?>
+		
+		
+		
+		
+		<div class="grid_1_of_4 images_1_of_4">
+			<a><img class="main-log" src="<?php echo base_url(); ?>/assets/images/uploaded/<?php echo substr("$row->image",55);?>"  style="width:220px; height:300px;"/></a>
+			
+			<div class="price-details">
+				<div class="price-number">
+					<p><span class="rupees"><strong><?php echo "$row->price";?></strong></span></p>
+				</div>
+			</div>
 		</div>
 		
-	       <div class="section group">
-
-				<div class="grid_1_of_4 images_1_of_4">
-					<img src="<?php echo base_url('assets/images/books/books_biography_1.jpg');?>" width= "250px"; height="300px"; overflow= "hidden">
-					
-					<div class="price-details">
-				        <div class="price-number">
-							<p><span class="rupees">LKR. 2,170.00</span></p>
-					    </div>
-					</div>
-				</div>
-
-				<div class="grid_1_of_4 images_1_of_4">
-					<img src="<?php echo base_url('assets/images/books/books_biography_2.jpg');?>" width= "250px"; height="300px"; overflow= "hidden">
-					 
-					<div class="price-details">
-				        <div class="price-number">
-							<p><span class="rupees">LKR. 1,170.00</span></p>
-					    </div>
-					</div>
-				</div>
-				    
-				
-				<div class="grid_1_of_4 images_1_of_4">
-					<img src="<?php echo base_url('assets/images/books/books_biography_3.jpg');?>" width= "250px"; height="300px"; overflow= "hidden">
-					 
-					<div class="price-details">
-				        <div class="price-number">
-							<p><span class="rupees">LKR. 1,370.00</span></p>
-					    </div>
-					</div>
-				</div>
-
-				<div class="grid_1_of_4 images_1_of_4">
-					<img src="<?php echo base_url('assets/images/books/books_biography_4.jpg');?>" width= "250px"; height="300px"; overflow= "hidden">
-					 
-					<div class="price-details">
-				        <div class="price-number">
-							<p><span class="rupees">LKR. 3,170.00</span></p>
-					    </div>
-					</div>
-				</div>
-			</div>
-
-			<div class="content_bottom">
-				<div class="heading">
-					<h3>Biographies</h3>
-				</div>
-				<div class="see">
-					<p><a href="#">See all Products</a></p>
-				</div>
-				<div class="clear"></div>
-			</div>
-			
-
-			<div class="section group">
-				<div class="grid_1_of_4 images_1_of_4">
-					<img src="<?php echo base_url('assets/images/books/books_biography_5.jpg');?>" width= "250px"; height="300px"; overflow= "hidden">
-					 
-					<div class="price-details">
-				        <div class="price-number">
-							<p><span class="rupees">LKR. 1,570.00</span></p>
-					    </div>
-					</div>
-				</div>
-
-				<div class="grid_1_of_4 images_1_of_4">
-					<img src="<?php echo base_url('assets/images/books/books_biography_6.jpg');?>" width= "250px"; height="300px"; overflow= "hidden">
-					 
-					<div class="price-details">
-				        <div class="price-number">
-							<p><span class="rupees">LKR. 2,670.00</span></p>
-					    </div>
-					</div>
-				</div>
-				<div class="grid_1_of_4 images_1_of_4">
-					<img src="<?php echo base_url('assets/images/books/books_biography_7.jpg');?>" width= "250px"; height="300px"; overflow= "hidden">
-					 
-					<div class="price-details">
-				        <div class="price-number">
-							<p><span class="rupees">LKR. 870.00</span></p>
-					    </div>
-					</div>
-				</div>
-				<div class="grid_1_of_4 images_1_of_4">
-					<img src="<?php echo base_url('assets/images/books/books_biography_8.jpg');?>" width= "250px"; height="300px"; overflow= "hidden">
-					 
-					<div class="price-details">
-				        <div class="price-number">
-							<p><span class="rupees">LKR. 1000.00</span></p>
-					    </div>
-					</div>
-				</div>
-			</div>
+		<?php
+				}
+			}
+		
+		?>		
+		<!---------------------->		
     </div>
  </div>
 </div>
