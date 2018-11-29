@@ -315,19 +315,74 @@
            
             
         </div>
-        <div class="contacts-area mg-b-15">
+
+
+
+
+
+----------------------------
+<!--
+<div class="contacts-area mg-b-15">
             <div class="container-fluid">
                 <div class="row">
+
+                -->
                     
-                    
-                    
-                <div class="row">
-                    
-                    
-                   
+
+        
+<!----srating the php art -->
+
+
+
+
+
+
+<?php
+            
+    $this->load->database();
+    $this->db->select('customer_name');
+    $this->db->select('image');
+    $this->db->from('customer');
+
+    $query1 = $this->db->get();
+    $number_of_rows = $query1->num_rows();
+
+    if($number_of_rows!=0){
+    
+        $result1 = $query1->result();
+        foreach($result1 as $row){
+
+?>
+
+<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+    <div class="hpanel hblue contact-panel contact-panel-cs responsive-mg-b-30">
+        
+    <a><img class="main-log" src="<?php echo base_url(); ?>/assets/images/uploaded/<?php echo substr("$row->image",55);?>"  style="width:220px; height:300px;"/></a>
+
+        <div class="panel-footer contact-footer">
+            <div class="professor-stds-int">
+                
+                <div class="professor-stds">
+                    <div class="contact-stat"><span><?php echo "$row->customer_name";?></span> <strong></strong></div>
                 </div>
+                
             </div>
         </div>
+    </div>
+</div>
+
+
+
+<?php
+        }
+    }
+
+?>
+
+
+<!--endig the php part--->
+
+          
         
     </div>
     <!-- jquery
