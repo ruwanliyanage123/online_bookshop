@@ -95,7 +95,7 @@
 			$this->db->select('image');
 			$this->db->select('price');
 			$this->db->from('book');
-			$this->db->where('category',"0");
+			$this->db->where('category',"2");
 			$query1 = $this->db->get();
 			$number_of_rows = $query1->num_rows();
 		

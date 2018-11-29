@@ -289,8 +289,8 @@
                                                 </li>
                                                 <li class="nav-item">
                                                     <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle">
-															<img src="<?php echo base_url(); ?>/assets/img/product/pro4.jpg" alt="" />
-															<span class="admin-name">Prof.Anderson</span>
+															<img src="<?php echo base_url(); ?>/lassets/img/product/pro4.jpg" alt="" />
+															<span class="admin-name"></span>
 															<i class="fa fa-angle-down edu-icon edu-down-arrow"></i>
 														</a>
                                                     <ul role="menu" class="dropdown-header-top author-log dropdown-menu animated zoomIn">
@@ -337,8 +337,8 @@
                             <div class="single-review-st-text">
                                 <img src="<?php echo base_url(); ?>/assets/img/notification/2.jpg" alt="">
                                 <div class="review-ctn-hf">
-                                    <h3>Sarah Graves</h3>
-                                    <p>Highly recommend</p>
+                                    <h3></h3>
+                                    <p></p>
                                 </div>
                                 <div class="review-item-rating">
                                     <i class="educate-icon educate-star"></i>
@@ -351,8 +351,8 @@
                             <div class="single-review-st-text">
                                 <img src="<?php echo base_url(); ?>/assets/img/notification/2.jpg" alt="">
                                 <div class="review-ctn-hf">
-                                    <h3>Garbease sha</h3>
-                                    <p>Awesome Pro</p>
+                                    <h3></h3>
+                                    <p></p>
                                 </div>
                                 <div class="review-item-rating">
                                     <i class="educate-icon educate-star"></i>
@@ -365,8 +365,8 @@
                             <div class="single-review-st-text">
                                 <img src="<?php echo base_url(); ?>/assets/img/notification/2.jpg" alt="">
                                 <div class="review-ctn-hf">
-                                    <h3>Gobetro pro</h3>
-                                    <p>Great Website</p>
+                                    <h3></h3>
+                                    <p></p>
                                 </div>
                                 <div class="review-item-rating">
                                     <i class="educate-icon educate-star"></i>
@@ -379,8 +379,8 @@
                             <div class="single-review-st-text">
                                 <img src="<?php echo base_url(); ?>/assets/img/notification/2.jpg" alt="">
                                 <div class="review-ctn-hf">
-                                    <h3>Siam Graves</h3>
-                                    <p>That's Good</p>
+                                    <h3></h3>
+                                    <p></p>
                                 </div>
                                 <div class="review-item-rating">
                                     <i class="educate-icon educate-star"></i>
@@ -393,8 +393,8 @@
                             <div class="single-review-st-text">
                                 <img src="<?php echo base_url(); ?>/assets/img/notification/2.jpg" alt="">
                                 <div class="review-ctn-hf">
-                                    <h3>Sarah Graves</h3>
-                                    <p>Highly recommend</p>
+                                    <h3></h3>
+                                    <p></p>
                                 </div>
                                 <div class="review-item-rating">
                                     <i class="educate-icon educate-star"></i>
@@ -407,8 +407,8 @@
                             <div class="single-review-st-text">
                                 <img src="<?php echo base_url(); ?>/assets/img/notification/2.jpg" alt="">
                                 <div class="review-ctn-hf">
-                                    <h3>Julsha Grav</h3>
-                                    <p>Sei Hoise bro</p>
+                                    <h3></h3>
+                                    <p></p>
                                 </div>
                                 <div class="review-item-rating">
                                     <i class="educate-icon educate-star"></i>

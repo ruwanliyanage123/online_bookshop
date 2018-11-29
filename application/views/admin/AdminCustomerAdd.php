@@ -287,7 +287,7 @@
                                                 <li class="nav-item">
                                                     <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle">
 															<img src="img/product/pro4.jpg" alt="" />
-															<span class="admin-name">Prof.Anderson</span>
+															<span class="admin-name"></span>
 															<i class="fa fa-angle-down edu-icon edu-down-arrow"></i>
 														</a>
                                                     <ul role="menu" class="dropdown-header-top author-log dropdown-menu animated zoomIn">
@@ -346,7 +346,7 @@
                                                                 </div>
                                                                 
                                                                 <div class="form-group">
-                                                                    <input name="customer_password" type="text" class="form-control" placeholder="password">
+                                                                    <input name="customer_password" type="password" class="form-control" placeholder="password">
                                                                 </div>
                                                     
                                                             </div>
@@ -367,19 +367,7 @@
                                                 <!--end of the book regiatration form-->
                                                 </div>
 
-                                                <?php
-                                                 $con = mysqli_connect("localhost","root","","online_bookshop");  
-                                                 $res = mysqli_query($con,"select*from customer"); 
-                                                 echo"<table>";
-                                                 while($row=mysqli_fetch_array($res)){
-                                                    echo"<tr>";
-                                                    echo"<td>";?><img src="<?php echo $row["image"];?>" height="100" width="100"><?php echo"</td>"; echo"<td>"; echo$row["customer_id"]; echo"</td>";
-
-                                                    echo"</tr>";
-                                                 }
-                                                echo"</table>";
-                                                ?>
-
+                                                
                                                 
                                             </div>
                                         </div>
