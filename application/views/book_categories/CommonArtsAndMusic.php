@@ -94,11 +94,10 @@
 <?php
 	
 	$this->load->database();
-	$this->db->select('name');
-	$this->db->select('image');
-	$this->db->select('price');
+	
+	$this->db->delete();
 	$this->db->from('book');
-	$this->db->where('category',"3");
+	$this->db->where('ISBN',"");
 	$query1 = $this->db->get();
 	$number_of_rows = $query1->num_rows();
 
