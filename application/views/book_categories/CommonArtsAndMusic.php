@@ -95,9 +95,9 @@
 	
 	$this->load->database();
 	
-	$this->db->delete();
+	$this->db->select();
 	$this->db->from('book');
-	$this->db->where('ISBN',"");
+	$this->db->where('category',"3");
 	$query1 = $this->db->get();
 	$number_of_rows = $query1->num_rows();
 
