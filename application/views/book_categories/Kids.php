@@ -1,3 +1,4 @@
+
 <!DOCTYPE HTML>
 <head>
 <title>online book</title>
@@ -84,7 +85,7 @@
 	<div class="header_bottom">
 	     	<div class="menu">
 	     		<ul>
-				 <li><a href= "<?=base_url('index.php/customer/CustomerRegistrationController/decieDashboard');?>">Home</a></li>
+                    <li><a href= "<?=base_url('index.php/customer/CustomerRegistrationController/decieDashboard');?>">Home</a></li>
 			    	<li><a href= "<?=base_url('index.php/customer/CustomerRegistrationController/moveToAbout');?>">About</a></li>
 			    	<li><a href="delivery.html">Delivery</a></li>
 			    	<li><a href="news.html">News</a></li>
@@ -105,149 +106,58 @@
     <div class="content">
     	<div class="content_top">
     		<div class="heading">
-    		<h3>Kids</h3>
+    		<h3>Biographies</h3>
     		</div>
     		<div class="see">
-    			<p><a href="#">See all Products</a></p>
+    			<p><a href="#"></a></p>
     		</div>
     		<div class="clear"></div>
 		</div>
 		
 		<!--start of the showroom-->
-	      <div class="section group">
+	
+<?php
+	
+	$this->load->database();
+	$this->db->select('name');
+	$this->db->select('image');
+	$this->db->select('price');
+	$this->db->from('book');
+	$this->db->where('category',"2");
+	$query1 = $this->db->get();
+	$number_of_rows = $query1->num_rows();
 
-				<div class="grid_1_of_4 images_1_of_4">
-					<img src="<?php echo base_url('assets/images/books/books_kids_1.jpg');?>" width= "250px"; height="300px"; overflow= "hidden">
-					
-						<div class="price-details">
-							<div class="price-number">
-								<p><span class="rupees">LKR. 2,170.00</span></p>
-							</div>
-							<div class="add-cart">								
-								<h4><a href="<?=base_url('index.php/customer/CustomerRegistrationController/moveToPreview');?>">Add to Cart</a></h4>
-							</div>
-							<div class="clear"></div>
-						</div>
-				</div>
-
-		
-				<div class="grid_1_of_4 images_1_of_4">
-					<img src="<?php echo base_url('assets/images/books/books_kids_2.jpg');?>" width= "250px"; height="300px"; overflow= "hidden">
-					
-						<div class="price-details">
-							<div class="price-number">
-								<p><span class="rupees">LKR. 670.00</span></p>
-							</div>
-							<div class="add-cart">								
-								<h4><a href="<?=base_url('index.php/customer/CustomerRegistrationController/moveToPreview');?>">Add to Cart</a></h4>
-							</div>
-							<div class="clear"></div>
-						</div>
-				</div>
-				    
+	if($number_of_rows!=0){
+	
+		$result1 = $query1->result();
+		foreach($result1 as $row){
 				
-				<div class="grid_1_of_4 images_1_of_4">
-					<img src="<?php echo base_url('assets/images/books/books_kids_3.jpg');?>" width= "250px"; height="300px"; overflow= "hidden">
-					
-						<div class="price-details">
-							<div class="price-number">
-								<p><span class="rupees">LKR. 1,670.00</span></p>
-							</div>
-							<div class="add-cart">								
-								<h4><a href="<?=base_url('index.php/customer/CustomerRegistrationController/moveToPreview');?>">Add to Cart</a></h4>
-							</div>
-							<div class="clear"></div>
-						</div>
-				</div>
-
-				<div class="grid_1_of_4 images_1_of_4">
-					<img src="<?php echo base_url('assets/images/books/books_kids_4.jpg');?>" width= "250px"; height="300px"; overflow= "hidden">
-					
-						<div class="price-details">
-							<div class="price-number">
-								<p><span class="rupees">LKR. 2,670.00</span></p>
-							</div>
-							<div class="add-cart">								
-								<h4><a href="<?=base_url('index.php/customer/CustomerRegistrationController/moveToPreview');?>">Add to Cart</a></h4>
-							</div>
-							<div class="clear"></div>
-						</div>
-				</div>
-
+?>
+				
+	<div class="grid_1_of_4 images_1_of_4">
+		<a><img class="main-log" src="<?php echo base_url(); ?>/assets/images/uploaded/<?php echo substr("$row->image",55);?>"  style="width:220px; height:300px;"/></a>
+		
+		<div class="price-details">
+			<div class="price-number">
+				<p><span class="rupees"><strong><?php echo "$row->price";?></strong></span></p>
 			</div>
-
-			<div class="content_bottom">
-				<div class="heading">
-					<h3>Kids</h3>
-				</div>
-				<div class="see">
-					<p><a href="#">See all Products</a></p>
-				</div>
-    			<div class="clear"></div>
+			<div class="add-cart">								
+				<h4><a href="<?=base_url('index.php/customer/CustomerRegistrationController/moveToPreview');?>">Add to Cart</a></h4>
 			</div>
-			
-			<div class="section group">
-
-				<div class="grid_1_of_4 images_1_of_4">
-					<img src="<?php echo base_url('assets/images/books/books_kids_2.jpg');?>" width= "250px"; height="300px"; overflow= "hidden">
-					
-						<div class="price-details">
-							<div class="price-number">
-								<p><span class="rupees">LKR. 1,870.00</span></p>
-							</div>
-							<div class="add-cart">								
-								<h4><a href="<?=base_url('index.php/customer/CustomerRegistrationController/moveToPreview');?>">Add to Cart</a></h4>
-							</div>
-							<div class="clear"></div>
-						</div>
-				</div>
-
-				<div class="grid_1_of_4 images_1_of_4">
-					<img src="<?php echo base_url('assets/images/books/books_kids_4.jpg');?>" width= "250px"; height="300px"; overflow= "hidden">
-					
-						<div class="price-details">
-							<div class="price-number">
-								<p><span class="rupees">LKR. 1,470.00</span></p>
-							</div>
-							<div class="add-cart">								
-								<h4><a href="<?=base_url('index.php/customer/CustomerRegistrationController/moveToPreview');?>">Add to Cart</a></h4>
-							</div>
-							<div class="clear"></div>
-						</div>
-				</div>
-
-				<div class="grid_1_of_4 images_1_of_4">
-					<img src="<?php echo base_url('assets/images/books/books_kids_3.jpg');?>" width= "250px"; height="300px"; overflow= "hidden">
-					
-						<div class="price-details">
-							<div class="price-number">
-								<p><span class="rupees">LKR. 1,770.00</span></p>
-							</div>
-							<div class="add-cart">								
-								<h4><a href="<?=base_url('index.php/customer/CustomerRegistrationController/moveToPreview');?>">Add to Cart</a></h4>
-							</div>
-							<div class="clear"></div>
-						</div>
-				</div>
-
-				<div class="grid_1_of_4 images_1_of_4">
-					<img src="<?php echo base_url('assets/images/books/books_kids_1.jpg');?>" width= "250px"; height="300px"; overflow= "hidden">
-					
-						<div class="price-details">
-							<div class="price-number">
-								<p><span class="rupees">LKR. 1,170.00</span></p>
-							</div>
-							<div class="add-cart">								
-								<h4><a href="<?=base_url('index.php/customer/CustomerRegistrationController/moveToPreview');?>">Add to Cart</a></h4>
-							</div>
-							<div class="clear"></div>
-						</div>
-				</div>
-
-			</div>
-
-			
+			<div class="clear"></div>
 		</div>
+	</div>
+		
+		
+
+<?php
+		}
+	}
+
+?>		
+
+
+
 		<!--end of the showing-->
  </div>
 </div>
