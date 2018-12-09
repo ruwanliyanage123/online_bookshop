@@ -84,7 +84,7 @@
 	<div class="header_bottom">
 	     	<div class="menu">
 	     		<ul>
-				 <li><a href= "<?=base_url('index.php/customer/CustomerRegistrationController/decieDashboard');?>">Home</a></li>
+                    <li><a href= "<?=base_url('index.php/customer/CustomerRegistrationController/decieDashboard');?>">Home</a></li>
 			    	<li><a href= "<?=base_url('index.php/customer/CustomerRegistrationController/moveToAbout');?>">About</a></li>
 			    	<li><a href="delivery.html">Delivery</a></li>
 			    	<li><a href="news.html">News</a></li>
@@ -105,133 +105,59 @@
     <div class="content">
     	<div class="content_top">
     		<div class="heading">
-    		<h3>School Educational</h3>
+    		<h3>Business</h3>
     		</div>
     		<div class="see">
     			<p><a href="#">See all Products</a></p>
     		</div>
     		<div class="clear"></div>
-    	</div>
-	      <div class="section group">
-				<div class="grid_1_of_4 images_1_of_4">
-					 <a href="preview.html"><img src="images/feature-pic1.jpg" alt="" /></a>
-					 <h2>Lorem Ipsum is simply </h2>
-					<div class="price-details">
-				       <div class="price-number">
-							<p><span class="rupees">620.87LKR</span></p>
-					    </div>
-					       		<div class="add-cart">								
-									<h4><a href="preview.html">Add to Cart</a></h4>
-							     </div>
-							 <div class="clear"></div>
-					</div>
-					 
-				</div>
-				<div class="grid_1_of_4 images_1_of_4">
-					<a href="preview.html"><img src="images/feature-pic2.jpg" alt="" /></a>
-					 <h2>Lorem Ipsum is simply </h2>
-					<div class="price-details">
-				       <div class="price-number">
-							<p><span class="rupees">899.75LKR</span></p>
-					    </div>
-					       		<div class="add-cart">								
-									<h4><a href="preview.html">Add to Cart</a></h4>
-							     </div>
-							 <div class="clear"></div>
-					</div>
-				    
-				</div>
-				<div class="grid_1_of_4 images_1_of_4">
-					<a href="preview.html"><img src="images/feature-pic3.jpg" alt="" /></a>
-					 <h2>Lorem Ipsum is simply </h2>
-					 <div class="price-details">
-				       <div class="price-number">
-							<p><span class="rupees">599.00LKR</span></p>
-					    </div>
-					       		<div class="add-cart">								
-									<h4><a href="preview.html">Add to Cart</a></h4>
-							     </div>
-							 <div class="clear"></div>
-					</div>
-				</div>
-				<div class="grid_1_of_4 images_1_of_4">
-					<a href="preview.html"><img src="images/feature-pic4.jpg" alt="" /></a>
-					 <h2>Lorem Ipsum is simply </h2>
-					<div class="price-details">
-				       <div class="price-number">
-							<p><span class="rupees">679.87LKR</span></p>
-					    </div>
-					       		<div class="add-cart">								
-									<h4><a href="preview.html">Add to Cart</a></h4>
-							     </div>
-							 <div class="clear"></div>
-					</div>				     
-				</div>
+		</div>
+		
+		<!--start of the showroom-->
+	
+<?php
+	
+	$this->load->database();
+	$this->db->select('name');
+	$this->db->select('image');
+	$this->db->select('price');
+	$this->db->from('book');
+	$this->db->where('category',"1");
+	$query1 = $this->db->get();
+	$number_of_rows = $query1->num_rows();
+
+	if($number_of_rows!=0){
+	
+		$result1 = $query1->result();
+		foreach($result1 as $row){
+				
+?>
+				
+	<div class="grid_1_of_4 images_1_of_4">
+		<a><img class="main-log" src="<?php echo base_url(); ?>/assets/images/uploaded/<?php echo substr("$row->image",55);?>"  style="width:220px; height:300px;"/></a>
+		
+		<div class="price-details">
+			<div class="price-number">
+				<p><span class="rupees"><strong><?php echo "$row->price";?></strong></span></p>
 			</div>
-			<div class="content_bottom">
-    		<div class="heading">
-    		<h3>School Educational</h3>
-    		</div>
-    		<div class="see">
-    			<p><a href="#">See all Products</a></p>
-    		</div>
-    		<div class="clear"></div>
-    	</div>
-			<div class="section group">
-				<div class="grid_1_of_4 images_1_of_4">
-					 <a href="preview.html"><img src="images/new-pic1.jpg" alt="" /></a>					
-					 <h2>Lorem Ipsum is simply </h2>
-					<div class="price-details">
-				       <div class="price-number">
-							<p><span class="rupees">$849.99</span></p>
-					    </div>
-					       		<div class="add-cart">								
-									<h4><a href="preview.html">Add to Cart</a></h4>
-							     </div>
-							 <div class="clear"></div>
-					</div>
-				</div>
-				<div class="grid_1_of_4 images_1_of_4">
-					<a href="preview.html"><img src="images/new-pic2.jpg" alt="" /></a>
-					 <h2>Lorem Ipsum is simply </h2>
-					 <div class="price-details">
-				       <div class="price-number">
-							<p><span class="rupees">$599.99</span></p>
-					    </div>
-					       		<div class="add-cart">								
-									<h4><a href="preview.html">Add to Cart</a></h4>
-							     </div>
-							 <div class="clear"></div>
-					</div>
-				</div>
-				<div class="grid_1_of_4 images_1_of_4">
-					<a href="preview.html"><img src="images/new-pic4.jpg" alt="" /></a>
-					 <h2>Lorem Ipsum is simply </h2>
-					<div class="price-details">
-				       <div class="price-number">
-							<p><span class="rupees">$799.99</span></p>
-					    </div>
-					       		<div class="add-cart">								
-									<h4><a href="preview.html">Add to Cart</a></h4>
-							     </div>
-							 <div class="clear"></div>
-					</div>
-				</div>
-				<div class="grid_1_of_4 images_1_of_4">
-				 <a href="preview.html"><img src="images/new-pic3.jpg" alt="" /></a>
-					 <h2>Lorem Ipsum is simply </h2>					 
-					 <div class="price-details">
-				       <div class="price-number">
-							<p><span class="rupees">$899.99</span></p>
-					    </div>
-					       		<div class="add-cart">								
-									<h4><a href="preview.html">Add to Cart</a></h4>
-							     </div>
-							 <div class="clear"></div>
-					</div>
-				</div>
+			<div class="add-cart">								
+				<h4><a href="<?=base_url('index.php/customer/CustomerRegistrationController/moveToPreview');?>">Add to Cart</a></h4>
 			</div>
-    </div>
+			<div class="clear"></div>
+		</div>
+	</div>
+		
+		
+
+<?php
+		}
+	}
+
+?>		
+
+
+
+		<!--end of the showing-->
  </div>
 </div>
 
