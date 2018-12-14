@@ -17,8 +17,21 @@
   <div class="wrap">
 	<div class="header">
 		<div class="headertop_desc">
-			
-			
+			<div class="call">
+				<!-- <p><span>Need help?</span> call us <span class="number">+94772308519 (RUWAN)</span></span></p> -->
+				 <p><span>Need help?</span>  call us <span class="number">+94772308519</span></p>
+			</div>
+			<div class="account_desc">
+				<ul>
+				
+					<li><a href="#">Delivery</a></li>
+					<li><a href="#">Checkout</a></li>
+					<li><a href="#">My Account</a></li>
+					<li><a href= "<?=base_url('index.php/customer/CustomerRegistrationController/logout');?>"><font color="green"; font-family:bolt>LOGOUT</font></a></li>
+
+				</ul>
+			</div>
+			<div class="clear"></div>
 		</div>
 		<div class="header_top">
 			<div class="logo">
@@ -26,7 +39,16 @@
 				
 				<img src="<?php echo base_url('assets/images/logo.png');?>" width= "300px"; overflow= "hidden">
 			</div>
-			  
+			  <div class="cart">
+			  	   <p>Welcome to our Online Store! <span>Cart:</span><div id="dd" class="wrapper-dropdown-2"> 0 item(s) - $0.00
+			  	   	<ul class="dropdown">
+							<li>you have no items in your Shopping cart</li>
+					</ul></div></p>
+			  </div>
+
+			<!--start-->
+			
+			<!--end-->
 
 			  <script type="text/javascript">
 
@@ -62,8 +84,9 @@
 	<div class="header_bottom">
 	     	<div class="menu">
 	     		<ul>
-				 <li><a href= "<?=base_url('index.php/customer/CustomerRegistrationController/decieDashboard');?>">Home</a></li>
+                    <li><a href= "<?=base_url('index.php/customer/CustomerRegistrationController/decieDashboard');?>">Home</a></li>
 			    	<li><a href= "<?=base_url('index.php/customer/CustomerRegistrationController/moveToAbout');?>">About</a></li>
+			    	<li><a href="delivery.html">Delivery</a></li>
 			    	<li><a href="news.html">News</a></li>
 			    	
 			    	<div class="clear"></div>
@@ -82,7 +105,7 @@
     <div class="content">
     	<div class="content_top">
     		<div class="heading">
-    		<h3>Kids</h3>
+    		<h3>Business</h3>
     		</div>
     		<div class="see">
     			<p><a href="#">See all Products</a></p>
@@ -91,13 +114,15 @@
 		</div>
 		
 		<!--start of the showroom-->
+	
 <?php
 	
 	$this->load->database();
-	
-	$this->db->select();
+	$this->db->select('name');
+	$this->db->select('image');
+	$this->db->select('price');
 	$this->db->from('book');
-	$this->db->where('category',"4");
+	$this->db->where('category',"1");
 	$query1 = $this->db->get();
 	$number_of_rows = $query1->num_rows();
 
@@ -105,34 +130,37 @@
 	
 		$result1 = $query1->result();
 		foreach($result1 as $row){
-		
+				
 ?>
-
-
-
-
-<div class="grid_1_of_4 images_1_of_4">
-	<a><img class="main-log" src="<?php echo base_url(); ?>/assets/images/uploaded/<?php echo substr("$row->image",55);?>"  style="width:220px; height:300px;"/></a>
-	
-	<div class="price-details">
-		<div class="price-number">
-			<p><span class="rupees"><strong><?php echo "$row->price";?></strong></span></p>
+				
+	<div class="grid_1_of_4 images_1_of_4">
+		<a><img class="main-log" src="<?php echo base_url(); ?>/assets/images/uploaded/<?php echo substr("$row->image",55);?>"  style="width:220px; height:300px;"/></a>
+		
+		<div class="price-details">
+			<div class="price-number">
+				<p><span class="rupees"><strong><?php echo "$row->price";?></strong></span></p>
+			</div>
+			<div class="add-cart">								
+				<h4><a href="<?=base_url('index.php/customer/CustomerRegistrationController/moveToPreview');?>">Add to Cart</a></h4>
+			</div>
+			<div class="clear"></div>
 		</div>
 	</div>
-</div>
-
-
-
-
+		
+		
 
 <?php
 		}
 	}
 
 ?>		
+
+
+
 		<!--end of the showing-->
  </div>
 </div>
+
 
    
     <script type="text/javascript">
